@@ -1,0 +1,16 @@
+uncompress.o: uncompress.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/zlib_fs.h
+inode.o: inode.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/blkdev.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/cramfs_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/semaphore.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h

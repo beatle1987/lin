@@ -1,0 +1,287 @@
+serial_sa1100.o: serial_sa1100.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty_flip.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/major.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/circ_buf.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/serial.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysrq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/serial_sa1100.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/sa1100/console.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/magic/sysrq.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/serial_core.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/default/baudrate.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/devfs/fs.h)
+serial_clps711x.o: serial_clps711x.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty_flip.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/major.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/circ_buf.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/serial.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysrq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/serial_core.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware/clps7111.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/clps711x/console.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/devfs/fs.h)
+serial_amba.o: serial_amba.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty_flip.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/major.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/circ_buf.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/serial.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysrq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/amba/console.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/magic/sysrq.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/serial_core.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware/serial_amba.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/devfs/fs.h)
+serial_8250_pci.o: serial_8250_pci.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/serial.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/serialP.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/serial.h \
+   serial_8250.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ddb5074.h)
+serial_21285.o: serial_21285.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty_flip.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/serial.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/major.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware/dec21285.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/21285/old.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach-types.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/21285/console.h)
+serial_8250_pnp.o: serial_8250_pnp.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/isapnp.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/serial.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/serialP.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/serial.h \
+   serial_8250.h
+serial_anakin.o: serial_anakin.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty_flip.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/major.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/circ_buf.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/serial.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysrq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/serial_core.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/anakin/console.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/anakin/default/baudrate.h)
+serial_8250.o: serial_8250.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty_flip.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/major.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/serial.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysrq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/serial_reg.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/serialP.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/serial_core.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kmod.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
+   serial_8250.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/8250/many/ports.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/8250/detect/irq.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/8250/multiport.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/8250/hub6.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/serial.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/8250/console.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/rsa.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/many/ports.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/8250/share/irq.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mca.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/devfs/fs.h)
+serial_uart00.o: serial_uart00.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty_flip.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/major.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/circ_buf.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/serial.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysrq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/sizes.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/uart00/console.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/magic/sysrq.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/serial_core.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/hard/pps.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/camelot.h)
+serial_core.o: serial_core.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty_flip.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/major.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/circ_buf.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysrq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/serial_core.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pm.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/core/console.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/proc/fs.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/amba/console.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/anakin/console.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/clps711x/console.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/21285/console.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/sa1100/console.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/8250/console.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/uart00/console.h)
+serial_8250.h: \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pci.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/share/irq.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/many/ports.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/isapnp.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/isapnp/module.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/multiport.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/hub6.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/m386.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/m486.h)
+	@touch serial_8250.h
+.PRECIOUS:	serial_8250.h \
+

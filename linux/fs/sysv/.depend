@@ -1,0 +1,42 @@
+dir.o: dir.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysv_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h
+symlink.o: symlink.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h
+namei.o: namei.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysv_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h
+inode.o: inode.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysv_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/highuid.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h
+file.o: file.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysv_fs.h
+super.o: super.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysv_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h
+ialloc.o: ialloc.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysv_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/stddef.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h
+itree.o: itree.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysv_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h
+balloc.o: balloc.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysv_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h

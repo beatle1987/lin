@@ -1,0 +1,174 @@
+protocol.o: protocol.c \
+   protocol.h \
+   usb.h \
+   debug.h \
+   scsiglue.h \
+   transport.h
+unusual_devs.h: \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/usb/storage/hp8200e.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/usb/storage/dpcm.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/usb/storage/sddr09.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/usb/storage/isd200.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/usb/storage/jumpshot.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/usb/storage/freecom.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/usb/storage/datafab.h)
+	@touch unusual_devs.h
+freecom.o: freecom.c \
+   transport.h \
+   protocol.h \
+   usb.h \
+   debug.h \
+   freecom.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/hdreg.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/usb/storage/debug.h)
+jumpshot.o: jumpshot.c \
+   transport.h \
+   protocol.h \
+   usb.h \
+   debug.h \
+   jumpshot.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h
+usb.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/usb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/blk.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/completion.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/scsi/scsi.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/scsi/hosts.h
+	@touch usb.h
+transport.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/blk.h \
+   usb.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/scsi/scsi.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/usb/storage/hp8200e.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/usb/storage/sddr09.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/usb/storage/freecom.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/usb/storage/datafab.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/usb/storage/jumpshot.h)
+	@touch transport.h
+usb.o: usb.c \
+   usb.h \
+   scsiglue.h \
+   transport.h \
+   protocol.h \
+   debug.h \
+   initializers.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/usb/storage/hp8200e.h) \
+   shuttle_usbat.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/usb/storage/sddr09.h) \
+   sddr09.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/usb/storage/dpcm.h) \
+   dpcm.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/usb/storage/freecom.h) \
+   freecom.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/usb/storage/isd200.h) \
+   isd200.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/usb/storage/datafab.h) \
+   datafab.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/usb/storage/jumpshot.h) \
+   jumpshot.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   unusual_devs.h \
+   unusual_devs.h
+transport.o: transport.c \
+   transport.h \
+   protocol.h \
+   usb.h \
+   debug.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/usb/storage/debug.h)
+sddr09.o: sddr09.c \
+   transport.h \
+   protocol.h \
+   usb.h \
+   debug.h \
+   sddr09.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h
+isd200.o: isd200.c \
+   transport.h \
+   protocol.h \
+   usb.h \
+   debug.h \
+   scsiglue.h \
+   isd200.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/hdreg.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ide.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/usb/storage/debug.h)
+debug.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/blk.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/cdrom.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/scsi/scsi.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/usb/storage/debug.h)
+	@touch debug.h
+scsiglue.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/blk.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/scsi/scsi.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/scsi/hosts.h
+	@touch scsiglue.h
+dpcm.o: dpcm.c \
+   transport.h \
+   protocol.h \
+   usb.h \
+   debug.h \
+   dpcm.h \
+   sddr09.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/usb/storage/sddr09.h)
+initializers.h: \
+   usb.h
+	@touch initializers.h
+debug.o: debug.c \
+   debug.h
+datafab.o: datafab.c \
+   transport.h \
+   protocol.h \
+   usb.h \
+   debug.h \
+   datafab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h
+initializers.o: initializers.c \
+   initializers.h \
+   debug.h
+scsiglue.o: scsiglue.c \
+   scsiglue.h \
+   usb.h \
+   debug.h \
+   transport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h
+protocol.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/blk.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/scsi/scsi.h \
+   usb.h
+	@touch protocol.h
+shuttle_usbat.o: shuttle_usbat.c \
+   transport.h \
+   protocol.h \
+   usb.h \
+   debug.h \
+   shuttle_usbat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h
+.PRECIOUS:	unusual_devs.h \
+	usb.h \
+	transport.h \
+	debug.h \
+	scsiglue.h \
+	initializers.h \
+	protocol.h \
+

@@ -1,0 +1,49 @@
+evmisc.o: evmisc.c \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acevents.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acnamesp.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acinterp.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/achware.h
+evrgnini.o: evrgnini.c \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acevents.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acnamesp.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acinterp.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/amlcode.h
+evxfevnt.o: evxfevnt.c \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/achware.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acnamesp.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acevents.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/amlcode.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acinterp.h
+evsci.o: evsci.c \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acnamesp.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/achware.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acevents.h
+evxface.o: evxface.c \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/achware.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acnamesp.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acevents.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/amlcode.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acinterp.h
+evevent.o: evevent.c \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/achware.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acevents.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acnamesp.h
+evregion.o: evregion.c \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acevents.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acnamesp.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acinterp.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/amlcode.h
+evxfregn.o: evxfregn.c \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/achware.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acnamesp.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acevents.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/amlcode.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acinterp.h

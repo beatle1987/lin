@@ -1,0 +1,38 @@
+capi.o: capi.c \
+   act2000.h \
+   capi.h
+module.o: module.c \
+   act2000.h \
+   act2000_isa.h \
+   capi.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h
+act2000_isa.o: act2000_isa.c \
+   act2000.h \
+   act2000_isa.h \
+   capi.h
+act2000.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tqueue.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/major.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/segment.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mman.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/timer.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/wait.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ctype.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/isdnif.h
+	@touch act2000.h
+.PRECIOUS:	act2000.h \
+

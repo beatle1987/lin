@@ -1,0 +1,103 @@
+cs4231.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h
+	@touch cs4231.h
+dbri.o: dbri.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   dbri.h \
+   ../../isdn/hisax/hisax.h \
+   ../../isdn/hisax/isdnl1.h
+dummy.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tqueue.h
+	@touch dummy.h
+cs4231.o: cs4231.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/soundcard.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pci.h) \
+   cs4231.h
+dmy.o: dmy.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/soundcard.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   dummy.h
+audio.o: audio.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tqueue.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/major.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/soundcard.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/devfs_fs_kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h
+amd7930.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h
+	@touch amd7930.h
+amd7930.o: amd7930.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/soundcard.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   amd7930.h \
+   ../../isdn/hisax/hisax.h \
+   ../../isdn/hisax/isdnl1.h
+dbri.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   cs4215.h
+	@touch dbri.h
+.PRECIOUS:	cs4231.h \
+	dummy.h \
+	amd7930.h \
+	dbri.h \
+

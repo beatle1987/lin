@@ -1,0 +1,6 @@
+#define UTS_VERSION "#2 Mon Oct 13 21:33:26 BST 2014"
+#define LINUX_COMPILE_TIME "21:33:26"
+#define LINUX_COMPILE_BY "eccles"
+#define LINUX_COMPILE_HOST "eccles-desktop"
+#define LINUX_COMPILE_DOMAIN ""
+#define LINUX_COMPILER "gcc version 2.95.3 20010315 (release)"

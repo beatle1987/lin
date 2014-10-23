@@ -1,0 +1,35 @@
+memory_cs.o: memory_cs.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/pcmcia/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/pcmcia/cs_types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/pcmcia/cs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/pcmcia/cistpl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/pcmcia/ciscode.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/pcmcia/ds.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/pcmcia/cisreg.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h
+serial_cs.o: serial_cs.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/timer.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/serial.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/major.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/pcmcia/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/pcmcia/cs_types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/pcmcia/cs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/pcmcia/cistpl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/pcmcia/ciscode.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/pcmcia/ds.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/pcmcia/cisreg.h

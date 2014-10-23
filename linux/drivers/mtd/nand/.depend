@@ -1,0 +1,34 @@
+autcpu12.o: autcpu12.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/nand.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/arch/hardware.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/sizes.h
+nand_ecc.o: nand_ecc.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h
+spia.o: spia.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/nand.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h
+nand.o: nand.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/nand.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/nand_ids.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/nand/ecc.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/nand_ecc.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/nand/verify/write.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/nand/ecc/jffs2.h)

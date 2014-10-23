@@ -1,0 +1,21 @@
+ec_osl.o: ec_osl.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/ospm/include/bm.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/ospm/include/ec.h
+ecgpe.o: ecgpe.c \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/ospm/include/ec.h
+ecmain.o: ecmain.c \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/ospm/include/ec.h
+ectransx.o: ectransx.c \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/ospm/include/ec.h
+ecspace.o: ecspace.c \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/ospm/include/ec.h

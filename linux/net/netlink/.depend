@@ -1,0 +1,45 @@
+af_netlink.o: af_netlink.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/major.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/socket.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/un.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/termios.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sockios.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/net.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/rtnetlink.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/scm.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/netlink/dev.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/netlink/dev/module.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/proc/fs.h)
+netlink_dev.o: netlink_dev.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/major.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/netlink.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/devfs_fs_kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h

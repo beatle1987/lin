@@ -1,0 +1,150 @@
+ncplib_kernel.o: ncplib_kernel.c \
+   ncplib_kernel.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ncpfs/nfs/ns.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ncpfs/os2/ns.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ncpfs/debugdentry.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ncpfs/ioctl/locking.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ncpfs/nls.h)
+ioctl.o: ioctl.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioctl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/highuid.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ncp_fs.h \
+   ncplib_kernel.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ncpfs/packet/signing.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ncpfs/ioctl/locking.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ncpfs/nls.h)
+dir.o: dir.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ncp_fs.h \
+   ncplib_kernel.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ncpfs/extras.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ncpfs/strong.h)
+ncpsign_kernel.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ncp_fs.h
+	@touch ncpsign_kernel.h
+ncpsign_kernel.o: ncpsign_kernel.c \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ncpfs/packet/signing.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ncp.h \
+   ncpsign_kernel.h
+symlink.o: symlink.c \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ncpfs/extras.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/segment.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ncp_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
+   ncplib_kernel.h
+sock.o: sock.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/socket.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/in.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/net.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/scm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ipx.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/file.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ncp_fs.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ncpfs/packet/signing.h) \
+   ncpsign_kernel.h
+inode.o: inode.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/file.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ncp_fs.h \
+   ncplib_kernel.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ncpfs/extras.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ncpfs/strong.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ncpfs/packet/signing.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ncpfs/nls.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ncpfs/smalldos.h)
+file.o: file.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ncp_fs.h \
+   ncplib_kernel.h
+ncplib_kernel.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/unaligned.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/string.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ncpfs/nls.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/nls.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ctype.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ncp_fs.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ncpfs/ioctl/locking.h)
+	@touch ncplib_kernel.h
+mmap.o: mmap.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/shm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mman.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ncp_fs.h \
+   ncplib_kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h
+.PRECIOUS:	ncpsign_kernel.h \
+	ncplib_kernel.h \
+

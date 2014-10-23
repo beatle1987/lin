@@ -1,0 +1,86 @@
+pci_hotplug_util.o: pci_hotplug_util.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   pci_hotplug.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/hotplug/pci/module.h)
+cpqphp_ctrl.o: cpqphp_ctrl.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/wait.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   cpqphp.h
+cpqphp_core.o: cpqphp_core.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/miscdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   cpqphp.h \
+   cpqphp_nvram.h \
+   ../../arch/i386/kernel/pci-i386.h
+cpqphp_pci.o: cpqphp_pci.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   cpqphp.h \
+   cpqphp_nvram.h \
+   ../../arch/i386/kernel/pci-i386.h
+cpqphp_nvram.h: \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/hotplug/pci/compaq/nvram.h)
+	@touch cpqphp_nvram.h
+pci_hotplug_core.o: pci_hotplug_core.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/list.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   pci_hotplug.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/hotplug/pci/module.h)
+cpqphp_nvram.o: cpqphp_nvram.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/miscdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   cpqphp.h \
+   cpqphp_nvram.h
+cpqphp_proc.o: cpqphp_proc.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   cpqphp.h
+cpqphp.h: \
+   pci_hotplug.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/hotplug/pci/compaq/module.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/proc/fs.h)
+	@touch cpqphp.h
+.PRECIOUS:	cpqphp_nvram.h \
+	cpqphp.h \
+

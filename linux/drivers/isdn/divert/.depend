@@ -1,0 +1,27 @@
+isdn_divert.o: isdn_divert.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   isdn_divert.h
+divert_init.o: divert_init.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   isdn_divert.h
+divert_procfs.o: divert_procfs.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/proc/fs.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/isdnif.h \
+   isdn_divert.h
+isdn_divert.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioctl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/isdnif.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/isdn_divertif.h
+	@touch isdn_divert.h
+.PRECIOUS:	isdn_divert.h \
+

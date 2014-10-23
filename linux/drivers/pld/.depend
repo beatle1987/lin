@@ -1,0 +1,26 @@
+pld_epxa.o: pld_epxa.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/arch/hardware.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pld/hotswap.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pld/pld_epxa.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/control/clock/ratio/msk.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/control.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/control/lk/msk.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/unlock/magic.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/unlock.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/control/co/msk.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/control/clock.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/control/b/msk.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/control/e/msk.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/control/es/0/msk.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/control/es/1/msk.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/control/es/2/msk.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/control/data.h)

@@ -1,0 +1,51 @@
+tc.o: tc.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/ptrace.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h
+zs.o: zs.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/timer.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty_flip.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/major.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/console.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/segment.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/decstation.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/baget/mips.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/kgdb.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/magic/sysrq.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysrq.h \
+   zs.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/devfs/fs.h)
+lk201.o: lk201.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kbd_ll.h \
+   zs.h \
+   lk201.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/magic/sysrq.h)

@@ -1,0 +1,3 @@
+ifeq (serial_core.o serial_sa1100.o,$(strip $(subst $(comma),:,$(EXTRA_LDFLAGS) $(obj-y))))
+FILES_FLAGS_UP_TO_DATE += serial.o
+endif

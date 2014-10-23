@@ -1,0 +1,38 @@
+dir.o: dir.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/minix_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h
+file.o: file.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/minix_fs.h
+namei.o: namei.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/minix_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h
+inode.o: inode.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/minix_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/highuid.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/blkdev.h
+itree_v1.o: itree_v1.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/minix_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   itree_common.c
+itree_v2.o: itree_v2.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/minix_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   itree_common.c
+bitmap.o: bitmap.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/minix_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h

@@ -1,0 +1,115 @@
+dir.o: dir.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ufs_fs.h \
+   swab.h \
+   util.h
+symlink.o: symlink.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h
+namei.o: namei.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ufs_fs.h
+cylinder.o: cylinder.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ufs_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h \
+   swab.h \
+   util.h
+inode.o: inode.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ufs_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   swab.h \
+   util.h
+file.o: file.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ufs_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h
+super.o: super.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ufs_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/blkdev.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   swab.h \
+   util.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ufs/fs/write.h)
+util.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   swab.h
+	@touch util.h
+truncate.o: truncate.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ufs_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   swab.h \
+   util.h
+util.o: util.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   swab.h \
+   util.h
+ialloc.o: ialloc.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ufs_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/quotaops.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h \
+   swab.h \
+   util.h
+balloc.o: balloc.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ufs_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/quotaops.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h \
+   swab.h \
+   util.h
+.PRECIOUS:	util.h \
+

@@ -1,0 +1,109 @@
+dmasound_q40.o: dmasound_q40.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/soundcard.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   dmasound.h
+trans_16.o: trans_16.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/soundcard.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   dmasound.h
+dmasound_core.o: dmasound_core.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sound.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/soundcard.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   dmasound.h
+dac3550a.o: dac3550a.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysctl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/i2c.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   dmasound.h
+dmasound_awacs.o: dmasound_awacs.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/soundcard.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/adb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/nvram.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vt_kern.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kmod.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/semaphore.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/adb/cuda.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/cuda.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/adb/pmu.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pmu.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/i2c-dev.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   awacs_defs.h \
+   dmasound.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pmac/pbook.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/kmod.h)
+dmasound_atari.o: dmasound_atari.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/soundcard.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   dmasound.h
+dmasound_paula.o: dmasound_paula.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/soundcard.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/setup.h \
+   dmasound.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/heartbeat.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/apus.h)
+tas3001c.o: tas3001c.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysctl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/i2c.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   dmasound.h \
+   tas3001c.h
+dmasound.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/dmasound/atari.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/dmasound/atari/module.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/dmasound/paula.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/dmasound/paula/module.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/dmasound/q40.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/dmasound/q40/module.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/dmasound/pmac.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/dmasound/pmac/module.h)
+	@touch dmasound.h
+.PRECIOUS:	dmasound.h \
+

@@ -1,0 +1,367 @@
+pb1xxx-flash.o: pb1xxx-flash.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mips/pb1000.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mips/pb1500.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mips/pb1100.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/pb1500/boot.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/pb1500/user.h)
+iq80310.o: iq80310.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/redboot/parts.h)
+nora.o: nora.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h
+sc520cdp.o: sc520cdp.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/concat.h
+dbox2-flash.o: dbox2-flash.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h
+pnc2000.o: pnc2000.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h
+sa1100-flash.o: sa1100-flash.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/sa1100.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/adsbitsy.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/assabet.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/badge4.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/cerf.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/cerf/flash/32mb.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/cerf/flash/16mb.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/cerf/flash/8mb.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/consus.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/flexanet.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/freebird.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/freebird/new.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/frodo.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/graphicsclient.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/graphicsmaster.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/h3600.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/jffs2/fs.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/huw/webpanel.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/jornada720.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/nanoengine.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/pangolin.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/pt/system3.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/shannon.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/sherman.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/simpad.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/stork.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/yopy.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/redboot/parts.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/cmdline/parts.h)
+elan-104nc.o: elan-104nc.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h
+dilnetpc.o: dilnetpc.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/concat.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/dilnetpc/bootsize.h)
+physmap.o: physmap.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/partitions.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/physmap/start.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/physmap/len.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/physmap/buswidth.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/cmdline/parts.h)
+rpxlite.o: rpxlite.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h
+pci.o: pci.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h
+tsunami_flash.o: tsunami_flash.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h
+neponset-flash.o: neponset-flash.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/arch/assabet.h
+epxa10db-flash.o: epxa10db-flash.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/redboot/parts.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/afs/parts.h)
+cdb89712.o: cdb89712.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/arch/hardware.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h
+fortunet.o: fortunet.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h
+mbx860.o: mbx860.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h
+amd766rom.o: amd766rom.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci_ids.h
+octagon-5066.o: octagon-5066.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h
+tqm8xxl.o: tqm8xxl.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/partitions.h)
+sun_uflash.o: sun_uflash.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h
+autcpu12-nvram.o: autcpu12-nvram.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/sizes.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h
+sbc_gxx.o: sbc_gxx.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h
+dc21285.o: dc21285.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware/dec21285.h
+redwood.o: redwood.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h
+solutionengine.o: solutionengine.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/superh/reserve.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/redboot/parts.h)
+impa7.o: impa7.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/partitions.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/cmdline/parts.h)
+ocelot.o: ocelot.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h
+edb7312.o: edb7312.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/partitions.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/cmdline/parts.h)
+integrator-flash.o: integrator-flash.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/integrator.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/p720t.h)
+cfi_flagadm.o: cfi_flagadm.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h
+l440gx.o: l440gx.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h
+cstm_mips_ixx.o: cstm_mips_ixx.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mips/ite8172.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mips/ivr.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/cstm/mips/ixx/start.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/cstm/mips/ixx/len.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtd/cstm/mips/ixx/buswidth.h)
+ich2rom.o: ich2rom.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci_ids.h
+netsc520.o: netsc520.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/partitions.h
+vmax301.o: vmax301.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/spinlock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/map.h

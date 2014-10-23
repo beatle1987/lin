@@ -1,0 +1,11 @@
+bt.o: bt.c \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/ospm/include/bt.h
+bt_osl.o: bt_osl.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
+   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/ospm/include/bt.h

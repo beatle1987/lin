@@ -1,0 +1,6 @@
+#define UTS_VERSION "#8 Thu 23 Oct 17:21:12 BST 2014"
+#define LINUX_COMPILE_TIME "17:21:12"
+#define LINUX_COMPILE_BY "j6-harvey"
+#define LINUX_COMPILE_HOST "CZC32992Q6"
+#define LINUX_COMPILE_DOMAIN "uwe.ac.uk"
+#define LINUX_COMPILER "gcc version 2.95.3 20010315 (release)"

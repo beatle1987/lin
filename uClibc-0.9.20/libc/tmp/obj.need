@@ -1,0 +1,6 @@
+_divsi3.o
+_modsi3.o
+_muldi3.o
+_udivsi3.o
+_umodsi3.o
+_dvmd_lnx.o

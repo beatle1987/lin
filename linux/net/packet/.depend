@@ -1,0 +1,40 @@
+af_packet.o: af_packet.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/socket.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/in.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/inet.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/if_packet.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/wireless.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kmod.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/ip.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/protocol.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/timer.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/ioctls.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/if_bridge.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/net/divert.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/divert.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/inet.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/inet_common.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/dlci.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/packet/multicast.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/packet/mmap.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sock/packet.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/filter.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/bridge.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/bridge/module.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/kmod.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/net/radio.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/proc/fs.h)

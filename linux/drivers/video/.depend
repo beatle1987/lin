@@ -1,0 +1,1805 @@
+fbcon.o: fbcon.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vt_kern.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/amiga.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/atari.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mac.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/apus.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/setup.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fbcon/vga/planes.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/linux_logo.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-mac.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/font.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pm.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fbcon/fontwidth8/only.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fbcon/cfb16.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fbcon/cfb24.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fbcon/cfb32.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/sbus.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fbcon/cfb4.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fbcon/cfb8.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fbcon/afb.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fbcon/ilbm.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fbcon/iplan2p2.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fbcon/iplan2p4.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fbcon/iplan2p8.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fbcon/mfb.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fbcon/hga.h)
+pmag-ba-fb.o: pmag-ba-fb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/timer.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   pmag-ba-fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-mfb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb2.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb4.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h
+hgafb.o: hgafb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/spinlock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/vga.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-hga.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/linux_logo.h
+fbcon-vga-planes.o: fbcon-vga-planes.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vt_buffer.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-vga-planes.h
+tx3912fb.h: \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/nino/4mb.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/nino/8mb.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fbcon/cfb4.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fbcon/cfb2.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/nino/16mb.h)
+	@touch tx3912fb.h
+mdacon.o: mdacon.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console_struct.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vt_kern.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vt_buffer.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/spinlock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/vga.h
+tgafb.o: tgafb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h \
+   tgafb.h
+sticon-bmode.o: sticon-bmode.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vt_kern.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/font.h \
+   sti-bmode.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgalloc.h
+sa1100fb.h: \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pm.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/freq.h)
+	@touch sa1100fb.h
+S3triofb.o: S3triofb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/compat/xpmac.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/s3blit.h
+fbcon-iplan2p2.o: fbcon-iplan2p2.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/setup.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-iplan2p2.h
+retz3fb.o: retz3fb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/zorro.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   retz3fb.h
+vesafb.o: vesafb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb24.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-mac.h
+radeonfb.o: radeonfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/macmodes.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/nvram.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/nvram.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pmac/backlight.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/bootx/text.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/adb/pmu.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/adb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pmu.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb24.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h \
+   radeon.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pmac/pbook.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/all/ppc.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/memsize.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/memsize/mask.h)
+newport_con.o: newport_con.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console_struct.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vt_kern.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/page.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/newport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/linux_logo.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/font.h
+fbcon-cfb4.o: fbcon-cfb4.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb4.h
+cgfourteenfb.o: cgfourteenfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/sbusfb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h
+font_sun12x22.o: font_sun12x22.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/font.h
+vfb.o: vfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-mfb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb2.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb4.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb24.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h
+pmagb-b-fb.o: pmagb-b-fb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/timer.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   pmagb-b-fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-mfb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb2.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb4.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h
+fonts.o: fonts.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/apus.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/setup.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/font.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/font/8x8.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/font/8x16.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/font/6x11.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fbcon/mac.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/sbus.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/font/sun8x16.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/font/sun12x22.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fbcon/cfb8.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fbcon/cfb16.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fbcon/cfb24.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fbcon/cfb32.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/font/acorn/8x8.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/font/pearl/8x8.h)
+fbcon-vga.o: fbcon-vga.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-vga.h
+creatorfb.o: creatorfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/sbusfb.h
+fbgen.o: fbgen.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h
+fbcon-hga.o: fbcon-hga.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-hga.h
+sticore.o: sticore.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   sti.h
+modedb.o: modedb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console_struct.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h
+maxinefb.o: maxinefb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   maxinefb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-mfb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb2.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb4.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h
+acornfb.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware/iomd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware/memc.h
+	@touch acornfb.h
+imsttfb.o: imsttfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ppc.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/nvram.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/macmodes.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb24.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/compat/xpmac.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/all/ppc.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/nvram.h)
+fbmon.o: fbmon.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h
+fbcon-cfb16.o: fbcon-cfb16.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h
+sticon.o: sticon.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console_struct.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vt_kern.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   sti.h
+fbcon-cfb8.o: fbcon-cfb8.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h
+macmodes.o: macmodes.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/compat/xpmac.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/macmodes.h
+fbcon-mfb.o: fbcon-mfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-mfb.h
+vga.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/amiga.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/vga.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h
+	@touch vga.h
+font_acorn_8x8.o: font_acorn_8x8.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/font.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/acorn.h)
+sstfb.o: sstfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/ioctl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb24.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h \
+   sstfb.h
+aty128fb.o: aty128fb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ppc.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/macmodes.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/nvram.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/nvram.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/adb/pmu.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/adb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pmu.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pmac/backlight.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/compat/xpmac.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/bootx/text.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb24.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtrr.h) \
+   aty128.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pmac/pbook.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pci.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cntl.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/memsize.h)
+valkyriefb.h: \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mac.h)
+	@touch valkyriefb.h
+virgefb.o: virgefb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/zorro.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/s3blit.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h
+sa1100fb.o: sa1100fb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/cpufreq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach-types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/arch/assabet.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/arch/shannon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-mfb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb4.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   sa1100fb.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/assabet.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/h3xxx.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/brutus.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/cerf.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cerf/lcd/72/a.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cerf/lcd/57/a.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cerf/lcd/38/a.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cerf/lcd/38/b.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/freebird.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/graphicsclient.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/huw/webpanel.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/frodo.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/shannon.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/omnimeter.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/pangolin.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/stork.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/xp860.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/lart.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/freq.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pm.h)
+fbcon-ilbm.o: fbcon-ilbm.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-ilbm.h
+cgthreefb.o: cgthreefb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/sbusfb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h
+pm3fb.h: \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/of.h)
+	@touch pm3fb.h
+hpfb.o: hpfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/dio.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-mfb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb2.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb4.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h
+cgsixfb.o: cgsixfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/sbusfb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h
+dummycon.o: dummycon.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kdev_t.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console_struct.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vt_kern.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h
+fbcon-mac.o: fbcon-mac.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-mac.h
+fbcon-cfb32.o: fbcon-cfb32.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h
+chipsfb.o: chipsfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/compat/xpmac.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pmac/backlight.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pmac/pbook.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/adb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pmu.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/macmodes.h
+fbcon-sti.o: fbcon-sti.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-mfb.h \
+   sti.h
+cyber2000fb.h: \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/debug/ll.h)
+	@touch cyber2000fb.h
+macfb.o: macfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/nubus.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/setup.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-mfb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb2.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb4.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb24.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h
+fbmem.o: fbmem.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/major.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mman.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/kmod.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kmod.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/devfs_fs_kernel.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/apus.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/setup.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/page.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/sbus.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/retinaz3.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/amiga.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/clps711x.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/cyber.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/cyber2000.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/pm2.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/pm3.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/clgen.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/aty.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/matrox.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/aty128.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/virge.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/riva.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/radeon.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/control.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/platinum.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/valkyrie.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/ct65550.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/imstt.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/s3trio.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/fm2.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/sis.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/trident.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/of.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/vesa.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/3dfx.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/sgivw.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/acorn.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/atari.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/mac.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/hga.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/iga.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/apollo.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/q40.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/tga.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/hp300.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/g364.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/sa1100.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/sun3.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/hit.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/anakin.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/e1355.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/pvr2.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/voodoo1.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/vga16.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/sti.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/gsp/resolver.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/virtual.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sun3.h)
+fbcon-cfb2.o: fbcon-cfb2.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb2.h
+leofb.o: leofb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/sbusfb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h
+font_pearl_8x8.o: font_pearl_8x8.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/font.h
+sun3fb.o: sun3fb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vt_kern.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sun3.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sun3x.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/sbusfb.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/cgsix.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/bwtwo.h)
+tcxfb.o: tcxfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/sbusfb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h
+igafb.o: igafb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/nvram.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vt_kern.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb24.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h \
+   iga.h
+vga16fb.o: vga16fb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-vga-planes.h \
+   vga.h
+epson1355fb.o: epson1355fb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-mfb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/superh.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/e1355/reg/base.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/e1355/fb/base.h)
+dn_accel.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h
+	@touch dn_accel.h
+platinumfb.o: platinumfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/nvram.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/compat/xpmac.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/macmodes.h \
+   platinumfb.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/nvram.h)
+sgivwfb.o: sgivwfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h \
+   sgivwfb.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtrr.h)
+atafb.o: atafb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/setup.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-iplan2p2.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-iplan2p4.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-iplan2p8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-mfb.h
+fbcon-iplan2p4.o: fbcon-iplan2p4.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/setup.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-iplan2p4.h
+controlfb.o: controlfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/nvram.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/compat/xpmac.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/adb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/cuda.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/macmodes.h \
+   controlfb.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/adb/cuda.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/nvram.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/bootx/text.h)
+font_8x16.o: font_8x16.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/font.h
+tx3912fb.o: tx3912fb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-mfb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb2.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb4.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   tx3912fb.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fbcon/mfb.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fbcon/cfb2.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fbcon/cfb4.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fbcon/cfb8.h)
+sbusfb.o: sbusfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vt_kern.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/sbusfb.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/creator.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/cgsix.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/cgthree.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/tcx.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/leo.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/bwtwo.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/cgfourteen.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/p9100.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sun4.h)
+q40fb.o: q40fb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/setup.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/segment.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h
+stifb.o: stifb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   sti.h
+offb.o: offb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/compat/xpmac.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/bootx/text.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/macmodes.h
+bwtwofb.o: bwtwofb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/sbusfb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-mfb.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sun4.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/sun3.h)
+amifb.o: amifb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/setup.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-afb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-ilbm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-mfb.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/amiga/ocs.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/amiga/ecs.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/amiga/aga.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/gsp/resolver.h)
+cvisionppc.h: \
+   pm2fb.h
+	@touch cvisionppc.h
+fbcmap.o: fbcmap.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h
+clgenfb.o: clgenfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/zorro.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/zorro.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pci.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/amiga.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/all/ppc.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/processor.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-mfb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb24.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h \
+   clgenfb.h \
+   vga.h
+tridentfb.o: tridentfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb24.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h \
+   tridentfb.h
+anakinfb.o: anakinfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h
+fbcon-cfb24.o: fbcon-cfb24.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb24.h
+font_6x11.o: font_6x11.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/font.h
+g364fb.o: g364fb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h
+dnfb.o: dnfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/setup.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/segment.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   dn_accel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-mfb.h
+pm2fb.o: pm2fb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb24.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h \
+   pm2fb.h \
+   cvisionppc.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/pm2/pci.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pci.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/pm2/cvppc.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/pm2/fifo/disconnect.h)
+font_8x8.o: font_8x8.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/font.h
+acornfb.o: acornfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ctype.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach-types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-mfb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb2.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb4.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h \
+   acornfb.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/a5k.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/32.h)
+fbcon-afb.o: fbcon-afb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-afb.h
+tdfxfb.o: tdfxfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/nvram.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vt_kern.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/timer.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtrr.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb24.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/spinlock.h
+vgacon.o: vgacon.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console_struct.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vt_kern.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/spinlock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ia64/softsdv/hacks.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/dummy/console.h)
+dn_cfb8.o: dn_cfb8.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/setup.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/segment.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   dn_accel.h
+clps711xfb.o: clps711xfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb4.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach-types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware/clps7111.h
+fbcon-iplan2p8.o: fbcon-iplan2p8.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/setup.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-iplan2p8.h
+cyberfb.o: cyberfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/zorro.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   cyberfb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h
+skeletonfb.o: skeletonfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h
+fm2fb.o: fm2fb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/zorro.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h
+font_sun8x16.o: font_sun8x16.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/font.h
+valkyriefb.o: valkyriefb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/nvram.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/compat/xpmac.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/adb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/cuda.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mac.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/macmodes.h \
+   valkyriefb.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/adb/cuda.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/nvram.h)
+promcon.o: promcon.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console_struct.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vt_kern.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/dummy/console.h)
+pm3fb.o: pm3fb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-mfb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb2.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb4.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb24.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/of.h) \
+   pm3fb.h
+hitfb.o: hitfb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/nubus.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/hd64461/iobase.h)
+pvr2fb.o: pvr2fb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sh/dreamcast.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtrr.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb24.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/pvr2/debug.h)
+dn_cfb4.o: dn_cfb4.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/setup.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/segment.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-mfb.h \
+   dn_accel.h
+cyber2000fb.o: cyber2000fb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb24.h \
+   cyber2000fb.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/shark.h)
+p9100fb.o: p9100fb.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/sbusfb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   p9100.h
+.PRECIOUS:	tx3912fb.h \
+	sa1100fb.h \
+	acornfb.h \
+	vga.h \
+	valkyriefb.h \
+	pm3fb.h \
+	cyber2000fb.h \
+	dn_accel.h \
+	cvisionppc.h \
+

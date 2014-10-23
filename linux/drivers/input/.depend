@@ -1,0 +1,57 @@
+keybdev.o: keybdev.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kbd_ll.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/input.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kbd_kern.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/x86.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ia64.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sparc64.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/superh.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ppc.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mac/emumousebtn.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mac/adbkeycodes.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/adb/keyboard.h)
+mousedev.o: mousedev.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/input.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/random.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/input/mousedev/screen/x.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/input/mousedev/screen/y.h)
+evdev.o: evdev.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/input.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h
+joydev.o: joydev.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/segment.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/joystick.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/input.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/major.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/miscdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h
+input.o: input.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/input.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/random.h

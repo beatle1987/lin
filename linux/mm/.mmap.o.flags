@@ -1,0 +1,3 @@
+ifeq (-D__KERNEL__ -I/home/netlab/j6-harvey/Kernel/linux/include -Wall -Wstrict-prototypes -Wno-trigraphs -Os -mapcs -fno-strict-aliasing -fno-common -fno-common -pipe -g -mapcs-32 -march=armv4 -mtune=strongarm1100 -mshort-load-bytes -msoft-float,$(strip $(subst $(comma),:,$(CFLAGS) $(EXTRA_CFLAGS) $(CFLAGS_mmap) $(CFLAGS_mmap.o))))
+FILES_FLAGS_UP_TO_DATE += mmap.o
+endif

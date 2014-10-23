@@ -1,0 +1,3 @@
+ifeq (nls_base.o nls_cp950.o nls_big5.o,$(strip $(subst $(comma),:,$(EXTRA_LDFLAGS) $(obj-y))))
+FILES_FLAGS_UP_TO_DATE += nls.o
+endif

@@ -1,0 +1,54 @@
+agpgart_be.o: agpgart_be.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/miscdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/page.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/agp_backend.h \
+   agp.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/smp.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/agp/i810.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/agp/intel.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/agp/via.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/agp/sis.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/agp/amd.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/agp/ali.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/agp/sworks.h)
+agpgart_fe.o: agpgart_fe.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/miscdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/agp_backend.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/agpgart.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/page.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/mman.h \
+   agp.h

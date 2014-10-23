@@ -1,0 +1,78 @@
+mcp-sa1100.o: mcp-sa1100.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/spinlock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/dma.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   mcp.h
+ucb1x00-core.o: ucb1x00-core.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/dma.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach-types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/arch/shannon.h \
+   ucb1x00.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/cerf.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/freebird.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/graphicsclient.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/grapicsmaster.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/lart.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/pfs168.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/simpad.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/yopy.h)
+ucb1x00-audio.o: ucb1x00-audio.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sound.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/soundcard.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/list.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/dma.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/semaphore.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   ucb1x00.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/../drivers/sound/sa1100-audio.h
+ucb1x00-ts.o: ucb1x00-ts.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/completion.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/dma.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/semaphore.h \
+   ucb1x00.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/miscdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/input.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pm.h)
+ucb1x00.h: \
+   mcp.h
+	@touch ucb1x00.h
+mcp-core.o: mcp-core.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/dma.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   mcp.h
+.PRECIOUS:	ucb1x00.h \
+

@@ -1,0 +1,56 @@
+init/main.o: init/main.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/devfs_fs_kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/unistd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ctype.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/utsname.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/blk.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/hdreg.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/iobuf.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/bootmem.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bugs.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/s390.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pci.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/dio.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/dio.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/zorro.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/zorro.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtrr.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/nubus.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/nubus.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/isapnp.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/isapnp.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/irda.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/x86/local/apic.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/smp.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/tc.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sysvipc.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/perfmon.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/blk/dev/initrd.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/blk/cpq/da.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/blk/cpq/da/module.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/blk/cpq/ciss/da.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/blk/cpq/ciss/da/module.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/smp.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/modules.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/proc/fs.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sysctl.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sbus.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ppc.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mca.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/acorn.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pcmcia.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/blk/dev/ram.h)
+init/version.o: init/version.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/uts.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/utsname.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/compile.h

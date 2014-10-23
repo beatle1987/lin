@@ -1,0 +1,72 @@
+vxfs_immed.o: vxfs_immed.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h \
+   vxfs.h \
+   vxfs_inode.h
+vxfs_super.o: vxfs_super.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/blkdev.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
+   vxfs.h \
+   vxfs_extern.h \
+   vxfs_dir.h \
+   vxfs_inode.h
+vxfs_lookup.o: vxfs_lookup.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/highmem.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h \
+   vxfs.h \
+   vxfs_dir.h \
+   vxfs_inode.h \
+   vxfs_extern.h
+vxfs_kcompat.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/blkdev.h
+	@touch vxfs_kcompat.h
+vxfs_olt.o: vxfs_olt.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   vxfs.h \
+   vxfs_olt.h
+vxfs_bmap.o: vxfs_bmap.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   vxfs.h \
+   vxfs_inode.h
+vxfs_subr.o: vxfs_subr.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h \
+   vxfs_kcompat.h \
+   vxfs_extern.h
+vxfs_inode.o: vxfs_inode.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   vxfs.h \
+   vxfs_inode.h \
+   vxfs_extern.h
+vxfs.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   vxfs_kcompat.h
+	@touch vxfs.h
+vxfs_fshead.o: vxfs_fshead.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   vxfs.h \
+   vxfs_inode.h \
+   vxfs_extern.h \
+   vxfs_fshead.h
+.PRECIOUS:	vxfs_kcompat.h \
+	vxfs.h \
+

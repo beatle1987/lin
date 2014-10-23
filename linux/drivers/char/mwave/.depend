@@ -1,0 +1,72 @@
+tp3780i.o: tp3780i.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   smapi.h \
+   mwavedd.h \
+   tp3780i.h \
+   3780i.h \
+   mwavepub.h
+mwavedd.h: \
+   3780i.h \
+   tp3780i.h \
+   mwavepub.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioctl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h
+	@touch mwavedd.h
+mwavedd.o: mwavedd.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/major.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/miscdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/serial.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/spinlock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/spinlock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   smapi.h \
+   mwavedd.h \
+   3780i.h \
+   tp3780i.h
+3780i.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h
+	@touch 3780i.h
+tp3780i.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   mwavepub.h
+	@touch tp3780i.h
+mwavepub.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/miscdevice.h
+	@touch mwavepub.h
+smapi.o: smapi.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mc146818rtc.h \
+   smapi.h \
+   mwavedd.h
+3780i.o: 3780i.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/unistd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
+   smapi.h \
+   mwavedd.h \
+   3780i.h
+.PRECIOUS:	mwavedd.h \
+	3780i.h \
+	tp3780i.h \
+	mwavepub.h \
+

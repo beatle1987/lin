@@ -1,0 +1,32 @@
+cs4281pm-24.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pm.h \
+   cs4281pm.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pm.h)
+	@touch cs4281pm-24.h
+cs4281m.o: cs4281m.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/list.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sound.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/soundcard.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/bitops.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/dma.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/wrapper.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardirq.h \
+   cs4281_hwdefs.h \
+   cs4281_wrapper.h \
+   cs4281pm-24.h \
+   cs4281pm-24.c
+.PRECIOUS:	cs4281pm-24.h \
+

@@ -1,0 +1,84 @@
+hysdn_procconf.o: hysdn_procconf.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   hysdn_defs.h
+boardergo.o: boardergo.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   hysdn_defs.h \
+   boardergo.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/hysdn/capi.h)
+hysdn_proclog.o: hysdn_proclog.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   hysdn_defs.h
+hysdn_init.o: hysdn_init.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   hysdn_defs.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/hysdn/capi.h)
+hysdn_net.o: hysdn_net.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/etherdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/inetdevice.h \
+   hysdn_defs.h
+hycapi.o: hycapi.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
+   hysdn_defs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernelcapi.h
+hysdn_defs.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/hysdn_if.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tqueue.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
+   ince1pc.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/hysdn/capi.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/capi.h \
+   ../avmb1/capicmd.h \
+   ../avmb1/capiutil.h \
+   ../avmb1/capilli.h
+	@touch hysdn_defs.h
+hysdn_boot.o: hysdn_boot.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   hysdn_defs.h \
+   hysdn_pof.h
+hysdn_sched.o: hysdn_sched.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   hysdn_defs.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/hysdn/capi.h)
+.PRECIOUS:	hysdn_defs.h \
+

@@ -1,0 +1,96 @@
+ioctl.o: ioctl.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/jbd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext3_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext3_jbd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/jbd/debug.h)
+dir.o: dir.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/jbd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext3_fs.h
+fsync.o: fsync.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/jbd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext3_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext3_jbd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/jbd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h
+symlink.o: symlink.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/jbd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext3_fs.h
+namei.o: namei.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/jbd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext3_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext3_jbd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/quotaops.h
+inode.o: inode.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext3_jbd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/jbd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/highuid.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/quotaops.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/quota.h)
+file.o: file.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/jbd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext3_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext3_jbd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h
+super.o: super.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/jbd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext3_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext3_jbd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/blkdev.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/random.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/jbd/debug.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ext3/check.h)
+bitmap.o: bitmap.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h
+ialloc.o: ialloc.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/jbd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext3_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext3_jbd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/quotaops.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ext3/check.h)
+balloc.o: balloc.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/jbd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext3_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext3_jbd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/quotaops.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/jbd/debug.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ext3/check.h)

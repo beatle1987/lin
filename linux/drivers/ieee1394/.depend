@@ -1,0 +1,290 @@
+ohci1394.o: ohci1394.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/list.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/wait.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/atomic.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tqueue.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/spinlock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/page.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/segment.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/wrapper.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/all/ppc.h) \
+   ieee1394.h \
+   ieee1394_types.h \
+   hosts.h \
+   ieee1394_core.h \
+   highlevel.h \
+   ohci1394.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ieee1394/verbosedebug.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ieee1394/ohci/dma/debug.h)
+pcilynx.h: \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ieee1394/pcilynx/ports.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ieee1394/pcilynx/localram.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/stddef.h
+	@touch pcilynx.h
+nodemgr.o: nodemgr.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/list.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/atomic.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kmod.h \
+   ieee1394_types.h \
+   ieee1394.h \
+   hosts.h \
+   ieee1394_transactions.h \
+   ieee1394_hotplug.h \
+   highlevel.h \
+   csr.h \
+   nodemgr.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/rom/vendor/id.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/rom/model/id.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/rom/specifier/id.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/rom/version.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/rom/descriptor/leaf.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/rom/descriptor/directory.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ieee1394/verbosedebug.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/rom/node/capabilites.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/rom/unit/directory.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/hotplug.h)
+video1394.o: video1394.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/list.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/wait.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/atomic.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tqueue.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/devfs_fs_kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/page.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/segment.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/wrapper.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/timex.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   ieee1394.h \
+   ieee1394_types.h \
+   hosts.h \
+   ieee1394_core.h \
+   highlevel.h \
+   video1394.h \
+   ohci1394.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ieee1394/verbosedebug.h)
+ieee1394_transactions.h: \
+   ieee1394_core.h
+	@touch ieee1394_transactions.h
+highlevel.o: highlevel.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   ieee1394.h \
+   ieee1394_types.h \
+   hosts.h \
+   ieee1394_core.h \
+   highlevel.h
+raw1394.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/types.h
+	@touch raw1394.h
+sbp2.o: sbp2.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/list.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/blk.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/current.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/scatterlist.h \
+   ieee1394.h \
+   ieee1394_types.h \
+   ieee1394_core.h \
+   hosts.h \
+   nodemgr.h \
+   highlevel.h \
+   ieee1394_transactions.h \
+   ieee1394_hotplug.h \
+   ../scsi/scsi.h \
+   ../scsi/hosts.h \
+   ../scsi/sd.h \
+   sbp2.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ieee1394/sbp2/debug/orbs.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ieee1394/sbp2/debug/dma.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ieee1394/sbp2/debug.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/rom/initial/memory/space.h)
+raw1394.o: raw1394.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/list.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/atomic.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/devfs_fs_kernel.h \
+   ieee1394.h \
+   ieee1394_types.h \
+   ieee1394_core.h \
+   hosts.h \
+   highlevel.h \
+   ieee1394_transactions.h \
+   raw1394.h
+ieee1394_types.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/list.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/spinlock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/spinlock.h
+	@touch ieee1394_types.h
+ieee1394_transactions.o: ieee1394_transactions.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
+   ieee1394.h \
+   ieee1394_types.h \
+   hosts.h \
+   ieee1394_core.h \
+   highlevel.h
+hosts.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/wait.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tqueue.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/list.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/semaphore.h \
+   ieee1394_types.h \
+   csr.h
+	@touch hosts.h
+ieee1394.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h
+	@touch ieee1394.h
+csr.o: csr.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   ieee1394_types.h \
+   hosts.h \
+   ieee1394.h \
+   highlevel.h
+ieee1394_core.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tqueue.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/semaphore.h \
+   hosts.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/atomic.h
+	@touch ieee1394_core.h
+hosts.o: hosts.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/wait.h \
+   ieee1394_types.h \
+   hosts.h \
+   ieee1394_core.h \
+   highlevel.h
+ohci1394.h: \
+   ieee1394_types.h
+	@touch ohci1394.h
+ieee1394_hotplug.h: \
+   ieee1394_core.h \
+   nodemgr.h
+	@touch ieee1394_hotplug.h
+ieee1394_core.o: ieee1394_core.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/list.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/semaphore.h \
+   ieee1394_types.h \
+   ieee1394.h \
+   hosts.h \
+   ieee1394_core.h \
+   highlevel.h \
+   ieee1394_transactions.h \
+   csr.h \
+   nodemgr.h \
+   ieee1394_hotplug.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ieee1394/verbosedebug.h)
+pcilynx.o: pcilynx.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/wait.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/atomic.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   ieee1394.h \
+   ieee1394_types.h \
+   hosts.h \
+   ieee1394_core.h \
+   highlevel.h \
+   pcilynx.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ieee1394/verbosedebug.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ieee1394/pcilynx/ports.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ieee1394/pcilynx/localram.h)
+.PRECIOUS:	pcilynx.h \
+	ieee1394_transactions.h \
+	raw1394.h \
+	ieee1394_types.h \
+	hosts.h \
+	ieee1394.h \
+	ieee1394_core.h \
+	ohci1394.h \
+	ieee1394_hotplug.h \
+

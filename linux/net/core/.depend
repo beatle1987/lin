@@ -1,0 +1,342 @@
+skbuff.o: skbuff.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/in.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/inet.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/cache.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/rtnetlink.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/highmem.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/protocol.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/dst.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/checksum.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/netfilter.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/netfilter/debug.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/net/sched.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/hippi.h)
+iovec.o: iovec.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/net.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/in6.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/checksum.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h
+dev_mcast.o: dev_mcast.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/socket.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sockios.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/in.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/if_ether.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/inet.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/etherdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/ip.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/route.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/arp.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/proc/fs.h)
+scm.o: scm.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/major.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/socket.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/file.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/net.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/protocol.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/scm.h
+sysctl_net_core.o: sysctl_net_core.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysctl.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sysctl.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/net/divert.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/net.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/net/fastroute.h)
+profile.o: profile.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ip.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/inet.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/checksum.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/processor.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/profile.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/net/profile.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/proc/fs.h)
+dv.o: dv.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/socket.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/in.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/inet.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ip.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/udp.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/etherdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/dst.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/arp.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/ipv6.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/ip.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/checksum.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/divert.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sockios.h
+sock.o: sock.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/socket.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/in.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/major.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/timer.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sockios.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/net.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/protocol.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ipsec.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/filter.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/filter.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/inet.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/tcp.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/netdevices.h)
+netfilter.o: netfilter.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/netfilter.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/protocol.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/wait.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/if.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/brlock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/inetdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/route.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ip.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/unistd.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/netfilter/debug.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/ip.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/route.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/tcp.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/netfilter_ipv4.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/inet.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ip/route/fwmark.h)
+filter.o: filter.c \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/filter.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/socket.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/in.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/inet.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/if_packet.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/ip.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/protocol.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/timer.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/filter.h
+dev.o: dev.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/socket.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sockios.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/if_ether.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/etherdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/notifier.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/brlock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/rtnetlink.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/if_bridge.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/divert.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/dst.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/pkt_sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/profile.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/checksum.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/highmem.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kmod.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/net/radio.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/net/pcmcia/radio.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/wireless.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/plip.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/hotplug.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/net/fastroute.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/kmod.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/highmem.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/net/hw/flowcontrol.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/bridge.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/bridge/module.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/net/divert.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/proc/fs.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/net/profile.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/net/sched.h)
+dst.o: dst.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/dst.h
+datagram.o: datagram.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/inet.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/rtnetlink.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/highmem.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/protocol.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/checksum.h
+rtnetlink.o: rtnetlink.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/socket.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/major.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/timer.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sockios.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/net.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/capability.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/inet.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/ip.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/protocol.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/arp.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/route.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/udp.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/pkt_sched.h
+utils.o: utils.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h
+neighbour.o: neighbour.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/socket.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sysctl.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysctl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/neighbour.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/dst.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/rtnetlink.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arpd.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/smp.h)

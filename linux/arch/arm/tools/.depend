@@ -1,0 +1,7 @@
+constants.h: getconstants.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/26.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/32.h)

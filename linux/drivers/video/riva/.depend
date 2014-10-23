@@ -1,0 +1,35 @@
+riva_hw.o: riva_hw.c \
+   riva_hw.h \
+   riva_tbl.h
+rivafb.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb4.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h \
+   riva_hw.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtrr.h)
+	@touch rivafb.h
+accel.o: accel.c \
+   rivafb.h
+fbdev.o: fbdev.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtrr.h) \
+   rivafb.h \
+   nvreg.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pci.h)
+.PRECIOUS:	rivafb.h \
+

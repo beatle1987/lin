@@ -1,0 +1,316 @@
+capability.o: capability.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h
+ksyms.o: ksyms.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/blkdev.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/cdrom.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel_stat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sys.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/utsname.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/serial.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/random.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/reboot.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysctl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/hdreg.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/genhd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/blkpg.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/swap.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ctype.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/file.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/iobuf.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mmzone.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/capability.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/highuid.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/brlock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/in6.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/completion.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/seq_file.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/checksum.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/proc/fs.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/kmod.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kmod.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/modversions.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/highmem.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ia64.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/s390.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/smp.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/generic/isa/dma.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/uid16.h)
+exec_domain.o: exec_domain.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kmod.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/personality.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysctl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/kmod.h)
+info.o: info.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/unistd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/swap.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h
+sys.o: sys.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/utsname.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mman.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/notifier.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/reboot.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/prctl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/highuid.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h
+itimer.o: itimer.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h
+time.o: time.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/timex.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h
+uid16.o: uid16.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/utsname.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mman.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/notifier.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/reboot.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/prctl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/highuid.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h
+user.o: user.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h
+signal.o: signal.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/unistd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/smp.h)
+ptrace.o: ptrace.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/highmem.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/smp.h)
+resource.o: resource.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/spinlock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h
+dma.o: dma.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/spinlock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/dma.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h
+softirq.o: softirq.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel_stat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tqueue.h
+printk.o: printk.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty_driver.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/multiquad.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/s390.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/smp.h)
+fork.o: fork.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/unistd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/completion.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/personality.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/mmu_context.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/smp.h)
+acct.o: acct.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/bsd/process/acct.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/acct.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/file.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h
+cpufreq.o: cpufreq.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/notifier.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/cpufreq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysctl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/semaphore.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/smp.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pm.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sysctl.h)
+sched.o: sched.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/nmi.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel_stat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/completion.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/prefetch.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/compiler.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/mmu_context.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/smp.h)
+pm.o: pm.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/spinlock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/pm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h
+panic.o: panic.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/reboot.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/notifier.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysrq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/s390.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/smp.h)
+sysctl.o: sysctl.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysctl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/swapctl.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ctype.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/utsname.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/capability.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysrq.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/highuid.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/root/nfs.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/nfs_fs.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sysctl.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/kmod.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/hotplug.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/chr/dev/sg.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sysvipc.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/s390.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mathemu.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ppc32.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/bsd/process/acct.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/net.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/proc/fs.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/blk/dev/initrd.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/magic/sysrq.h)
+context.o: context.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/unistd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/completion.h
+timer.o: timer.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/timex.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel_stat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/smp.h)
+kmod.o: kmod.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/unistd.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kmod.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/completion.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/kmod.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/hotplug.h)
+module.o: module.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgalloc.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kmod.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/seq_file.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/modules.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/kallsyms.h)
+exit.o: exit.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/completion.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/personality.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/bsd/process/acct.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/acct.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/mmu_context.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/smp.h)

@@ -1,0 +1,79 @@
+ddp.o: ddp.c \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/atalk.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/atalk/module.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/socket.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sockios.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/in.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/if_ether.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/notifier.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/inetdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/route.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/inet.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/etherdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/if_arp.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/spinlock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/termios.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/datalink.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/p8022.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/psnap.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/ip.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/route.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/atalk.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/proc/fs.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sysctl.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ipddp.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ipddp/module.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h
+sysctl_net_atalk.o: sysctl_net_atalk.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysctl.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sysctl.h)
+aarp.o: aarp.c \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/atalk.h) \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/atalk/module.h) \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/socket.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sockios.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/in.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/if_ether.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/inet.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/notifier.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/etherdevice.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/if_arp.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/spinlock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/datalink.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/net/psnap.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/atalk.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/proc/fs.h)

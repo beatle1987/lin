@@ -1,0 +1,58 @@
+name.o: name.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   hpfs_fn.h
+dir.o: dir.c \
+   hpfs_fn.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h
+file.o: file.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   hpfs_fn.h
+namei.o: namei.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   hpfs_fn.h
+alloc.o: alloc.c \
+   hpfs_fn.h
+inode.o: inode.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   hpfs_fn.h
+dnode.o: dnode.c \
+   hpfs_fn.h
+hpfs_fn.h: \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/hpfs_fs.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/segment.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
+   hpfs.h
+	@touch hpfs_fn.h
+super.o: super.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   hpfs_fn.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h
+buffer.o: buffer.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   hpfs_fn.h
+ea.o: ea.c \
+   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
+   hpfs_fn.h
+map.o: map.c \
+   hpfs_fn.h
+anode.o: anode.c \
+   hpfs_fn.h
+dentry.o: dentry.c \
+   hpfs_fn.h
+.PRECIOUS:	hpfs_fn.h \
+
