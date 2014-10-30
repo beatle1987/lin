@@ -73,7 +73,7 @@ LIBRARIES = -lcrypt
 
 # If you are running a cross compiler, you may want to set this
 # to something more interesting, like "powerpc-linux-".
-CROSS = /home/eccles/bpos/uClibc-0.9.20/extra/gcc-uClibc/arm-uclibc-
+CROSS = /home/netlab/j6-harvey/lin/uClibc-0.9.20/extra/gcc-uClibc/arm-uclibc-
 CC = $(CROSS)gcc
 AR = $(CROSS)ar
 STRIPTOOL = $(CROSS)strip

@@ -98,7 +98,8 @@ COMMANDS
 
     adduser, addgroup, deluser, delgroup, login, su, sulogin, passwd, getty
 
-    * adduser
+    *   adduser
+
         Add a user to the system
 
         Usage: adduser [OPTIONS]... <USER>
@@ -136,7 +137,8 @@ COMMANDS
         script were used as a reference, so those of you familiar with that
         should notice similarities.
 
-    * addgroup
+    *   addgroup
+
         Add a group to the system
 
         Usage: addgroup [OPTIONS]... <GROUP>
@@ -151,7 +153,8 @@ COMMANDS
         /etc/gshadow as well. If the GID is not specified, addgroup will try
         to find the next available gid within the range of [100..64000].
 
-    * deluser
+    *   deluser
+
         Delete a user from the system
 
         Usage: deluser <USER>
@@ -164,7 +167,8 @@ COMMANDS
         NOTE: Although adduser adds both users and groups, deluser only
         deletes users.
 
-    * delgroup
+    *   delgroup
+
         Delete a group from the system
 
         Usage: delgroup <USER>
@@ -177,23 +181,28 @@ COMMANDS
         NOTE: Although adduser adds both users and groups, delgroup only
         deletes groups.
 
-    * login
+    *   login
+
         Begin session on the system
 
         Usage: login
 
-    * su
+    *   su
+
         Change uid or become root
 
         Note that for su to work, the tinylogin binary must be setuid root.
 
-    * sulogin
+    *   sulogin
+
         Single-user login
 
-    * passwd
+    *   passwd
+
         Change user password
 
-    * getty
+    *   getty
+
         Opens a tty and invokes /bin/login
 
 SEE ALSO
