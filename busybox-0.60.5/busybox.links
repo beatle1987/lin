@@ -26,7 +26,10 @@
 /bin/gzip
 /sbin/halt
 /usr/bin/head
+/usr/bin/hostid
+/bin/hostname
 /usr/bin/id
+/sbin/ifconfig
 /sbin/init
 /bin/kill
 /usr/bin/killall
@@ -44,6 +47,7 @@
 /bin/mount
 /bin/mv
 /bin/pidof
+/bin/ping
 /sbin/poweroff
 /bin/ps
 /bin/pwd
@@ -63,6 +67,7 @@
 /bin/tar
 /usr/bin/test
 /bin/touch
+/usr/bin/traceroute
 /bin/true
 /usr/bin/tty
 /bin/umount

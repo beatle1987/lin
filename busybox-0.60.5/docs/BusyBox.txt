@@ -246,7 +246,7 @@ COMMANDS
                 i               extract
                 m               preserve mtime
                 t               list
-                u               unconditional overwrite         F               input from file 
+                u               unconditional overwrite         F               input from file
 
         -------------------------------
 
@@ -838,7 +838,7 @@ COMMANDS
         Example:
 
                 $ hostname
-                sage 
+                sage
 
         -------------------------------
 
@@ -993,6 +993,7 @@ COMMANDS
                 #
                 tty4::respawn:/sbin/getty 38400 tty5
                 tty5::respawn:/sbin/getty 38400 tty6
+        
         
                 # Example of how to put a getty on a serial line (for a terminal)
                 #
@@ -1436,7 +1437,7 @@ COMMANDS
 
                 -k
                    Set 'autoclean' on loaded     modules.   Used  by  the
-                   kernel  when it calls on modprobe to satify a miss­
+                   kernel  when it calls on modprobe to satify a miss
                    ing feature (supplied as a module).  The -q  option
                    is implied by -k.     These options will automatically
                    be sent to insmod.
@@ -1476,7 +1477,7 @@ COMMANDS
                    Use  the     file configfile instead of (the optional)
                    /etc/modules.conf     to  specify  the  configuration.
                    The  environment     variable  MODULECONF  can also be
-                   used to select (and override) a different     configu­
+                   used to select (and override) a different     configu
                    ration  file from the default /etc/modules.conf (or
                    /etc/conf.modules (depreciated)).
 
@@ -2171,7 +2172,7 @@ COMMANDS
 
         Example:
 
-                $ umount /dev/hdc1 
+                $ umount /dev/hdc1
 
         -------------------------------
 
@@ -2436,7 +2437,7 @@ AUTHORS
     Edward Betts <edward@debian.org>
 
         expr, hostid, logname, tty, wc, whoami, yes
- 
+
     Brian Candler <B.Candler@pobox.com>
 
         tiny-ls(ls)

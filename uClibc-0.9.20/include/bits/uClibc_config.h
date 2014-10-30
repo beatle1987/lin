@@ -27,17 +27,14 @@
 #define __HAS_FPU__ 1
 #undef __DO_C99_MATH__
 #define __WARNINGS__ "-Wall"
-#define __KERNEL_SOURCE__ "/home/eccles/bpos/linux"
+#define __KERNEL_SOURCE__ "/home/netlab/j6-harvey/lin/linux"
 #define __C_SYMBOL_PREFIX__ ""
 #define __HAVE_DOT_CONFIG__ 1
 
 /*
  * General Library Settings
  */
-#define __DOPIC__ 1
-#define __HAVE_SHARED__ 1
-#define __BUILD_UCLIBC_LDSO__ 1
-#define __LDSO_LDD_SUPPORT__ 1
+#undef __DOPIC__
 #define __UCLIBC_CTOR_DTOR__ 1
 #define __UCLIBC_PROFILING__ 1
 #define __UCLIBC_HAS_THREADS__ 1
@@ -68,8 +65,7 @@
 /*
  * Library Installation Options
  */
-#define __SHARED_LIB_LOADER_PATH__ "/lib"
-#define __DEVEL_PREFIX__ "/home/eccles/bpos/uClibc-0.9.20"
+#define __DEVEL_PREFIX__ "/home/netlab/j6-harvey/lin/uClibc-0.9.20"
 #define __SYSTEM_DEVEL_PREFIX__ "$(DEVEL_PREFIX)"
 #define __DEVEL_TOOL_PREFIX__ "$(DEVEL_PREFIX)/usr"
 
@@ -78,5 +74,3 @@
  */
 #undef __DODEBUG__
 #undef __DOASSERTS__
-#undef __SUPPORT_LD_DEBUG__
-#undef __SUPPORT_LD_DEBUG_EARLY__
