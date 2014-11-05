@@ -18,7 +18,7 @@
 #define BB_CHROOT
 #define BB_CHVT
 #define BB_CLEAR
-//#define BB_CMP
+#define BB_CMP
 #define BB_CP
 //#define BB_CPIO
 #define BB_CUT
@@ -116,7 +116,7 @@
 #define BB_TAR
 //#define BB_TEE
 //#define BB_TEST
-//#define BB_TELNET
+#define BB_TELNET
 //#define BB_TFTP
 //#define BB_TIME
 //#define BB_TOP
@@ -134,10 +134,10 @@
 //#define BB_UPDATE
 #define BB_UPTIME
 //#define BB_USLEEP
-//#define BB_VI
+#define BB_VI
 //#define BB_WATCHDOG
 #define BB_WC
-//#define BB_WGET
+#define BB_WGET
 #define BB_WHICH
 #define BB_WHOAMI
 #define BB_XARGS
