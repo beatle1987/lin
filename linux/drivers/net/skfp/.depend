@@ -1,4 +1,4 @@
-ecm.o: ecm.c \
+cfm.o: cfm.c \
    h/types.h \
    h/fddi.h \
    h/smc.h \
@@ -9,46 +9,83 @@ drvfbi.o: drvfbi.c \
    h/smc.h \
    h/supern_2.h \
    h/skfbiinc.h
-queue.o: queue.c \
-   h/types.h \
-   h/fddi.h \
-   h/smc.h
-hwmtm.o: hwmtm.c \
+ecm.o: ecm.c \
    h/types.h \
    h/fddi.h \
    h/smc.h \
-   h/supern_2.h \
-   h/skfbiinc.h
-smtparse.o: smtparse.c \
-   h/types.h \
-   h/fddi.h \
-   h/smc.h \
-   h/smt_p.h \
    h/smtstate.h
 ess.o: ess.c \
    h/types.h \
    h/fddi.h \
    h/smc.h \
    h/smt_p.h
+fplustm.o: fplustm.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/supern_2.h \
+   can.c
+hwmtm.o: hwmtm.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/supern_2.h \
+   h/skfbiinc.h
+hwt.o: hwt.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h
 lnkstat.o: lnkstat.c \
    h/types.h \
    h/fddi.h \
    h/smc.h \
    h/lnkstat.h
-hwt.o: hwt.c \
+pcmplc.o: pcmplc.c \
    h/types.h \
    h/fddi.h \
-   h/smc.h
-srf.o: srf.c \
+   h/smc.h \
+   h/supern_2.h \
+   h/smtstate.h
+pmf.o: pmf.c \
    h/types.h \
    h/fddi.h \
    h/smc.h \
    h/smt_p.h \
    h/smtstate.h
-smtinit.o: smtinit.c \
+queue.o: queue.c \
    h/types.h \
    h/fddi.h \
    h/smc.h
+rmt.o: rmt.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h \
+   h/smtstate.h
+skfddi.o: skfddi.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/ptrace.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/pci.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/asm/byteorder.h \
+   /home/eccles/lin/linux/include/asm/bitops.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/linux/ctype.h \
+   /home/eccles/lin/linux/include/linux/netdevice.h \
+   /home/eccles/lin/linux/include/linux/fddidevice.h \
+   /home/eccles/lin/linux/include/linux/skbuff.h \
+   h/types.h \
+   h/skfbi.h \
+   h/fddi.h \
+   h/smc.h \
+   h/smtstate.h
 smt.o: smt.c \
    h/types.h \
    h/fddi.h \
@@ -59,60 +96,23 @@ smtdef.o: smtdef.c \
    h/types.h \
    h/fddi.h \
    h/smc.h
-cfm.o: cfm.c \
-   h/types.h \
-   h/fddi.h \
-   h/smc.h \
-   h/smtstate.h
-rmt.o: rmt.c \
-   h/types.h \
-   h/fddi.h \
-   h/smc.h \
-   h/smtstate.h
-pcmplc.o: pcmplc.c \
-   h/types.h \
-   h/fddi.h \
-   h/smc.h \
-   h/supern_2.h \
-   h/smtstate.h
-smttimer.o: smttimer.c \
+smtinit.o: smtinit.c \
    h/types.h \
    h/fddi.h \
    h/smc.h
-pmf.o: pmf.c \
+smtparse.o: smtparse.c \
    h/types.h \
    h/fddi.h \
    h/smc.h \
    h/smt_p.h \
    h/smtstate.h
-fplustm.o: fplustm.c \
+smttimer.o: smttimer.c \
+   h/types.h \
+   h/fddi.h \
+   h/smc.h
+srf.o: srf.c \
    h/types.h \
    h/fddi.h \
    h/smc.h \
-   h/supern_2.h \
-   can.c
-skfddi.o: skfddi.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ctype.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fddidevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
-   h/types.h \
-   h/skfbi.h \
-   h/fddi.h \
-   h/smc.h \
+   h/smt_p.h \
    h/smtstate.h

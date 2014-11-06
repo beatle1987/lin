@@ -1,109 +1,109 @@
-com90xx.o: com90xx.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/bootmem.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/arcdevice.h
 arcnet.o: arcnet.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/if_arp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/arp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/arcdevice.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arcnet.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arcnet/1201.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arcnet/1051.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arcnet/raw.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arcnet/com90xx.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/inet.h)
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/netdevice.h \
+   /home/eccles/lin/linux/include/linux/if_arp.h \
+   /home/eccles/lin/linux/include/net/arp.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/arcdevice.h \
+   $(wildcard /home/eccles/lin/linux/include/config/arcnet.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arcnet/1201.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arcnet/1051.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arcnet/raw.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arcnet/com90xx.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/inet.h)
 arc-rawmode.o: arc-rawmode.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/if_arp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/arp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/arcdevice.h
-rfc1051.o: rfc1051.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/if_arp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/arp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/arcdevice.h
-com20020.o: com20020.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/arcdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/com20020.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h
-rfc1201.o: rfc1201.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/if_arp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/arcdevice.h
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/if_arp.h \
+   /home/eccles/lin/linux/include/net/arp.h \
+   /home/eccles/lin/linux/include/linux/netdevice.h \
+   /home/eccles/lin/linux/include/linux/skbuff.h \
+   /home/eccles/lin/linux/include/linux/arcdevice.h
 arc-rimi.o: arc-rimi.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/bootmem.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/arcdevice.h
-com90io.o: com90io.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/bootmem.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/arcdevice.h
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/netdevice.h \
+   /home/eccles/lin/linux/include/linux/bootmem.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/linux/arcdevice.h
+com20020.o: com20020.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/netdevice.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/arcdevice.h \
+   /home/eccles/lin/linux/include/linux/com20020.h \
+   /home/eccles/lin/linux/include/asm/io.h
 com20020-isa.o: com20020-isa.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/bootmem.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/arcdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/com20020.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/netdevice.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/bootmem.h \
+   /home/eccles/lin/linux/include/linux/arcdevice.h \
+   /home/eccles/lin/linux/include/linux/com20020.h \
+   /home/eccles/lin/linux/include/asm/io.h
 com20020-pci.o: com20020-pci.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/arcdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/com20020.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/netdevice.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/pci.h \
+   /home/eccles/lin/linux/include/linux/arcdevice.h \
+   /home/eccles/lin/linux/include/linux/com20020.h \
+   /home/eccles/lin/linux/include/asm/io.h
+com90io.o: com90io.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/netdevice.h \
+   /home/eccles/lin/linux/include/linux/bootmem.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/linux/arcdevice.h
+com90xx.o: com90xx.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/netdevice.h \
+   /home/eccles/lin/linux/include/linux/bootmem.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/linux/arcdevice.h
+rfc1051.o: rfc1051.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/if_arp.h \
+   /home/eccles/lin/linux/include/net/arp.h \
+   /home/eccles/lin/linux/include/linux/netdevice.h \
+   /home/eccles/lin/linux/include/linux/skbuff.h \
+   /home/eccles/lin/linux/include/linux/arcdevice.h
+rfc1201.o: rfc1201.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/if_arp.h \
+   /home/eccles/lin/linux/include/linux/netdevice.h \
+   /home/eccles/lin/linux/include/linux/skbuff.h \
+   /home/eccles/lin/linux/include/linux/arcdevice.h

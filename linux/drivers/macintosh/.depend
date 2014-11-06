@@ -1,277 +1,277 @@
-mac_keyb.o: mac_keyb.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty_flip.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/notifier.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/adb.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/cuda.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pmu.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kbd_kern.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kbd_ll.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pmac/backlight.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/magic/sysrq.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/adbmouse.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ppc.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mac.h)
 adb.o: adb.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/devfs_fs_kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/adb.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/cuda.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pmu.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/notifier.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/wait.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/completion.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ppc.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/adb/macii.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/adb/maciisi.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/adb/cuda.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/adb/iop.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/adb/pmu.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/adb/macio.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pmac/pbook.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mac.h)
-via-pmu.o: via-pmu.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/miscdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/blkdev.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/adb.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pmu.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/cuda.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/spinlock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardirq.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mmu_context.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pmac/backlight.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pmac/pbook.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/adb.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pm.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/xmon.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/altivec.h)
-rtc.o: rtc.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/miscdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mc146818rtc.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h
-adb-iop.o: adb-iop.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/adb.h
-mediabay.o: mediabay.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/timer.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/hdreg.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/stddef.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/unistd.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/adb.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pmu.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pmac/pbook.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/blk/dev/ide.h)
-ans-lcd.o: ans-lcd.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/miscdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h
-via-maciisi.o: via-maciisi.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/adb.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/cuda.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h
-mac_hid.o: mac_hid.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysctl.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/input.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mac/adbkeycodes.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/keyboard.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/keyboard.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/magic/sysrq.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mac/emumousebtn.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sysctl.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ppc.h)
-apm_emu.o: apm_emu.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/stddef.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/timer.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/miscdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/apm_bios.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/adb.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pmu.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h
-via-pmu68k.o: via-pmu68k.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/miscdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/blkdev.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/adb.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pmu.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/cuda.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h
-macio-adb.o: macio-adb.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/adb.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h
-macserial.o: macserial.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/timer.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty_flip.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/major.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/serial/console.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/segment.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/adb.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pmu.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/kgdb.h) \
-   macserial.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pmac/pbook.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/devfs/fs.h)
-nvram.o: nvram.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/miscdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/nvram.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h
-via-macii.o: via-macii.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/adb.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h
-via-cuda.o: via-cuda.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/adb.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/cuda.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ppc.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mac.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/adb.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/xmon.h)
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/devfs_fs_kernel.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h \
+   /home/eccles/lin/linux/include/linux/adb.h \
+   /home/eccles/lin/linux/include/linux/cuda.h \
+   /home/eccles/lin/linux/include/linux/pmu.h \
+   /home/eccles/lin/linux/include/linux/notifier.h \
+   /home/eccles/lin/linux/include/linux/wait.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/completion.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   $(wildcard /home/eccles/lin/linux/include/config/ppc.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/adb/macii.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/adb/maciisi.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/adb/cuda.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/adb/iop.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/adb/pmu.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/adb/macio.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/pmac/pbook.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/mac.h)
 adbhid.o: adbhid.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/notifier.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/input.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kbd_ll.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/adb.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/cuda.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pmu.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pmac/backlight.h)
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/notifier.h \
+   /home/eccles/lin/linux/include/linux/input.h \
+   /home/eccles/lin/linux/include/linux/kbd_ll.h \
+   /home/eccles/lin/linux/include/linux/adb.h \
+   /home/eccles/lin/linux/include/linux/cuda.h \
+   /home/eccles/lin/linux/include/linux/pmu.h \
+   $(wildcard /home/eccles/lin/linux/include/config/pmac/backlight.h)
+adb-iop.o: adb-iop.c \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/proc_fs.h \
+   /home/eccles/lin/linux/include/linux/adb.h
+ans-lcd.o: ans-lcd.c \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/miscdevice.h \
+   /home/eccles/lin/linux/include/linux/fcntl.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/asm/io.h
+apm_emu.o: apm_emu.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/poll.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/stddef.h \
+   /home/eccles/lin/linux/include/linux/timer.h \
+   /home/eccles/lin/linux/include/linux/fcntl.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/stat.h \
+   /home/eccles/lin/linux/include/linux/proc_fs.h \
+   /home/eccles/lin/linux/include/linux/miscdevice.h \
+   /home/eccles/lin/linux/include/linux/apm_bios.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/pm.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h \
+   /home/eccles/lin/linux/include/linux/adb.h \
+   /home/eccles/lin/linux/include/linux/pmu.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h
+mac_hid.o: mac_hid.c \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/proc_fs.h \
+   /home/eccles/lin/linux/include/linux/sysctl.h \
+   /home/eccles/lin/linux/include/linux/input.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   $(wildcard /home/eccles/lin/linux/include/config/mac/adbkeycodes.h) \
+   /home/eccles/lin/linux/include/linux/keyboard.h \
+   /home/eccles/lin/linux/include/asm/keyboard.h \
+   $(wildcard /home/eccles/lin/linux/include/config/magic/sysrq.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/mac/emumousebtn.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/sysctl.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ppc.h)
+macio-adb.o: macio-adb.c \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/adb.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/pgtable.h \
+   /home/eccles/lin/linux/include/asm/irq.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/linux/init.h
+mac_keyb.o: mac_keyb.c \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/tty.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/signal.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/tty_flip.h \
+   /home/eccles/lin/linux/include/linux/notifier.h \
+   /home/eccles/lin/linux/include/asm/bitops.h \
+   /home/eccles/lin/linux/include/linux/adb.h \
+   /home/eccles/lin/linux/include/linux/cuda.h \
+   /home/eccles/lin/linux/include/linux/pmu.h \
+   /home/eccles/lin/linux/include/linux/kbd_kern.h \
+   /home/eccles/lin/linux/include/linux/kbd_ll.h \
+   $(wildcard /home/eccles/lin/linux/include/config/pmac/backlight.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/magic/sysrq.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/adbmouse.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ppc.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/mac.h)
+macserial.o: macserial.c \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/signal.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/timer.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/tty.h \
+   /home/eccles/lin/linux/include/linux/tty_flip.h \
+   /home/eccles/lin/linux/include/linux/major.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/fcntl.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   $(wildcard /home/eccles/lin/linux/include/config/serial/console.h) \
+   /home/eccles/lin/linux/include/linux/console.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/pgtable.h \
+   /home/eccles/lin/linux/include/asm/irq.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/asm/segment.h \
+   /home/eccles/lin/linux/include/asm/bitops.h \
+   /home/eccles/lin/linux/include/linux/adb.h \
+   /home/eccles/lin/linux/include/linux/pmu.h \
+   $(wildcard /home/eccles/lin/linux/include/config/kgdb.h) \
+   macserial.h \
+   $(wildcard /home/eccles/lin/linux/include/config/pmac/pbook.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/devfs/fs.h)
+mediabay.o: mediabay.c \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/timer.h \
+   /home/eccles/lin/linux/include/linux/hdreg.h \
+   /home/eccles/lin/linux/include/linux/stddef.h \
+   /home/eccles/lin/linux/include/linux/unistd.h \
+   /home/eccles/lin/linux/include/asm/pgtable.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/linux/adb.h \
+   /home/eccles/lin/linux/include/linux/pmu.h \
+   $(wildcard /home/eccles/lin/linux/include/config/pmac/pbook.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/blk/dev/ide.h)
+nvram.o: nvram.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/miscdevice.h \
+   /home/eccles/lin/linux/include/linux/fcntl.h \
+   /home/eccles/lin/linux/include/linux/nvram.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h
+rtc.o: rtc.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/miscdevice.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/fcntl.h \
+   /home/eccles/lin/linux/include/linux/poll.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/mc146818rtc.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h
+via-cuda.o: via-cuda.c \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/adb.h \
+   /home/eccles/lin/linux/include/linux/cuda.h \
+   $(wildcard /home/eccles/lin/linux/include/config/ppc.h) \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   $(wildcard /home/eccles/lin/linux/include/config/mac.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/adb.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/xmon.h)
+via-macii.o: via-macii.c \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/adb.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/system.h
+via-maciisi.o: via-maciisi.c \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/adb.h \
+   /home/eccles/lin/linux/include/linux/cuda.h \
+   /home/eccles/lin/linux/include/linux/delay.h
+via-pmu68k.o: via-pmu68k.c \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/miscdevice.h \
+   /home/eccles/lin/linux/include/linux/blkdev.h \
+   /home/eccles/lin/linux/include/linux/pci.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/adb.h \
+   /home/eccles/lin/linux/include/linux/pmu.h \
+   /home/eccles/lin/linux/include/linux/cuda.h \
+   /home/eccles/lin/linux/include/asm/pgtable.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/asm/irq.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h
+via-pmu.o: via-pmu.c \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/miscdevice.h \
+   /home/eccles/lin/linux/include/linux/blkdev.h \
+   /home/eccles/lin/linux/include/linux/pci.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/poll.h \
+   /home/eccles/lin/linux/include/linux/adb.h \
+   /home/eccles/lin/linux/include/linux/pmu.h \
+   /home/eccles/lin/linux/include/linux/cuda.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/spinlock.h \
+   /home/eccles/lin/linux/include/linux/pm.h \
+   /home/eccles/lin/linux/include/linux/proc_fs.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/pgtable.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/asm/irq.h \
+   /home/eccles/lin/linux/include/asm/hardirq.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/asm/mmu_context.h \
+   $(wildcard /home/eccles/lin/linux/include/config/pmac/backlight.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/pmac/pbook.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/adb.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/pm.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/xmon.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/altivec.h)

@@ -1,96 +1,96 @@
-capi.o: capi.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/tqueue.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/isdnif.h \
-   pcbit.h \
-   edss1.h \
-   capi.h
 callbacks.o: callbacks.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/tqueue.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/isdnif.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/tqueue.h \
+   /home/eccles/lin/linux/include/linux/skbuff.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/linux/isdnif.h \
    pcbit.h \
    layer2.h \
    edss1.h \
    callbacks.h \
    capi.h
+capi.o: capi.c \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/tqueue.h \
+   /home/eccles/lin/linux/include/linux/skbuff.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/string.h \
+   /home/eccles/lin/linux/include/linux/isdnif.h \
+   pcbit.h \
+   edss1.h \
+   capi.h
 drv.o: drv.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/isdnif.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/skbuff.h \
+   /home/eccles/lin/linux/include/linux/isdnif.h \
+   /home/eccles/lin/linux/include/asm/string.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
    pcbit.h \
    edss1.h \
    layer2.h \
    capi.h
-module.o: module.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/tqueue.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/isdnif.h \
-   pcbit.h
 edss1.o: edss1.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/tqueue.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/timer.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/isdnif.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/tqueue.h \
+   /home/eccles/lin/linux/include/linux/skbuff.h \
+   /home/eccles/lin/linux/include/linux/timer.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/linux/isdnif.h \
    pcbit.h \
    edss1.h \
    layer2.h \
    callbacks.h
-layer2.h: \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h
-	@touch layer2.h
 layer2.o: layer2.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/tqueue.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/isdnif.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/tqueue.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/skbuff.h \
+   /home/eccles/lin/linux/include/linux/isdnif.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/asm/io.h \
    pcbit.h \
    layer2.h \
    edss1.h
+layer2.h: \
+   /home/eccles/lin/linux/include/asm/byteorder.h
+	@touch layer2.h
+module.o: module.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/tqueue.h \
+   /home/eccles/lin/linux/include/linux/skbuff.h \
+   /home/eccles/lin/linux/include/linux/isdnif.h \
+   pcbit.h
 .PRECIOUS:	layer2.h \
 

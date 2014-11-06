@@ -1,26 +1,26 @@
-tbinstal.o: tbinstal.c \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/achware.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/actables.h
-tbxface.o: tbxface.c \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acnamesp.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acinterp.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/actables.h
-tbget.o: tbget.c \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/achware.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/actables.h
-tbxfroot.o: tbxfroot.c \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/achware.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/actables.h
 tbconvrt.o: tbconvrt.c \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/achware.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/actables.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/actbl.h
+   /home/eccles/lin/linux/drivers/acpi/include/acpi.h \
+   /home/eccles/lin/linux/drivers/acpi/include/achware.h \
+   /home/eccles/lin/linux/drivers/acpi/include/actables.h \
+   /home/eccles/lin/linux/drivers/acpi/include/actbl.h
+tbget.o: tbget.c \
+   /home/eccles/lin/linux/drivers/acpi/include/acpi.h \
+   /home/eccles/lin/linux/drivers/acpi/include/achware.h \
+   /home/eccles/lin/linux/drivers/acpi/include/actables.h
+tbinstal.o: tbinstal.c \
+   /home/eccles/lin/linux/drivers/acpi/include/acpi.h \
+   /home/eccles/lin/linux/drivers/acpi/include/achware.h \
+   /home/eccles/lin/linux/drivers/acpi/include/actables.h
 tbutils.o: tbutils.c \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/actables.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acinterp.h
+   /home/eccles/lin/linux/drivers/acpi/include/acpi.h \
+   /home/eccles/lin/linux/drivers/acpi/include/actables.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acinterp.h
+tbxface.o: tbxface.c \
+   /home/eccles/lin/linux/drivers/acpi/include/acpi.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acnamesp.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acinterp.h \
+   /home/eccles/lin/linux/drivers/acpi/include/actables.h
+tbxfroot.o: tbxfroot.c \
+   /home/eccles/lin/linux/drivers/acpi/include/acpi.h \
+   /home/eccles/lin/linux/drivers/acpi/include/achware.h \
+   /home/eccles/lin/linux/drivers/acpi/include/actables.h

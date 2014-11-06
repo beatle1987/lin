@@ -1,32 +1,32 @@
 acpi_ksyms.o: acpi_ksyms.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/acpi.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acdebug.h
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/acpi.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acpi.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acdebug.h
 driver.o: driver.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysctl.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/acpi.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/proc_fs.h \
+   /home/eccles/lin/linux/include/linux/sysctl.h \
+   /home/eccles/lin/linux/include/linux/pm.h \
+   /home/eccles/lin/linux/include/linux/acpi.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acpi.h
 os.o: os.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kmod.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/acpi/efi.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/acpi/pci.h)
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/pci.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/kmod.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acpi.h \
+   $(wildcard /home/eccles/lin/linux/include/config/acpi/efi.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/acpi/pci.h)

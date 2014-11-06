@@ -1,139 +1,139 @@
-base.o: base.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/file.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/smp.h)
-proc_misc.o: proc_misc.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel_stat.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mman.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/swap.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/seq_file.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/modules.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sgi/ds1286.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/s390.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/generic/isa/dma.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/smp.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ppc32.h)
-generic.o: generic.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h
-proc_devtree.o: proc_devtree.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h
-root.o: root.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sysctl.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sysvipc.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/binfmt/misc.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/binfmt/misc/module.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sun/openpromfs.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sun/openpromfs/module.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/proc/devicetree.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ppc/rtas.h)
-kmsg.o: kmsg.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h
-kcore.o: kcore.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/user.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/a.out.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/elf.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/elfcore.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/highmem.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/kcore/aout.h)
-proc_tty.o: proc_tty.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h
-inode.o: inode.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/file.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/limits.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h
 array.o: array.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel_stat.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mman.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/swap.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/highmem.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/processor.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/s390.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/smp.h)
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/kernel_stat.h \
+   /home/eccles/lin/linux/include/linux/tty.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/mman.h \
+   /home/eccles/lin/linux/include/linux/proc_fs.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/pagemap.h \
+   /home/eccles/lin/linux/include/linux/swap.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/smp.h \
+   /home/eccles/lin/linux/include/linux/signal.h \
+   /home/eccles/lin/linux/include/linux/highmem.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/asm/pgtable.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/processor.h \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/s390.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/smp.h)
+base.o: base.c \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/proc_fs.h \
+   /home/eccles/lin/linux/include/linux/stat.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/file.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   $(wildcard /home/eccles/lin/linux/include/config/smp.h)
+generic.o: generic.c \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/proc_fs.h \
+   /home/eccles/lin/linux/include/linux/stat.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/asm/bitops.h
+inode.o: inode.c \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/proc_fs.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/stat.h \
+   /home/eccles/lin/linux/include/linux/file.h \
+   /home/eccles/lin/linux/include/linux/locks.h \
+   /home/eccles/lin/linux/include/linux/limits.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h
+kcore.o: kcore.c \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/proc_fs.h \
+   /home/eccles/lin/linux/include/linux/user.h \
+   /home/eccles/lin/linux/include/linux/a.out.h \
+   /home/eccles/lin/linux/include/linux/elf.h \
+   /home/eccles/lin/linux/include/linux/elfcore.h \
+   /home/eccles/lin/linux/include/linux/vmalloc.h \
+   /home/eccles/lin/linux/include/linux/highmem.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   $(wildcard /home/eccles/lin/linux/include/config/kcore/aout.h)
+kmsg.o: kmsg.c \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/poll.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/asm/io.h
+proc_devtree.o: proc_devtree.c \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/proc_fs.h \
+   /home/eccles/lin/linux/include/linux/stat.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h
+proc_misc.o: proc_misc.c \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/kernel_stat.h \
+   /home/eccles/lin/linux/include/linux/tty.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/mman.h \
+   /home/eccles/lin/linux/include/linux/proc_fs.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/pagemap.h \
+   /home/eccles/lin/linux/include/linux/swap.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/smp.h \
+   /home/eccles/lin/linux/include/linux/signal.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h \
+   /home/eccles/lin/linux/include/linux/seq_file.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/asm/pgtable.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   $(wildcard /home/eccles/lin/linux/include/config/modules.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/sgi/ds1286.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/s390.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/generic/isa/dma.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/smp.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ppc32.h)
+proc_tty.o: proc_tty.c \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/proc_fs.h \
+   /home/eccles/lin/linux/include/linux/stat.h \
+   /home/eccles/lin/linux/include/linux/tty.h \
+   /home/eccles/lin/linux/include/asm/bitops.h
+root.o: root.c \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/proc_fs.h \
+   /home/eccles/lin/linux/include/linux/stat.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/asm/bitops.h \
+   $(wildcard /home/eccles/lin/linux/include/config/sysctl.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/sysvipc.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/binfmt/misc.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/binfmt/misc/module.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/sun/openpromfs.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/sun/openpromfs/module.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/proc/devicetree.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ppc/rtas.h)

@@ -1,113 +1,113 @@
-socket.o: socket.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/socket.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/file.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/net.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/wanrouter.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/netlink.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/rtnetlink.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/cache.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/highmem.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/kmod.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/net.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kmod.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/scm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/netfilter.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/smp.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/wan/router.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/bluez.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/netlink/dev.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/netfilter.h)
-sysctl_net.o: sysctl_net.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysctl.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/inet.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/net.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ipv6.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/tr.h)
 netsyms.o: netsyms.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/net.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/in.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/inetdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fddidevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/trdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/neighbour.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/snmp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/dst.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/checksum.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/etherdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/route.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/hippi.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/hippidevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/pkt_sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/scm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/if_bridge.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/if_vlan.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/random.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/net/divert.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/divert.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/net.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/inet.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ip.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/protocol.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/arp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/ip.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/udp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/tcp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/icmp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/inet_common.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/inet.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mroute.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/igmp.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ipv6.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ipv6/module.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/khttpd.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/khttpd/module.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/in6.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/icmpv6.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/ipv6.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/ndisc.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/transp_v6.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/addrconf.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/rtnetlink.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ipx/module.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/atalk/module.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sysctl.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/filter.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arpd.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/vlan/8021q.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/vlan/8021q/module.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/bridge.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/bridge/module.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/dlci/module.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/ip6_route.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/netlink/dev.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/netlink/dev/module.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/tr.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fddi.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/kmod.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/net/hw/flowcontrol.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/net/fastroute.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/net/sched.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/net/estimator.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/net/cls/police.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/net/cls.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/netfilter.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/netfilter.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/netfilter_ipv4.h
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/net.h \
+   /home/eccles/lin/linux/include/linux/in.h \
+   /home/eccles/lin/linux/include/linux/netdevice.h \
+   /home/eccles/lin/linux/include/linux/inetdevice.h \
+   /home/eccles/lin/linux/include/linux/fddidevice.h \
+   /home/eccles/lin/linux/include/linux/trdevice.h \
+   /home/eccles/lin/linux/include/linux/fcdevice.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/linux/tty.h \
+   /home/eccles/lin/linux/include/net/neighbour.h \
+   /home/eccles/lin/linux/include/net/snmp.h \
+   /home/eccles/lin/linux/include/net/dst.h \
+   /home/eccles/lin/linux/include/net/checksum.h \
+   /home/eccles/lin/linux/include/linux/etherdevice.h \
+   /home/eccles/lin/linux/include/net/route.h \
+   $(wildcard /home/eccles/lin/linux/include/config/hippi.h) \
+   /home/eccles/lin/linux/include/linux/hippidevice.h \
+   /home/eccles/lin/linux/include/net/pkt_sched.h \
+   /home/eccles/lin/linux/include/net/scm.h \
+   /home/eccles/lin/linux/include/linux/if_bridge.h \
+   /home/eccles/lin/linux/include/linux/if_vlan.h \
+   /home/eccles/lin/linux/include/linux/random.h \
+   $(wildcard /home/eccles/lin/linux/include/config/net/divert.h) \
+   /home/eccles/lin/linux/include/linux/divert.h \
+   $(wildcard /home/eccles/lin/linux/include/config/net.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/inet.h) \
+   /home/eccles/lin/linux/include/linux/ip.h \
+   /home/eccles/lin/linux/include/net/protocol.h \
+   /home/eccles/lin/linux/include/net/arp.h \
+   /home/eccles/lin/linux/include/net/ip.h \
+   /home/eccles/lin/linux/include/net/udp.h \
+   /home/eccles/lin/linux/include/net/tcp.h \
+   /home/eccles/lin/linux/include/net/icmp.h \
+   /home/eccles/lin/linux/include/net/inet_common.h \
+   /home/eccles/lin/linux/include/linux/inet.h \
+   /home/eccles/lin/linux/include/linux/mroute.h \
+   /home/eccles/lin/linux/include/linux/igmp.h \
+   $(wildcard /home/eccles/lin/linux/include/config/ipv6.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ipv6/module.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/khttpd.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/khttpd/module.h) \
+   /home/eccles/lin/linux/include/linux/in6.h \
+   /home/eccles/lin/linux/include/linux/icmpv6.h \
+   /home/eccles/lin/linux/include/net/ipv6.h \
+   /home/eccles/lin/linux/include/net/ndisc.h \
+   /home/eccles/lin/linux/include/net/transp_v6.h \
+   /home/eccles/lin/linux/include/net/addrconf.h \
+   /home/eccles/lin/linux/include/linux/rtnetlink.h \
+   $(wildcard /home/eccles/lin/linux/include/config/ipx/module.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/atalk/module.h) \
+   /home/eccles/lin/linux/include/net/sock.h \
+   $(wildcard /home/eccles/lin/linux/include/config/sysctl.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/filter.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arpd.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/vlan/8021q.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/vlan/8021q/module.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/bridge.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/bridge/module.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/dlci/module.h) \
+   /home/eccles/lin/linux/include/net/ip6_route.h \
+   $(wildcard /home/eccles/lin/linux/include/config/netlink/dev.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/netlink/dev/module.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/tr.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/fddi.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/kmod.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/net/hw/flowcontrol.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/net/fastroute.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/net/sched.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/net/estimator.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/net/cls/police.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/net/cls.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/netfilter.h) \
+   /home/eccles/lin/linux/include/linux/netfilter.h \
+   /home/eccles/lin/linux/include/linux/netfilter_ipv4.h
+socket.o: socket.c \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h \
+   /home/eccles/lin/linux/include/linux/socket.h \
+   /home/eccles/lin/linux/include/linux/file.h \
+   /home/eccles/lin/linux/include/linux/net.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/netdevice.h \
+   /home/eccles/lin/linux/include/linux/proc_fs.h \
+   /home/eccles/lin/linux/include/linux/wanrouter.h \
+   /home/eccles/lin/linux/include/linux/netlink.h \
+   /home/eccles/lin/linux/include/linux/rtnetlink.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/poll.h \
+   /home/eccles/lin/linux/include/linux/cache.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/highmem.h \
+   $(wildcard /home/eccles/lin/linux/include/config/kmod.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/net.h) \
+   /home/eccles/lin/linux/include/linux/kmod.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/net/sock.h \
+   /home/eccles/lin/linux/include/net/scm.h \
+   /home/eccles/lin/linux/include/linux/netfilter.h \
+   $(wildcard /home/eccles/lin/linux/include/config/smp.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/wan/router.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/bluez.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/netlink/dev.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/netfilter.h)
+sysctl_net.o: sysctl_net.c \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/sysctl.h \
+   $(wildcard /home/eccles/lin/linux/include/config/inet.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/net.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ipv6.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/tr.h)

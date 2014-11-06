@@ -1,65 +1,16 @@
-ecard.h: \
-   8010.h \
-   hwaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h
-	@touch ecard.h
-irqmgr.o: irqmgr.c \
-   hwaccess.h \
-   8010.h \
-   cardmi.h \
-   cardmo.h \
-   irqmgr.h
-cardmi.h: \
-   icardmid.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h
-	@touch cardmi.h
-recmgr.h: \
-   hwaccess.h \
-   cardwi.h
-	@touch recmgr.h
-mixer.o: mixer.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   hwaccess.h \
-   8010.h \
-   recmgr.h
-ecard.o: ecard.c \
-   ecard.h \
-   hwaccess.h
-midi.o: midi.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   hwaccess.h \
-   cardmo.h \
-   cardmi.h \
-   midi.h \
-   ../sound_config.h
-recmgr.o: recmgr.c \
-   8010.h \
-   recmgr.h
-cardwo.h: \
-   icardwav.h \
-   audio.h \
-   voicemgr.h \
-   timer.h
-	@touch cardwo.h
+8010.h: \
+   /home/eccles/lin/linux/include/linux/types.h
+	@touch 8010.h
 audio.o: audio.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/bitops.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/wrapper.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/poll.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/version.h \
+   /home/eccles/lin/linux/include/linux/bitops.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h \
+   /home/eccles/lin/linux/include/linux/wrapper.h \
    hwaccess.h \
    cardwo.h \
    cardwi.h \
@@ -68,44 +19,96 @@ audio.o: audio.c \
    audio.h \
    8010.h
 cardmi.o: cardmi.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
    hwaccess.h \
    8010.h \
    cardmi.h \
    irqmgr.h
+cardmi.h: \
+   icardmid.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h
+	@touch cardmi.h
 cardmo.o: cardmo.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
    hwaccess.h \
    8010.h \
    cardmo.h \
    irqmgr.h
-cardwo.o: cardwo.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
+cardmo.h: \
+   icardmid.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h
+	@touch cardmo.h
+cardwi.o: cardwi.c \
+   /home/eccles/lin/linux/include/linux/poll.h \
    hwaccess.h \
-   8010.h \
-   voicemgr.h \
-   cardwo.h \
-   audio.h
-8010.h: \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h
-	@touch 8010.h
+   timer.h \
+   recmgr.h \
+   audio.h \
+   cardwi.h
 cardwi.h: \
    icardwav.h \
    audio.h \
    timer.h
 	@touch cardwi.h
+cardwo.o: cardwo.c \
+   /home/eccles/lin/linux/include/linux/poll.h \
+   hwaccess.h \
+   8010.h \
+   voicemgr.h \
+   cardwo.h \
+   audio.h
+cardwo.h: \
+   icardwav.h \
+   audio.h \
+   voicemgr.h \
+   timer.h
+	@touch cardwo.h
+ecard.o: ecard.c \
+   ecard.h \
+   hwaccess.h
+ecard.h: \
+   8010.h \
+   hwaccess.h \
+   /home/eccles/lin/linux/include/linux/init.h
+	@touch ecard.h
 efxmgr.o: efxmgr.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/bitops.h \
+   /home/eccles/lin/linux/include/linux/bitops.h \
    hwaccess.h \
    efxmgr.h
+emuadxmg.o: emuadxmg.c \
+   hwaccess.h
+hwaccess.o: hwaccess.c \
+   /home/eccles/lin/linux/include/asm/io.h \
+   hwaccess.h \
+   8010.h \
+   icardmid.h
+hwaccess.h: \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/sound.h \
+   /home/eccles/lin/linux/include/linux/soundcard.h \
+   /home/eccles/lin/linux/include/linux/ac97_codec.h \
+   /home/eccles/lin/linux/include/linux/pci.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   efxmgr.h \
+   passthrough.h \
+   midi.h
+	@touch hwaccess.h
+irqmgr.o: irqmgr.c \
+   hwaccess.h \
+   8010.h \
+   cardmi.h \
+   cardmo.h \
+   irqmgr.h
 main.o: main.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
+   /home/eccles/lin/linux/include/linux/version.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/proc_fs.h \
    hwaccess.h \
    8010.h \
    efxmgr.h \
@@ -117,61 +120,37 @@ main.o: main.c \
    ecard.h \
    ../sound_config.h \
    ../midi_synth.h
-voicemgr.h: \
-   hwaccess.h
-	@touch voicemgr.h
-cardwi.o: cardwi.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
+midi.o: midi.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/poll.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/version.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
    hwaccess.h \
-   timer.h \
-   recmgr.h \
-   audio.h \
-   cardwi.h
-emuadxmg.o: emuadxmg.c \
-   hwaccess.h
-timer.h: \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   hwaccess.h
-	@touch timer.h
-passthrough.h: \
-   audio.h
-	@touch passthrough.h
-voicemgr.o: voicemgr.c \
-   voicemgr.h \
-   8010.h
-hwaccess.h: \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sound.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/soundcard.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ac97_codec.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   efxmgr.h \
-   passthrough.h \
-   midi.h
-	@touch hwaccess.h
-cardmo.h: \
-   icardmid.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h
-	@touch cardmo.h
-timer.o: timer.c \
+   cardmo.h \
+   cardmi.h \
+   midi.h \
+   ../sound_config.h
+mixer.o: mixer.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/version.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/linux/fs.h \
    hwaccess.h \
    8010.h \
-   irqmgr.h \
-   timer.h
+   recmgr.h
 passthrough.o: passthrough.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/bitops.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/wrapper.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/poll.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/version.h \
+   /home/eccles/lin/linux/include/linux/bitops.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h \
+   /home/eccles/lin/linux/include/linux/wrapper.h \
    hwaccess.h \
    cardwo.h \
    cardwi.h \
@@ -179,20 +158,41 @@ passthrough.o: passthrough.c \
    irqmgr.h \
    audio.h \
    8010.h
-hwaccess.o: hwaccess.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+passthrough.h: \
+   audio.h
+	@touch passthrough.h
+recmgr.o: recmgr.c \
+   8010.h \
+   recmgr.h
+recmgr.h: \
+   hwaccess.h \
+   cardwi.h
+	@touch recmgr.h
+timer.o: timer.c \
    hwaccess.h \
    8010.h \
-   icardmid.h
-.PRECIOUS:	ecard.h \
+   irqmgr.h \
+   timer.h
+timer.h: \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   hwaccess.h
+	@touch timer.h
+voicemgr.o: voicemgr.c \
+   voicemgr.h \
+   8010.h
+voicemgr.h: \
+   hwaccess.h
+	@touch voicemgr.h
+.PRECIOUS:	8010.h \
 	cardmi.h \
-	recmgr.h \
-	cardwo.h \
-	8010.h \
-	cardwi.h \
-	voicemgr.h \
-	timer.h \
-	passthrough.h \
-	hwaccess.h \
 	cardmo.h \
+	cardwi.h \
+	cardwo.h \
+	ecard.h \
+	hwaccess.h \
+	passthrough.h \
+	recmgr.h \
+	timer.h \
+	voicemgr.h \
 

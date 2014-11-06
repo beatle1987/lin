@@ -139,7 +139,7 @@ static unsigned int smc_portlist[] __initdata = {
  .    2 for interrupt tracking, status flags
  .    3 for packet dumps, etc.
 */
-#define SMC_DEBUG 3
+#define SMC_DEBUG 0
 
 #if (SMC_DEBUG > 2 )
 #define PRINTK3(x) printk x

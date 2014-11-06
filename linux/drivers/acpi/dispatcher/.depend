@@ -1,74 +1,74 @@
-dswexec.o: dswexec.c \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acparser.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/amlcode.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acdispat.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acinterp.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acnamesp.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acdebug.h
-dsmethod.o: dsmethod.c \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acparser.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/amlcode.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acdispat.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acinterp.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acnamesp.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/actables.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acdebug.h
-dswload.o: dswload.c \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acparser.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/amlcode.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acdispat.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acinterp.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acnamesp.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acevents.h
-dswstate.o: dswstate.c \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/amlcode.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acparser.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acdispat.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acnamesp.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acinterp.h
-dsopcode.o: dsopcode.c \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acparser.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/amlcode.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acdispat.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acinterp.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acnamesp.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acevents.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/actables.h
-dsobject.o: dsobject.c \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acparser.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/amlcode.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acdispat.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acinterp.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acnamesp.h
-dswscope.o: dswscope.c \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acinterp.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acdispat.h
-dsmthdat.o: dsmthdat.c \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acparser.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acdispat.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acinterp.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/amlcode.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acnamesp.h
 dsfield.o: dsfield.c \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/amlcode.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acdispat.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acinterp.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acnamesp.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acparser.h
+   /home/eccles/lin/linux/drivers/acpi/include/acpi.h \
+   /home/eccles/lin/linux/drivers/acpi/include/amlcode.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acdispat.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acinterp.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acnamesp.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acparser.h
+dsmethod.o: dsmethod.c \
+   /home/eccles/lin/linux/drivers/acpi/include/acpi.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acparser.h \
+   /home/eccles/lin/linux/drivers/acpi/include/amlcode.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acdispat.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acinterp.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acnamesp.h \
+   /home/eccles/lin/linux/drivers/acpi/include/actables.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acdebug.h
+dsmthdat.o: dsmthdat.c \
+   /home/eccles/lin/linux/drivers/acpi/include/acpi.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acparser.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acdispat.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acinterp.h \
+   /home/eccles/lin/linux/drivers/acpi/include/amlcode.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acnamesp.h
+dsobject.o: dsobject.c \
+   /home/eccles/lin/linux/drivers/acpi/include/acpi.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acparser.h \
+   /home/eccles/lin/linux/drivers/acpi/include/amlcode.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acdispat.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acinterp.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acnamesp.h
+dsopcode.o: dsopcode.c \
+   /home/eccles/lin/linux/drivers/acpi/include/acpi.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acparser.h \
+   /home/eccles/lin/linux/drivers/acpi/include/amlcode.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acdispat.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acinterp.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acnamesp.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acevents.h \
+   /home/eccles/lin/linux/drivers/acpi/include/actables.h
 dsutils.o: dsutils.c \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acpi.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acparser.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/amlcode.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acdispat.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acinterp.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acnamesp.h \
-   /home/netlab/j6-harvey/Kernel/linux/drivers/acpi/include/acdebug.h
+   /home/eccles/lin/linux/drivers/acpi/include/acpi.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acparser.h \
+   /home/eccles/lin/linux/drivers/acpi/include/amlcode.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acdispat.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acinterp.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acnamesp.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acdebug.h
+dswexec.o: dswexec.c \
+   /home/eccles/lin/linux/drivers/acpi/include/acpi.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acparser.h \
+   /home/eccles/lin/linux/drivers/acpi/include/amlcode.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acdispat.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acinterp.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acnamesp.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acdebug.h
+dswload.o: dswload.c \
+   /home/eccles/lin/linux/drivers/acpi/include/acpi.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acparser.h \
+   /home/eccles/lin/linux/drivers/acpi/include/amlcode.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acdispat.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acinterp.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acnamesp.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acevents.h
+dswscope.o: dswscope.c \
+   /home/eccles/lin/linux/drivers/acpi/include/acpi.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acinterp.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acdispat.h
+dswstate.o: dswstate.c \
+   /home/eccles/lin/linux/drivers/acpi/include/acpi.h \
+   /home/eccles/lin/linux/drivers/acpi/include/amlcode.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acparser.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acdispat.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acnamesp.h \
+   /home/eccles/lin/linux/drivers/acpi/include/acinterp.h

@@ -1,71 +1,71 @@
-sis_main.o: sis_main.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/vt_kern.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/capability.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/agp_backend.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sisfb.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb24.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h \
-   osdef.h \
-   vgatypes.h \
-   sis_main.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/sis/300.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/sis/315.h)
-init.o: init.c \
-   init.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/sis/300.h) \
-   300vtbl.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/sis/315.h) \
-   310vtbl.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/sis/300h.h)
-init.h: \
-   osdef.h \
-   initdef.h \
-   vgatypes.h \
-   vstruct.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sisfb.h
-	@touch init.h
+init301.o: init301.c \
+   init301.h \
+   $(wildcard /home/eccles/lin/linux/include/config/fb/sis/300.h) \
+   oem300.h \
+   $(wildcard /home/eccles/lin/linux/include/config/fb/sis/315.h) \
+   oem310.h
 init301.h: \
    osdef.h \
    initdef.h \
    vgatypes.h \
    vstruct.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sisfb.h
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/sisfb.h
 	@touch init301.h
-init301.o: init301.c \
-   init301.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/sis/300.h) \
-   oem300.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/sis/315.h) \
-   oem310.h
+init.o: init.c \
+   init.h \
+   $(wildcard /home/eccles/lin/linux/include/config/fb/sis/300.h) \
+   300vtbl.h \
+   $(wildcard /home/eccles/lin/linux/include/config/fb/sis/315.h) \
+   310vtbl.h \
+   $(wildcard /home/eccles/lin/linux/include/config/fb/sis/300h.h)
+init.h: \
+   osdef.h \
+   initdef.h \
+   vgatypes.h \
+   vstruct.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/linux/sisfb.h
+	@touch init.h
+sis_main.o: sis_main.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/tty.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/fb.h \
+   /home/eccles/lin/linux/include/linux/console.h \
+   /home/eccles/lin/linux/include/linux/selection.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/pci.h \
+   /home/eccles/lin/linux/include/linux/vt_kern.h \
+   /home/eccles/lin/linux/include/linux/capability.h \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/agp_backend.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/sisfb.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/video/fbcon.h \
+   /home/eccles/lin/linux/include/video/fbcon-cfb8.h \
+   /home/eccles/lin/linux/include/video/fbcon-cfb16.h \
+   /home/eccles/lin/linux/include/video/fbcon-cfb24.h \
+   /home/eccles/lin/linux/include/video/fbcon-cfb32.h \
+   osdef.h \
+   vgatypes.h \
+   sis_main.h \
+   $(wildcard /home/eccles/lin/linux/include/config/fb/sis/300.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/fb/sis/315.h)
 sis_main.h: \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/sis/300.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/sis/315.h)
+   $(wildcard /home/eccles/lin/linux/include/config/fb/sis/300.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/fb/sis/315.h)
 	@touch sis_main.h
-.PRECIOUS:	init.h \
-	init301.h \
+.PRECIOUS:	init301.h \
+	init.h \
 	sis_main.h \
 

@@ -1,72 +1,72 @@
-ioctl.o: ioctl.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/msdos_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/umsdos_fs.h
 dir.o: dir.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/msdos_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/limits.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/umsdos_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h
-rdir.o: rdir.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/msdos_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/limits.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/umsdos_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h
-namei.o: namei.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/msdos_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/umsdos_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h
-inode.o: inode.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/msdos_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/umsdos_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/list.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h
-mangle.o: mangle.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/umsdos_fs.h
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/msdos_fs.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/stat.h \
+   /home/eccles/lin/linux/include/linux/limits.h \
+   /home/eccles/lin/linux/include/linux/umsdos_fs.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/pagemap.h
 emd.o: emd.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcntl.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/msdos_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/umsdos_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/dcache.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/fcntl.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/msdos_fs.h \
+   /home/eccles/lin/linux/include/linux/umsdos_fs.h \
+   /home/eccles/lin/linux/include/linux/dcache.h \
+   /home/eccles/lin/linux/include/linux/pagemap.h \
+   /home/eccles/lin/linux/include/linux/delay.h
+inode.o: inode.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/msdos_fs.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/stat.h \
+   /home/eccles/lin/linux/include/linux/umsdos_fs.h \
+   /home/eccles/lin/linux/include/linux/list.h \
+   /home/eccles/lin/linux/include/linux/pagemap.h
+ioctl.o: ioctl.c \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/msdos_fs.h \
+   /home/eccles/lin/linux/include/linux/umsdos_fs.h
+mangle.o: mangle.c \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/umsdos_fs.h
+namei.o: namei.c \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/fcntl.h \
+   /home/eccles/lin/linux/include/linux/stat.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/msdos_fs.h \
+   /home/eccles/lin/linux/include/linux/umsdos_fs.h \
+   /home/eccles/lin/linux/include/linux/slab.h
+rdir.o: rdir.c \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/msdos_fs.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/stat.h \
+   /home/eccles/lin/linux/include/linux/limits.h \
+   /home/eccles/lin/linux/include/linux/umsdos_fs.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h

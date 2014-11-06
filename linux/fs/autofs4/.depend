@@ -1,41 +1,41 @@
+autofs_i.h: \
+   /home/eccles/lin/linux/include/linux/auto_fs4.h \
+   /home/eccles/lin/linux/include/linux/list.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/wait.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h
+	@touch autofs_i.h
+expire.o: expire.c \
+   autofs_i.h
 init.o: init.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   autofs_i.h
+inode.o: inode.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/file.h \
+   /home/eccles/lin/linux/include/linux/locks.h \
+   /home/eccles/lin/linux/include/asm/bitops.h \
+   autofs_i.h \
+   /home/eccles/lin/linux/include/linux/module.h
+root.o: root.c \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/stat.h \
+   /home/eccles/lin/linux/include/linux/param.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h \
    autofs_i.h
 symlink.o: symlink.c \
    autofs_i.h
-autofs_i.h: \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/auto_fs4.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/list.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/wait.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h
-	@touch autofs_i.h
-root.o: root.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/param.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
-   autofs_i.h
 waitq.o: waitq.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/file.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/signal.h \
+   /home/eccles/lin/linux/include/linux/file.h \
    autofs_i.h
-expire.o: expire.c \
-   autofs_i.h
-inode.o: inode.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/file.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
-   autofs_i.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h
 .PRECIOUS:	autofs_i.h \
 

@@ -1,20 +1,20 @@
 dvma.o: dvma.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/dma.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sun4.h)
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/dma.h \
+   $(wildcard /home/eccles/lin/linux/include/config/sun4.h)
 sbus.o: sbus.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/dma.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sun/auxio.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sun4.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pci.h)
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/pci.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/asm/dma.h \
+   /home/eccles/lin/linux/include/asm/irq.h \
+   $(wildcard /home/eccles/lin/linux/include/config/sun/auxio.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/sun4.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/pci.h)

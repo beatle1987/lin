@@ -1,179 +1,179 @@
-sysctl.o: sysctl.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/net.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysctl.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/un.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/unistd.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/ip.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/tcp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/atomic.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/semaphore.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/processor.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/file.h \
-   prototypes.h
-datasending.o: datasending.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/tcp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
-   structure.h \
-   prototypes.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/khttpd/numcpu.h)
-logging.o: logging.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/tcp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   structure.h \
-   prototypes.h
-waitheaders.o: waitheaders.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/file.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   structure.h \
-   prototypes.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/khttpd/numcpu.h)
-security.o: security.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/net.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/un.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/unistd.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/ip.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/tcp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/atomic.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/semaphore.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/processor.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/file.h \
-   sysctl.h \
-   security.h \
-   prototypes.h
-userspace.o: userspace.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/net.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/un.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/unistd.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/wait.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/ip.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/tcp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/atomic.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/semaphore.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/processor.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/file.h \
-   structure.h \
-   prototypes.h \
-   sysctl.h
 accept.o: accept.c \
    structure.h \
    prototypes.h \
    sysctl.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h
-misc.o: misc.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ctype.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/net.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/unistd.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/file.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/ip.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/atomic.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/semaphore.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/processor.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h
+datasending.o: datasending.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/locks.h \
+   /home/eccles/lin/linux/include/linux/skbuff.h \
+   /home/eccles/lin/linux/include/net/tcp.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h \
+   structure.h \
+   prototypes.h \
+   $(wildcard /home/eccles/lin/linux/include/config/khttpd/numcpu.h)
+logging.o: logging.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/skbuff.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h \
+   /home/eccles/lin/linux/include/net/tcp.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
    structure.h \
    prototypes.h
 main.o: main.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/wait.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/unistd.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/signal.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/wait.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h \
+   /home/eccles/lin/linux/include/asm/unistd.h \
    structure.h \
    prototypes.h \
    sysctl.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/khttpd/numcpu.h)
-prototypes.h: \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/net.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/time.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/wait.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   $(wildcard /home/eccles/lin/linux/include/config/khttpd/numcpu.h)
+misc.o: misc.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/ctype.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/net.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/skbuff.h \
+   /home/eccles/lin/linux/include/linux/unistd.h \
+   /home/eccles/lin/linux/include/linux/file.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h \
+   /home/eccles/lin/linux/include/net/ip.h \
+   /home/eccles/lin/linux/include/net/sock.h \
+   /home/eccles/lin/linux/include/asm/atomic.h \
+   /home/eccles/lin/linux/include/asm/errno.h \
+   /home/eccles/lin/linux/include/asm/semaphore.h \
+   /home/eccles/lin/linux/include/asm/processor.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
    structure.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/khttpd/numcpu.h)
-	@touch prototypes.h
-sockets.o: sockets.c \
-   prototypes.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/net.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h
-structure.h: \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/time.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/wait.h
-	@touch structure.h
-rfc_time.o: rfc_time.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/time.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ctype.h \
    prototypes.h
+prototypes.h: \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/net.h \
+   /home/eccles/lin/linux/include/linux/time.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/wait.h \
+   /home/eccles/lin/linux/include/net/sock.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   structure.h \
+   $(wildcard /home/eccles/lin/linux/include/config/khttpd/numcpu.h)
+	@touch prototypes.h
 rfc.o: rfc.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ctype.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/net.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/unistd.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/file.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/ip.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/atomic.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/semaphore.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/processor.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/ctype.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/net.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/skbuff.h \
+   /home/eccles/lin/linux/include/linux/unistd.h \
+   /home/eccles/lin/linux/include/linux/file.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h \
+   /home/eccles/lin/linux/include/net/ip.h \
+   /home/eccles/lin/linux/include/net/sock.h \
+   /home/eccles/lin/linux/include/asm/atomic.h \
+   /home/eccles/lin/linux/include/asm/semaphore.h \
+   /home/eccles/lin/linux/include/asm/processor.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
    prototypes.h \
    structure.h \
    sysctl.h
+rfc_time.o: rfc_time.c \
+   /home/eccles/lin/linux/include/linux/time.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/ctype.h \
+   prototypes.h
+security.o: security.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/net.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/skbuff.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h \
+   /home/eccles/lin/linux/include/linux/un.h \
+   /home/eccles/lin/linux/include/linux/unistd.h \
+   /home/eccles/lin/linux/include/net/ip.h \
+   /home/eccles/lin/linux/include/net/sock.h \
+   /home/eccles/lin/linux/include/net/tcp.h \
+   /home/eccles/lin/linux/include/asm/atomic.h \
+   /home/eccles/lin/linux/include/asm/semaphore.h \
+   /home/eccles/lin/linux/include/asm/processor.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/linux/file.h \
+   sysctl.h \
+   security.h \
+   prototypes.h
+sockets.o: sockets.c \
+   prototypes.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/net.h \
+   /home/eccles/lin/linux/include/linux/version.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h \
+   /home/eccles/lin/linux/include/net/sock.h
+structure.h: \
+   /home/eccles/lin/linux/include/linux/time.h \
+   /home/eccles/lin/linux/include/linux/wait.h
+	@touch structure.h
+sysctl.o: sysctl.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/net.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/skbuff.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h \
+   /home/eccles/lin/linux/include/linux/sysctl.h \
+   /home/eccles/lin/linux/include/linux/un.h \
+   /home/eccles/lin/linux/include/linux/unistd.h \
+   /home/eccles/lin/linux/include/net/ip.h \
+   /home/eccles/lin/linux/include/net/sock.h \
+   /home/eccles/lin/linux/include/net/tcp.h \
+   /home/eccles/lin/linux/include/asm/atomic.h \
+   /home/eccles/lin/linux/include/asm/semaphore.h \
+   /home/eccles/lin/linux/include/asm/processor.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/linux/file.h \
+   prototypes.h
+userspace.o: userspace.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/net.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/skbuff.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h \
+   /home/eccles/lin/linux/include/linux/un.h \
+   /home/eccles/lin/linux/include/linux/unistd.h \
+   /home/eccles/lin/linux/include/linux/wait.h \
+   /home/eccles/lin/linux/include/net/ip.h \
+   /home/eccles/lin/linux/include/net/sock.h \
+   /home/eccles/lin/linux/include/net/tcp.h \
+   /home/eccles/lin/linux/include/asm/atomic.h \
+   /home/eccles/lin/linux/include/asm/semaphore.h \
+   /home/eccles/lin/linux/include/asm/processor.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/linux/file.h \
+   structure.h \
+   prototypes.h \
+   sysctl.h
+waitheaders.o: waitheaders.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/skbuff.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h \
+   /home/eccles/lin/linux/include/linux/file.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   structure.h \
+   prototypes.h \
+   $(wildcard /home/eccles/lin/linux/include/config/khttpd/numcpu.h)
 .PRECIOUS:	prototypes.h \
 	structure.h \
 

@@ -1,35 +1,35 @@
 af_econet.o: af_econet.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/socket.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sockios.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/in.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/if_ether.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/inetdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/route.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/inet.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/etherdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/if_arp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/wireless.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/sock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/inet_common.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/if_ec.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/udp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/ip.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/spinlock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/econet/aunudp.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/econet/native.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/socket.h \
+   /home/eccles/lin/linux/include/linux/sockios.h \
+   /home/eccles/lin/linux/include/linux/in.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/if_ether.h \
+   /home/eccles/lin/linux/include/linux/netdevice.h \
+   /home/eccles/lin/linux/include/linux/inetdevice.h \
+   /home/eccles/lin/linux/include/linux/route.h \
+   /home/eccles/lin/linux/include/linux/inet.h \
+   /home/eccles/lin/linux/include/linux/etherdevice.h \
+   /home/eccles/lin/linux/include/linux/if_arp.h \
+   /home/eccles/lin/linux/include/linux/wireless.h \
+   /home/eccles/lin/linux/include/linux/skbuff.h \
+   /home/eccles/lin/linux/include/net/sock.h \
+   /home/eccles/lin/linux/include/net/inet_common.h \
+   /home/eccles/lin/linux/include/linux/stat.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/if_ec.h \
+   /home/eccles/lin/linux/include/net/udp.h \
+   /home/eccles/lin/linux/include/net/ip.h \
+   /home/eccles/lin/linux/include/linux/spinlock.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/asm/bitops.h \
+   $(wildcard /home/eccles/lin/linux/include/config/econet/aunudp.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/econet/native.h) \
+   /home/eccles/lin/linux/include/linux/smp_lock.h

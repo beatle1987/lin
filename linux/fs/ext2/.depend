@@ -1,60 +1,60 @@
-ioctl.o: ioctl.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext2_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h
-dir.o: dir.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext2_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h
-fsync.o: fsync.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext2_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h
-symlink.o: symlink.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext2_fs.h
-namei.o: namei.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext2_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h
-inode.o: inode.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext2_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/highuid.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/quotaops.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h
-file.o: file.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext2_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h
-super.o: super.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext2_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/blkdev.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ext2/check.h)
-bitmap.o: bitmap.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext2_fs.h
-ialloc.o: ialloc.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext2_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/quotaops.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ext2/check.h)
 balloc.o: balloc.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ext2_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/quotaops.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ext2/check.h)
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/ext2_fs.h \
+   /home/eccles/lin/linux/include/linux/locks.h \
+   /home/eccles/lin/linux/include/linux/quotaops.h \
+   $(wildcard /home/eccles/lin/linux/include/config/ext2/check.h)
+bitmap.o: bitmap.c \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/ext2_fs.h
+dir.o: dir.c \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/ext2_fs.h \
+   /home/eccles/lin/linux/include/linux/pagemap.h
+file.o: file.c \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/ext2_fs.h \
+   /home/eccles/lin/linux/include/linux/sched.h
+fsync.o: fsync.c \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/ext2_fs.h \
+   /home/eccles/lin/linux/include/linux/locks.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h
+ialloc.o: ialloc.c \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/ext2_fs.h \
+   /home/eccles/lin/linux/include/linux/locks.h \
+   /home/eccles/lin/linux/include/linux/quotaops.h \
+   $(wildcard /home/eccles/lin/linux/include/config/ext2/check.h)
+inode.o: inode.c \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/ext2_fs.h \
+   /home/eccles/lin/linux/include/linux/locks.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/highuid.h \
+   /home/eccles/lin/linux/include/linux/quotaops.h \
+   /home/eccles/lin/linux/include/linux/module.h
+ioctl.o: ioctl.c \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/ext2_fs.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h
+namei.o: namei.c \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/ext2_fs.h \
+   /home/eccles/lin/linux/include/linux/pagemap.h
+super.o: super.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/ext2_fs.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/locks.h \
+   /home/eccles/lin/linux/include/linux/blkdev.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   $(wildcard /home/eccles/lin/linux/include/config/ext2/check.h)
+symlink.o: symlink.c \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/ext2_fs.h

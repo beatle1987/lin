@@ -1,161 +1,161 @@
-io-readsw-armv3.o: io-readsw-armv3.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h
-csumpartial.o: csumpartial.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h
-io-readsb.o: io-readsb.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h
-muldi3.o: muldi3.c \
-   gcclib.h
-testsetbit.o: testsetbit.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h
-io-shark.o: io-shark.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h
-strchr.o: strchr.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h
-uaccess.o: uaccess.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/errno.h
-memchr.o: memchr.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h
-strncpy_from_user.o: strncpy_from_user.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/errno.h
-clearbit.o: clearbit.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h
-ashrdi3.o: ashrdi3.c \
-   gcclib.h
-io-acorn.o: io-acorn.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/26.h)
-io-readsw-armv4.o: io-readsw-armv4.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h
-backtrace.o: backtrace.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/frame/pointer.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/32.h)
-strrchr.o: strrchr.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h
-io-writesl.o: io-writesl.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h
-ecard.o: ecard.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/26.h)
-setbit.o: setbit.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h
-copy_page.o: copy_page.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/constants.h
-csumpartialcopy.o: csumpartialcopy.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   csumpartialcopygeneric.S
-uaccess-armo.o: uaccess-armo.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h
-io-writesw-armv4.o: io-writesw-armv4.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h
-findbit.o: findbit.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h
 ashldi3.o: ashldi3.c \
    gcclib.h
-strnlen_user.o: strnlen_user.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/errno.h
+ashrdi3.o: ashrdi3.c \
+   gcclib.h
+backtrace.o: backtrace.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   $(wildcard /home/eccles/lin/linux/include/config/frame/pointer.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/32.h)
+changebit.o: changebit.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h
+clearbit.o: clearbit.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h
+copy_page.o: copy_page.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/constants.h
+csumipv6.o: csumipv6.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h
+csumpartialcopy.o: csumpartialcopy.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   csumpartialcopygeneric.S
+csumpartialcopyuser.o: csumpartialcopyuser.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/errno.h \
+   /home/eccles/lin/linux/include/asm/constants.h \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/32.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/26.h) \
+   csumpartialcopygeneric.S
+csumpartial.o: csumpartial.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h
+delay.o: delay.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h
+ecard.o: ecard.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/26.h)
+findbit.o: findbit.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h
+floppydma.o: floppydma.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h
+getuser.o: getuser.S \
+   /home/eccles/lin/linux/include/asm/constants.h
+io-acorn.o: io-acorn.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/26.h)
+io-readsb.o: io-readsb.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/hardware.h
+io-readsl-armv3.o: io-readsl-armv3.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/hardware.h
+io-readsl-armv4.o: io-readsl-armv4.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/hardware.h
+io-readsw-armv3.o: io-readsw-armv3.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/hardware.h
+io-readsw-armv4.o: io-readsw-armv4.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/hardware.h
+io-shark.o: io-shark.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/asm/io.h
+io-writesb.o: io-writesb.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/hardware.h
+io-writesl.o: io-writesl.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/hardware.h
+io-writesw-armv3.o: io-writesw-armv3.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/hardware.h
+io-writesw-armv4.o: io-writesw-armv4.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/hardware.h
 kbd.o: kbd.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kd.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/magic/sysrq.h)
+   /home/eccles/lin/linux/include/linux/kd.h \
+   $(wildcard /home/eccles/lin/linux/include/config/magic/sysrq.h)
+lib1funcs.o: lib1funcs.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/26.h)
 lshrdi3.o: lshrdi3.c \
    gcclib.h
-memzero.o: memzero.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h
-testclearbit.o: testclearbit.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h
-lib1funcs.o: lib1funcs.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/26.h)
-putuser.o: putuser.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/constants.h
-io-readsl-armv4.o: io-readsl-armv4.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h
-io-writesw-armv3.o: io-writesw-armv3.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h
-csumipv6.o: csumipv6.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h
-io-writesb.o: io-writesb.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h
-getuser.o: getuser.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/constants.h
+memchr.o: memchr.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h
 memcpy.o: memcpy.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h
-delay.o: delay.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h
-floppydma.o: floppydma.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h
-changebit.o: changebit.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h
 memset.o: memset.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h
+memzero.o: memzero.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h
+muldi3.o: muldi3.c \
+   gcclib.h
+putuser.o: putuser.S \
+   /home/eccles/lin/linux/include/asm/constants.h
+setbit.o: setbit.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h
+strchr.o: strchr.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h
+strncpy_from_user.o: strncpy_from_user.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/errno.h
+strnlen_user.o: strnlen_user.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/errno.h
+strrchr.o: strrchr.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h
 testchangebit.o: testchangebit.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h
-io-readsl-armv3.o: io-readsl-armv3.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h
+testclearbit.o: testclearbit.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h
+testsetbit.o: testsetbit.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h
+uaccess-armo.o: uaccess-armo.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h
+uaccess.o: uaccess.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/errno.h
 ucmpdi2.o: ucmpdi2.c \
    gcclib.h
 udivdi3.o: udivdi3.c \
    gcclib.h \
    longlong.h
-csumpartialcopyuser.o: csumpartialcopyuser.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/constants.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/32.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/26.h) \
-   csumpartialcopygeneric.S

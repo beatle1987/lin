@@ -1,48 +1,48 @@
-l3-sa1111.o: l3-sa1111.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/l3/l3.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/semaphore.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach-types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/arch/assabet.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware/sa1111.h
 l3-algo-bit.o: l3-algo-bit.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/l3/l3.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/l3/algo-bit.h
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/l3/l3.h \
+   /home/eccles/lin/linux/include/linux/l3/algo-bit.h
 l3-bit-sa1100.o: l3-bit-sa1100.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/i2c-algo-bit.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/l3/algo-bit.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach-types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/arch/assabet.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/i2c/bit/sa1100/gpio.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/l3/bit/sa1100/gpio.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/h3600.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/h3100.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1100/stork.h)
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/i2c-algo-bit.h \
+   /home/eccles/lin/linux/include/linux/l3/algo-bit.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   /home/eccles/lin/linux/include/asm/mach-types.h \
+   /home/eccles/lin/linux/include/asm/arch/assabet.h \
+   $(wildcard /home/eccles/lin/linux/include/config/i2c/bit/sa1100/gpio.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/l3/bit/sa1100/gpio.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/sa1100/h3600.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/sa1100/h3100.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/sa1100/stork.h)
 l3-core.o: l3-core.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kmod.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/l3/l3.h
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/proc_fs.h \
+   /home/eccles/lin/linux/include/linux/kmod.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/l3/l3.h
+l3-sa1111.o: l3-sa1111.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/l3/l3.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   /home/eccles/lin/linux/include/asm/semaphore.h \
+   /home/eccles/lin/linux/include/asm/mach-types.h \
+   /home/eccles/lin/linux/include/asm/arch/assabet.h \
+   /home/eccles/lin/linux/include/asm/hardware/sa1111.h

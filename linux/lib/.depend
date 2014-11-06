@@ -1,41 +1,41 @@
-ctype.o: ctype.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ctype.h
-rwsem.o: rwsem.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/rwsem.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h
-cmdline.o: cmdline.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h
 brlock.o: brlock.c \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/smp.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/brlock.h
-vsprintf.o: vsprintf.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ctype.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/div64.h
-rwsem-spinlock.o: rwsem-spinlock.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/rwsem.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h
+   $(wildcard /home/eccles/lin/linux/include/config/smp.h) \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/brlock.h
 bust_spinlocks.o: bust_spinlocks.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/spinlock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/wait.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/vt_kern.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/vt.h)
-rbtree.o: rbtree.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/rbtree.h
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/spinlock.h \
+   /home/eccles/lin/linux/include/linux/tty.h \
+   /home/eccles/lin/linux/include/linux/wait.h \
+   /home/eccles/lin/linux/include/linux/vt_kern.h \
+   $(wildcard /home/eccles/lin/linux/include/config/vt.h)
+cmdline.o: cmdline.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/string.h
+ctype.o: ctype.c \
+   /home/eccles/lin/linux/include/linux/ctype.h
 dec_and_lock.o: dec_and_lock.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/spinlock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/atomic.h
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/spinlock.h \
+   /home/eccles/lin/linux/include/asm/atomic.h
+rbtree.o: rbtree.c \
+   /home/eccles/lin/linux/include/linux/rbtree.h
+rwsem.o: rwsem.c \
+   /home/eccles/lin/linux/include/linux/rwsem.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/module.h
+rwsem-spinlock.o: rwsem-spinlock.c \
+   /home/eccles/lin/linux/include/linux/rwsem.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/module.h
 string.o: string.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ctype.h
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/ctype.h
+vsprintf.o: vsprintf.c \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/ctype.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/asm/div64.h

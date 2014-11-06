@@ -1,113 +1,21 @@
-ftape-io.o: ftape-io.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/segment.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioctl.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtio.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ftape.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/qic117.h \
+fc-10.o: fc-10.c \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/linux/ftape.h \
    ../lowlevel/ftape-tracing.h \
    ../lowlevel/fdc-io.h \
-   ../lowlevel/ftape-io.h \
-   ../lowlevel/ftape-ctl.h \
-   ../lowlevel/ftape-rw.h \
-   ../lowlevel/ftape-write.h \
-   ../lowlevel/ftape-read.h \
-   ../lowlevel/ftape-init.h \
-   ../lowlevel/ftape-calibr.h
-ftape-proc.h: \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h
-	@touch ftape-proc.h
-ftape_syms.h: \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h
-	@touch ftape_syms.h
-ftape-ecc.h: \
-   ../lowlevel/ftape-bsm.h
-	@touch ftape-ecc.h
-fdc-io.h: \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fdreg.h \
-   ../lowlevel/ftape-bsm.h
-	@touch fdc-io.h
-fdc-isr.o: fdc-isr.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/dma.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ftape.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/qic117.h \
-   ../lowlevel/ftape-tracing.h \
-   ../lowlevel/fdc-isr.h \
-   ../lowlevel/fdc-io.h \
-   ../lowlevel/ftape-ctl.h \
-   ../lowlevel/ftape-rw.h \
-   ../lowlevel/ftape-io.h \
-   ../lowlevel/ftape-calibr.h \
-   ../lowlevel/ftape-bsm.h
-ftape-format.o: ftape-format.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ftape.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/qic117.h \
-   ../lowlevel/ftape-tracing.h \
-   ../lowlevel/ftape-io.h \
-   ../lowlevel/ftape-ctl.h \
-   ../lowlevel/ftape-rw.h \
-   ../lowlevel/ftape-ecc.h \
-   ../lowlevel/ftape-bsm.h \
-   ../lowlevel/ftape-format.h
-ftape-proc.o: ftape-proc.c \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/proc/fs.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ft/proc/fs.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ftape.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/qic117.h \
-   ../lowlevel/ftape-io.h \
-   ../lowlevel/ftape-ctl.h \
-   ../lowlevel/ftape-proc.h \
-   ../lowlevel/ftape-tracing.h
-ftape_syms.o: ftape_syms.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ftape.h \
-   ../lowlevel/ftape-tracing.h \
-   ../lowlevel/ftape-init.h \
-   ../lowlevel/fdc-io.h \
-   ../lowlevel/ftape-read.h \
-   ../lowlevel/ftape-write.h \
-   ../lowlevel/ftape-io.h \
-   ../lowlevel/ftape-ctl.h \
-   ../lowlevel/ftape-rw.h \
-   ../lowlevel/ftape-bsm.h \
-   ../lowlevel/ftape-buffer.h \
-   ../lowlevel/ftape-format.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ft/no/trace/at/all.h)
-ftape-calibr.o: ftape-calibr.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/timex.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ftape.h \
-   ../lowlevel/ftape-tracing.h \
-   ../lowlevel/ftape-calibr.h \
-   ../lowlevel/fdc-io.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ft/alpha/clock.h)
-ftape-bsm.h: \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ftape.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ftape-header-segment.h
-	@touch ftape-bsm.h
+   ../lowlevel/fc-10.h
 fdc-io.o: fdc-io.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/dma.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ftape.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/qic117.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/linux/version.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/dma.h \
+   /home/eccles/lin/linux/include/asm/irq.h \
+   /home/eccles/lin/linux/include/linux/ftape.h \
+   /home/eccles/lin/linux/include/linux/qic117.h \
    ../lowlevel/ftape-tracing.h \
    ../lowlevel/fdc-io.h \
    ../lowlevel/fdc-isr.h \
@@ -116,98 +24,73 @@ fdc-io.o: fdc-io.c \
    ../lowlevel/ftape-ctl.h \
    ../lowlevel/ftape-calibr.h \
    ../lowlevel/fc-10.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ft/fdc/base.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ft/fdc/irq.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ft/fdc/dma.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ft/fdc/thr.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ft/fdc/max/rate.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ft/probe/fc10.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ft/mach2.h)
-ftape-read.o: ftape-read.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/segment.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ftape.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/qic117.h \
+   $(wildcard /home/eccles/lin/linux/include/config/ft/fdc/base.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ft/fdc/irq.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ft/fdc/dma.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ft/fdc/thr.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ft/fdc/max/rate.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ft/probe/fc10.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ft/mach2.h)
+fdc-io.h: \
+   /home/eccles/lin/linux/include/linux/fdreg.h \
+   ../lowlevel/ftape-bsm.h
+	@touch fdc-io.h
+fdc-isr.o: fdc-isr.c \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/dma.h \
+   /home/eccles/lin/linux/include/linux/ftape.h \
+   /home/eccles/lin/linux/include/linux/qic117.h \
    ../lowlevel/ftape-tracing.h \
-   ../lowlevel/ftape-read.h \
-   ../lowlevel/ftape-io.h \
+   ../lowlevel/fdc-isr.h \
+   ../lowlevel/fdc-io.h \
    ../lowlevel/ftape-ctl.h \
    ../lowlevel/ftape-rw.h \
-   ../lowlevel/ftape-write.h \
-   ../lowlevel/ftape-ecc.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-calibr.h \
    ../lowlevel/ftape-bsm.h
-ftape-rw.h: \
-   ../lowlevel/fdc-io.h \
-   ../lowlevel/ftape-init.h \
-   ../lowlevel/ftape-bsm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/unaligned.h
-	@touch ftape-rw.h
 ftape-bsm.o: ftape-bsm.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ftape.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/ftape.h \
    ../lowlevel/ftape-tracing.h \
    ../lowlevel/ftape-bsm.h \
    ../lowlevel/ftape-ctl.h \
    ../lowlevel/ftape-rw.h
-ftape-rw.o: ftape-rw.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ftape.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/qic117.h \
-   ../lowlevel/ftape-tracing.h \
+ftape-bsm.h: \
+   /home/eccles/lin/linux/include/linux/ftape.h \
+   /home/eccles/lin/linux/include/linux/ftape-header-segment.h
+	@touch ftape-bsm.h
+ftape-buffer.o: ftape-buffer.c \
+   /home/eccles/lin/linux/include/asm/segment.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/mman.h \
+   /home/eccles/lin/linux/include/linux/wrapper.h \
+   /home/eccles/lin/linux/include/asm/dma.h \
+   /home/eccles/lin/linux/include/linux/ftape.h \
    ../lowlevel/ftape-rw.h \
+   ../lowlevel/ftape-read.h \
+   ../lowlevel/ftape-tracing.h
+ftape-calibr.o: ftape-calibr.c \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/linux/timex.h \
+   /home/eccles/lin/linux/include/linux/ftape.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/ftape-calibr.h \
    ../lowlevel/fdc-io.h \
-   ../lowlevel/ftape-init.h \
-   ../lowlevel/ftape-io.h \
-   ../lowlevel/ftape-ctl.h \
-   ../lowlevel/ftape-read.h \
-   ../lowlevel/ftape-ecc.h \
-   ../lowlevel/ftape-bsm.h
-ftape-ctl.h: \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioctl.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtio.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ftape-vendors.h \
-   ../lowlevel/ftape-rw.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ftape-header-segment.h
-	@touch ftape-ctl.h
-ftape-init.h: \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h
-	@touch ftape-init.h
-ftape-tracing.h: \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ft/no/trace/at/all.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ft/no/trace.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ft/full/debug.h)
-	@touch ftape-tracing.h
-ftape-write.o: ftape-write.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/segment.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ftape.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/qic117.h \
-   ../lowlevel/ftape-tracing.h \
-   ../lowlevel/ftape-write.h \
-   ../lowlevel/ftape-read.h \
-   ../lowlevel/ftape-io.h \
-   ../lowlevel/ftape-ctl.h \
-   ../lowlevel/ftape-rw.h \
-   ../lowlevel/ftape-ecc.h \
-   ../lowlevel/ftape-bsm.h \
-   ../lowlevel/fdc-isr.h
+   $(wildcard /home/eccles/lin/linux/include/config/ft/alpha/clock.h)
 ftape-ctl.o: ftape-ctl.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mman.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/wrapper.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ftape.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/qic117.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/segment.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/mman.h \
+   /home/eccles/lin/linux/include/linux/wrapper.h \
+   /home/eccles/lin/linux/include/linux/ftape.h \
+   /home/eccles/lin/linux/include/linux/qic117.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/asm/segment.h \
+   /home/eccles/lin/linux/include/asm/io.h \
    ../lowlevel/ftape-tracing.h \
    ../lowlevel/ftape-io.h \
    ../lowlevel/ftape-ctl.h \
@@ -215,34 +98,46 @@ ftape-ctl.o: ftape-ctl.c \
    ../lowlevel/ftape-read.h \
    ../lowlevel/ftape-rw.h \
    ../lowlevel/ftape-bsm.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ft/two/drives.h)
+   $(wildcard /home/eccles/lin/linux/include/config/ft/two/drives.h)
+ftape-ctl.h: \
+   /home/eccles/lin/linux/include/linux/ioctl.h \
+   /home/eccles/lin/linux/include/linux/mtio.h \
+   /home/eccles/lin/linux/include/linux/ftape-vendors.h \
+   ../lowlevel/ftape-rw.h \
+   /home/eccles/lin/linux/include/linux/ftape-header-segment.h
+	@touch ftape-ctl.h
 ftape-ecc.o: ftape-ecc.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ftape.h \
+   /home/eccles/lin/linux/include/linux/ftape.h \
    ../lowlevel/ftape-tracing.h \
    ../lowlevel/ftape-ecc.h
-ftape-io.h: \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/qic117.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ftape-vendors.h
-	@touch ftape-io.h
-fc-10.o: fc-10.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ftape.h \
+ftape-ecc.h: \
+   ../lowlevel/ftape-bsm.h
+	@touch ftape-ecc.h
+ftape-format.o: ftape-format.c \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/ftape.h \
+   /home/eccles/lin/linux/include/linux/qic117.h \
    ../lowlevel/ftape-tracing.h \
-   ../lowlevel/fdc-io.h \
-   ../lowlevel/fc-10.h
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/ftape-ecc.h \
+   ../lowlevel/ftape-bsm.h \
+   ../lowlevel/ftape-format.h
 ftape-init.o: ftape-init.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/major.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ftape.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/qic117.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/zftape.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/zftape.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/version.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/signal.h \
+   /home/eccles/lin/linux/include/linux/major.h \
+   /home/eccles/lin/linux/include/linux/ftape.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/qic117.h \
+   $(wildcard /home/eccles/lin/linux/include/config/zftape.h) \
+   /home/eccles/lin/linux/include/linux/zftape.h \
    ../lowlevel/ftape-init.h \
    ../lowlevel/ftape_syms.h \
    ../lowlevel/ftape-io.h \
@@ -254,49 +149,154 @@ ftape-init.o: ftape-init.c \
    ../lowlevel/ftape-buffer.h \
    ../lowlevel/ftape-proc.h \
    ../lowlevel/ftape-tracing.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ft/nr/buffers.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/proc/fs.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ft/proc/fs.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ft/no/trace/at/all.h)
-ftape-setup.o: ftape-setup.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/segment.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ftape.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
+   $(wildcard /home/eccles/lin/linux/include/config/ft/nr/buffers.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/proc/fs.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ft/proc/fs.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ft/no/trace/at/all.h)
+ftape-init.h: \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/linux/signal.h
+	@touch ftape-init.h
+ftape-io.o: ftape-io.c \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/asm/segment.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/linux/ioctl.h \
+   /home/eccles/lin/linux/include/linux/mtio.h \
+   /home/eccles/lin/linux/include/linux/ftape.h \
+   /home/eccles/lin/linux/include/linux/qic117.h \
    ../lowlevel/ftape-tracing.h \
    ../lowlevel/fdc-io.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ft/no/trace/at/all.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ft/fdc/base.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ft/fdc/irq.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ft/fdc/dma.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ft/fdc/thr.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ft/fdc/max/rate.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ft/probe/fc10.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ft/mach2.h)
-ftape-tracing.o: ftape-tracing.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ftape.h \
-   ../lowlevel/ftape-tracing.h
-ftape-buffer.o: ftape-buffer.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/segment.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mman.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/wrapper.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/dma.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ftape.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-ctl.h \
    ../lowlevel/ftape-rw.h \
+   ../lowlevel/ftape-write.h \
    ../lowlevel/ftape-read.h \
+   ../lowlevel/ftape-init.h \
+   ../lowlevel/ftape-calibr.h
+ftape-io.h: \
+   /home/eccles/lin/linux/include/linux/qic117.h \
+   /home/eccles/lin/linux/include/linux/ftape-vendors.h
+	@touch ftape-io.h
+ftape-proc.o: ftape-proc.c \
+   $(wildcard /home/eccles/lin/linux/include/config/proc/fs.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ft/proc/fs.h) \
+   /home/eccles/lin/linux/include/linux/proc_fs.h \
+   /home/eccles/lin/linux/include/linux/ftape.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/qic117.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-proc.h \
    ../lowlevel/ftape-tracing.h
-.PRECIOUS:	ftape-proc.h \
-	ftape_syms.h \
-	ftape-ecc.h \
-	fdc-io.h \
+ftape-proc.h: \
+   /home/eccles/lin/linux/include/linux/proc_fs.h
+	@touch ftape-proc.h
+ftape-read.o: ftape-read.c \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/asm/segment.h \
+   /home/eccles/lin/linux/include/linux/ftape.h \
+   /home/eccles/lin/linux/include/linux/qic117.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/ftape-read.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/ftape-write.h \
+   ../lowlevel/ftape-ecc.h \
+   ../lowlevel/ftape-bsm.h
+ftape-rw.o: ftape-rw.c \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/ftape.h \
+   /home/eccles/lin/linux/include/linux/qic117.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/fdc-io.h \
+   ../lowlevel/ftape-init.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-read.h \
+   ../lowlevel/ftape-ecc.h \
+   ../lowlevel/ftape-bsm.h
+ftape-rw.h: \
+   ../lowlevel/fdc-io.h \
+   ../lowlevel/ftape-init.h \
+   ../lowlevel/ftape-bsm.h \
+   /home/eccles/lin/linux/include/asm/unaligned.h
+	@touch ftape-rw.h
+ftape-setup.o: ftape-setup.c \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/asm/segment.h \
+   /home/eccles/lin/linux/include/linux/ftape.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/fdc-io.h \
+   $(wildcard /home/eccles/lin/linux/include/config/ft/no/trace/at/all.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ft/fdc/base.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ft/fdc/irq.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ft/fdc/dma.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ft/fdc/thr.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ft/fdc/max/rate.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ft/probe/fc10.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ft/mach2.h)
+ftape_syms.o: ftape_syms.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/ftape.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/ftape-init.h \
+   ../lowlevel/fdc-io.h \
+   ../lowlevel/ftape-read.h \
+   ../lowlevel/ftape-write.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/ftape-bsm.h \
+   ../lowlevel/ftape-buffer.h \
+   ../lowlevel/ftape-format.h \
+   $(wildcard /home/eccles/lin/linux/include/config/ft/no/trace/at/all.h)
+ftape_syms.h: \
+   /home/eccles/lin/linux/include/linux/module.h
+	@touch ftape_syms.h
+ftape-tracing.o: ftape-tracing.c \
+   /home/eccles/lin/linux/include/linux/ftape.h \
+   ../lowlevel/ftape-tracing.h
+ftape-tracing.h: \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   $(wildcard /home/eccles/lin/linux/include/config/ft/no/trace/at/all.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ft/no/trace.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ft/full/debug.h)
+	@touch ftape-tracing.h
+ftape-write.o: ftape-write.c \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/asm/segment.h \
+   /home/eccles/lin/linux/include/linux/ftape.h \
+   /home/eccles/lin/linux/include/linux/qic117.h \
+   ../lowlevel/ftape-tracing.h \
+   ../lowlevel/ftape-write.h \
+   ../lowlevel/ftape-read.h \
+   ../lowlevel/ftape-io.h \
+   ../lowlevel/ftape-ctl.h \
+   ../lowlevel/ftape-rw.h \
+   ../lowlevel/ftape-ecc.h \
+   ../lowlevel/ftape-bsm.h \
+   ../lowlevel/fdc-isr.h
+.PRECIOUS:	fdc-io.h \
 	ftape-bsm.h \
-	ftape-rw.h \
 	ftape-ctl.h \
+	ftape-ecc.h \
 	ftape-init.h \
-	ftape-tracing.h \
 	ftape-io.h \
+	ftape-proc.h \
+	ftape-rw.h \
+	ftape_syms.h \
+	ftape-tracing.h \
 

@@ -1,23 +1,23 @@
 dir.o: dir.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/efs_fs.h
-symlink.o: symlink.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/efs_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h
-namei.o: namei.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/efs_fs.h
-inode.o: inode.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/efs_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/efs_fs_sb.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h
+   /home/eccles/lin/linux/include/linux/efs_fs.h
 file.o: file.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/efs_fs.h
+   /home/eccles/lin/linux/include/linux/efs_fs.h
+inode.o: inode.c \
+   /home/eccles/lin/linux/include/linux/efs_fs.h \
+   /home/eccles/lin/linux/include/linux/efs_fs_sb.h \
+   /home/eccles/lin/linux/include/linux/module.h
+namei.o: namei.c \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/efs_fs.h
 super.o: super.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/locks.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/efs_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/efs_vh.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/efs_fs_sb.h
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/locks.h \
+   /home/eccles/lin/linux/include/linux/efs_fs.h \
+   /home/eccles/lin/linux/include/linux/efs_vh.h \
+   /home/eccles/lin/linux/include/linux/efs_fs_sb.h
+symlink.o: symlink.c \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/efs_fs.h \
+   /home/eccles/lin/linux/include/linux/pagemap.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h

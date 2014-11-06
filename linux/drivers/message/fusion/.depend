@@ -1,30 +1,44 @@
-linux_compat.h: \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/proc/fs.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/page.h
-	@touch linux_compat.h
-mptctl.o: mptctl.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/miscdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
-   mptbase.h
+isense.o: isense.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/version.h \
+   /home/eccles/lin/linux/include/asm/spinlock.h \
+   mptbase.h \
+   isense.h \
+   ascq_tbl.c \
+   scsiops.c
 isense.h: \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
    scsi3.h
 	@touch isense.h
+linux_compat.h: \
+   /home/eccles/lin/linux/include/linux/version.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/pci.h \
+   $(wildcard /home/eccles/lin/linux/include/config/proc/fs.h) \
+   /home/eccles/lin/linux/include/asm/page.h
+	@touch linux_compat.h
+mptbase.o: mptbase.c \
+   /home/eccles/lin/linux/include/linux/version.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/pci.h \
+   /home/eccles/lin/linux/include/linux/kdev_t.h \
+   /home/eccles/lin/linux/include/linux/blkdev.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/proc_fs.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   $(wildcard /home/eccles/lin/linux/include/config/mtrr.h) \
+   mptbase.h \
+   $(wildcard /home/eccles/lin/linux/include/config/proc/fs.h)
 mptbase.h: \
    linux_compat.h \
    lsi/mpi_type.h \
@@ -37,73 +51,51 @@ mptbase.h: \
    lsi/mpi_targ.h \
    lsi/fc_log.h
 	@touch mptbase.h
-isense.o: isense.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/spinlock.h \
-   mptbase.h \
-   isense.h \
-   ascq_tbl.c \
-   scsiops.c
-mptbase.o: mptbase.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kdev_t.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/blkdev.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/mtrr.h) \
-   mptbase.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/proc/fs.h)
-mptlan.h: \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fcdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/if_arp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/miscdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/spinlock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/tqueue.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
+mptctl.o: mptctl.c \
+   /home/eccles/lin/linux/include/linux/version.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/pci.h \
+   /home/eccles/lin/linux/include/linux/miscdevice.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/linux/proc_fs.h \
    mptbase.h
-	@touch mptlan.h
-mptscsih.h: \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/capability.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h
-	@touch mptscsih.h
 mptlan.o: mptlan.c \
    mptlan.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h
-scsi3.h: \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h
-	@touch scsi3.h
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/fs.h
+mptlan.h: \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/netdevice.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/fcdevice.h \
+   /home/eccles/lin/linux/include/linux/skbuff.h \
+   /home/eccles/lin/linux/include/linux/if_arp.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/miscdevice.h \
+   /home/eccles/lin/linux/include/linux/spinlock.h \
+   /home/eccles/lin/linux/include/linux/tqueue.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   mptbase.h
+	@touch mptlan.h
 mptscsih.o: mptscsih.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kdev_t.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/blkdev.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/blk.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/version.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/kdev_t.h \
+   /home/eccles/lin/linux/include/linux/blkdev.h \
+   /home/eccles/lin/linux/include/linux/blk.h \
    ../../scsi/scsi.h \
    ../../scsi/hosts.h \
    ../../scsi/sd.h \
@@ -111,8 +103,16 @@ mptscsih.o: mptscsih.c \
    mptscsih.h \
    isense.h \
    ../../scsi/scsi_module.c
-.PRECIOUS:	linux_compat.h \
-	isense.h \
+mptscsih.h: \
+   /home/eccles/lin/linux/include/linux/version.h \
+   /home/eccles/lin/linux/include/linux/capability.h \
+   /home/eccles/lin/linux/include/linux/sched.h
+	@touch mptscsih.h
+scsi3.h: \
+   /home/eccles/lin/linux/include/linux/types.h
+	@touch scsi3.h
+.PRECIOUS:	isense.h \
+	linux_compat.h \
 	mptbase.h \
 	mptlan.h \
 	mptscsih.h \

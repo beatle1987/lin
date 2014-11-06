@@ -1,176 +1,176 @@
 background.o: background.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/unistd.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/jffs2.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/completion.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/unistd.h \
+   /home/eccles/lin/linux/include/linux/jffs2.h \
+   /home/eccles/lin/linux/include/linux/mtd/mtd.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/completion.h \
    nodelist.h
-zlib.o: zlib.c \
-   zlib.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h
-ioctl.o: ioctl.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h
-read.o: read.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/jffs2.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
-   nodelist.h \
-   crc32.h
-crc32.h: \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h
-	@touch crc32.h
-pushpull.o: pushpull.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   pushpull.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h
-readinode.o: readinode.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/jffs2.h \
-   nodelist.h \
-   crc32.h
+build.o: build.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/jffs2.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   nodelist.h
+compr.o: compr.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/jffs2.h
+compr_rtime.o: compr_rtime.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/string.h
+compr_rubin.o: compr_rubin.c \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   compr_rubin.h \
+   histo_mips.h
 compr_rubin.h: \
    pushpull.h
 	@touch compr_rubin.h
+comprtest.o: comprtest.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/asm/types.h
+compr_zlib.o: compr_zlib.c \
+   zlib.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/mtd/compatmac.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/jffs2.h \
+   nodelist.h \
+   /home/eccles/lin/linux/include/asm/types.h
 crc32.o: crc32.c \
    crc32.h
-comprtest.o: comprtest.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/types.h
-nodelist.h: \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/jffs2_fs_sb.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/jffs2_fs_i.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/jffs2/fs/debug.h)
-	@touch nodelist.h
-symlink.o: symlink.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/jffs2.h \
-   nodelist.h
-file.o: file.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/compatmac.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/jffs2.h \
-   nodelist.h \
-   crc32.h
-super.o: super.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/list.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/jffs2.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   nodelist.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/jffs2/fs/debug.h)
-nodelist.o: nodelist.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/jffs2.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
-   nodelist.h
+crc32.h: \
+   /home/eccles/lin/linux/include/linux/types.h
+	@touch crc32.h
 dir.o: dir.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/compatmac.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/jffs2.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/jffs2_fs_i.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/jffs2_fs_sb.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/mtd/compatmac.h \
+   /home/eccles/lin/linux/include/linux/jffs2.h \
+   /home/eccles/lin/linux/include/linux/jffs2_fs_i.h \
+   /home/eccles/lin/linux/include/linux/jffs2_fs_sb.h \
    nodelist.h \
    crc32.h
 erase.o: erase.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/jffs2.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/mtd/mtd.h \
+   /home/eccles/lin/linux/include/linux/jffs2.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   nodelist.h \
+   crc32.h
+file.o: file.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/mtd/compatmac.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/pagemap.h \
+   /home/eccles/lin/linux/include/linux/jffs2.h \
+   nodelist.h \
+   crc32.h
+gc.o: gc.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/mtd/mtd.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/jffs2.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/pagemap.h \
+   nodelist.h \
+   crc32.h
+ioctl.o: ioctl.c \
+   /home/eccles/lin/linux/include/linux/fs.h
+malloc.o: malloc.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/jffs2.h \
+   nodelist.h
+nodelist.o: nodelist.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/jffs2.h \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/mtd/mtd.h \
+   nodelist.h
+nodelist.h: \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/jffs2_fs_sb.h \
+   /home/eccles/lin/linux/include/linux/jffs2_fs_i.h \
+   $(wildcard /home/eccles/lin/linux/include/config/jffs2/fs/debug.h)
+	@touch nodelist.h
+nodemgmt.o: nodemgmt.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/jffs2.h \
+   /home/eccles/lin/linux/include/linux/mtd/mtd.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   nodelist.h
+pushpull.o: pushpull.c \
+   /home/eccles/lin/linux/include/linux/string.h \
+   pushpull.h \
+   /home/eccles/lin/linux/include/linux/errno.h
+read.o: read.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/jffs2.h \
+   /home/eccles/lin/linux/include/linux/mtd/mtd.h \
+   nodelist.h \
+   crc32.h
+readinode.o: readinode.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/mtd/mtd.h \
+   /home/eccles/lin/linux/include/linux/jffs2.h \
    nodelist.h \
    crc32.h
 scan.o: scan.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/jffs2.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/jffs2.h \
+   /home/eccles/lin/linux/include/linux/mtd/mtd.h \
+   /home/eccles/lin/linux/include/linux/pagemap.h \
    nodelist.h \
    crc32.h
-malloc.o: malloc.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/jffs2.h \
-   nodelist.h
-compr_zlib.o: compr_zlib.c \
-   zlib.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/compatmac.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/jffs2.h \
+super.o: super.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/version.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/list.h \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/jffs2.h \
+   /home/eccles/lin/linux/include/linux/pagemap.h \
+   /home/eccles/lin/linux/include/linux/mtd/mtd.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
    nodelist.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/types.h
+   $(wildcard /home/eccles/lin/linux/include/config/jffs2/fs/debug.h)
+symlink.o: symlink.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/jffs2.h \
+   nodelist.h
 write.o: write.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/jffs2.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/jffs2.h \
+   /home/eccles/lin/linux/include/linux/mtd/mtd.h \
    nodelist.h \
    crc32.h
-compr_rtime.o: compr_rtime.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h
-build.o: build.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/jffs2.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   nodelist.h
-nodemgmt.o: nodemgmt.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/jffs2.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   nodelist.h
-compr_rubin.o: compr_rubin.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   compr_rubin.h \
-   histo_mips.h
-gc.o: gc.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mtd/mtd.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/jffs2.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pagemap.h \
-   nodelist.h \
-   crc32.h
-compr.o: compr.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/jffs2.h
-.PRECIOUS:	crc32.h \
-	compr_rubin.h \
+zlib.o: zlib.c \
+   zlib.h \
+   /home/eccles/lin/linux/include/linux/string.h
+.PRECIOUS:	compr_rubin.h \
+	crc32.h \
 	nodelist.h \
 

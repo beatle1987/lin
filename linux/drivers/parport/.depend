@@ -1,188 +1,188 @@
-procfs.o: procfs.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/parport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ctype.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysctl.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sysctl.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/proc/fs.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/parport/1284.h)
-parport_serial.o: parport_serial.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/parport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/parport_pc.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/serial.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/serialP.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/list.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/serial.h
 daisy.o: daisy.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/parport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h
-parport_sunbpp.o: parport_sunbpp.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/parport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/ptrace.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/dma.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h
-parport_pc.o: parport_pc.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysctl.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/dma.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/parport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/parport_pc.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/parport.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/parport/pc/fifo.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/parport/pc/superio.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/parport/1284.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pci.h)
-init.o: init.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/threads.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/parport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/parport/pc.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sysctl.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/parport/amiga.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/parport/mfc3.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/parport/atari.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/parport/arc.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/parport/sunbpp.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/parport/1284.h)
-parport_arc.o: parport_arc.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/threads.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/parport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/ptrace.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/arch/irqs.h
-parport_gsc.o: parport_gsc.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysctl.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/dma.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/parport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h
+   /home/eccles/lin/linux/include/linux/parport.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h
 ieee1284.o: ieee1284.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/threads.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/parport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/lp/console.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/parport/1284.h)
-parport_atari.o: parport_atari.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/parport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/setup.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h
+   /home/eccles/lin/linux/include/linux/threads.h \
+   /home/eccles/lin/linux/include/linux/parport.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   $(wildcard /home/eccles/lin/linux/include/config/lp/console.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/parport/1284.h)
 ieee1284_ops.o: ieee1284_ops.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/parport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/lp/console.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/parport/1284.h)
-parport_cs.o: parport_cs.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/timer.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/parport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/parport_pc.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/pcmcia/version.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/pcmcia/cs_types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/pcmcia/cs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/pcmcia/cistpl.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/pcmcia/ds.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/pcmcia/cisreg.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/pcmcia/ciscode.h
+   /home/eccles/lin/linux/include/linux/parport.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   $(wildcard /home/eccles/lin/linux/include/config/lp/console.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/parport/1284.h)
+init.o: init.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/threads.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/parport.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   $(wildcard /home/eccles/lin/linux/include/config/parport/pc.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/sysctl.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/parport/amiga.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/parport/mfc3.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/parport/atari.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/parport/arc.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/parport/sunbpp.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/parport/1284.h)
 parport_amiga.o: parport_amiga.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/parport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/setup.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h
-probe.o: probe.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/parport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ctype.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/parport.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/asm/setup.h \
+   /home/eccles/lin/linux/include/asm/irq.h \
+   /home/eccles/lin/linux/include/asm/io.h
+parport_arc.o: parport_arc.c \
+   /home/eccles/lin/linux/include/linux/threads.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/parport.h \
+   /home/eccles/lin/linux/include/asm/ptrace.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/arch/irqs.h
+parport_atari.o: parport_atari.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/parport.h \
+   /home/eccles/lin/linux/include/asm/setup.h \
+   /home/eccles/lin/linux/include/asm/irq.h
+parport_cs.o: parport_cs.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/version.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/ptrace.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/timer.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/linux/parport.h \
+   /home/eccles/lin/linux/include/linux/parport_pc.h \
+   /home/eccles/lin/linux/include/pcmcia/version.h \
+   /home/eccles/lin/linux/include/pcmcia/cs_types.h \
+   /home/eccles/lin/linux/include/pcmcia/cs.h \
+   /home/eccles/lin/linux/include/pcmcia/cistpl.h \
+   /home/eccles/lin/linux/include/pcmcia/ds.h \
+   /home/eccles/lin/linux/include/pcmcia/cisreg.h \
+   /home/eccles/lin/linux/include/pcmcia/ciscode.h
+parport_gsc.o: parport_gsc.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/pci.h \
+   /home/eccles/lin/linux/include/linux/sysctl.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/dma.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/linux/parport.h \
+   /home/eccles/lin/linux/include/asm/hardware.h
 parport_mfc3.o: parport_mfc3.c \
    multiface.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/parport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mc6821.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/zorro.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/setup.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/parport.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/mc6821.h \
+   /home/eccles/lin/linux/include/linux/zorro.h \
+   /home/eccles/lin/linux/include/asm/setup.h \
+   /home/eccles/lin/linux/include/asm/irq.h
+parport_pc.o: parport_pc.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/pci.h \
+   /home/eccles/lin/linux/include/linux/sysctl.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/dma.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/linux/parport.h \
+   /home/eccles/lin/linux/include/linux/parport_pc.h \
+   /home/eccles/lin/linux/include/asm/parport.h \
+   $(wildcard /home/eccles/lin/linux/include/config/parport/pc/fifo.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/parport/pc/superio.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/parport/1284.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/pci.h)
+parport_serial.o: parport_serial.c \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/pci.h \
+   /home/eccles/lin/linux/include/linux/parport.h \
+   /home/eccles/lin/linux/include/linux/parport_pc.h \
+   /home/eccles/lin/linux/include/linux/serial.h \
+   /home/eccles/lin/linux/include/linux/serialP.h \
+   /home/eccles/lin/linux/include/linux/list.h \
+   /home/eccles/lin/linux/include/asm/serial.h
+parport_sunbpp.o: parport_sunbpp.c \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/parport.h \
+   /home/eccles/lin/linux/include/asm/ptrace.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/dma.h \
+   /home/eccles/lin/linux/include/asm/irq.h
+probe.o: probe.c \
+   /home/eccles/lin/linux/include/linux/parport.h \
+   /home/eccles/lin/linux/include/linux/ctype.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h
+procfs.o: procfs.c \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/parport.h \
+   /home/eccles/lin/linux/include/linux/ctype.h \
+   /home/eccles/lin/linux/include/linux/sysctl.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   $(wildcard /home/eccles/lin/linux/include/config/sysctl.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/proc/fs.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/parport/1284.h)
 share.o: share.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/threads.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/parport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kmod.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/spinlock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/parport/1284.h)
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/threads.h \
+   /home/eccles/lin/linux/include/linux/parport.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/kmod.h \
+   /home/eccles/lin/linux/include/linux/spinlock.h \
+   /home/eccles/lin/linux/include/asm/irq.h \
+   $(wildcard /home/eccles/lin/linux/include/config/parport/1284.h)

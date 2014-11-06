@@ -1,3 +1,29 @@
+double_cpdo.o: double_cpdo.c \
+   fpa11.h \
+   softfloat.h \
+   fpopcode.h
+entry26.o: entry26.S \
+   /home/eccles/lin/linux/include/asm/constants.h
+extended_cpdo.o: extended_cpdo.c \
+   fpa11.h \
+   softfloat.h \
+   fpopcode.h
+fpa11.o: fpa11.c \
+   fpa11.h \
+   fpopcode.h \
+   fpmodule.h \
+   fpmodule.inl \
+   /home/eccles/lin/linux/include/asm/system.h
+fpa11_cpdo.o: fpa11_cpdo.c \
+   fpa11.h \
+   fpopcode.h
+fpa11_cpdt.o: fpa11_cpdt.c \
+   fpa11.h \
+   softfloat.h \
+   fpopcode.h \
+   fpmodule.h \
+   fpmodule.inl \
+   /home/eccles/lin/linux/include/asm/uaccess.h
 fpa11_cprt.o: fpa11_cprt.c \
    fpa11.h \
    milieu.h \
@@ -6,10 +32,39 @@ fpa11_cprt.o: fpa11_cprt.c \
    fpa11.inl \
    fpmodule.h \
    fpmodule.inl
-fpa11_cpdo.o: fpa11_cpdo.c \
+fpa11.h: \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   fpsr.h \
+   softfloat.h
+	@touch fpa11.h
+fpmodule.o: fpmodule.c \
    fpa11.h \
-   fpopcode.h
-double_cpdo.o: double_cpdo.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/version.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/signal.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   softfloat.h \
+   fpopcode.h \
+   fpmodule.h \
+   fpa11.inl \
+   $(wildcard /home/eccles/lin/linux/include/config/debug/user.h)
+fpmodule.h: \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/32.h)
+	@touch fpmodule.h
+fpopcode.o: fpopcode.c \
+   fpa11.h \
+   softfloat.h \
+   fpopcode.h \
+   fpsr.h \
+   fpmodule.h \
+   fpmodule.inl
+milieu.h: \
+   ARM-gcc.h
+	@touch milieu.h
+single_cpdo.o: single_cpdo.c \
    fpa11.h \
    softfloat.h \
    fpopcode.h
@@ -19,61 +74,6 @@ softfloat.o: softfloat.c \
    softfloat.h \
    softfloat-macros \
    softfloat-specialize
-extended_cpdo.o: extended_cpdo.c \
-   fpa11.h \
-   softfloat.h \
-   fpopcode.h
-fpa11_cpdt.o: fpa11_cpdt.c \
-   fpa11.h \
-   softfloat.h \
-   fpopcode.h \
-   fpmodule.h \
-   fpmodule.inl \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h
-entry26.o: entry26.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/constants.h
-fpa11.h: \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   fpsr.h \
-   softfloat.h
-	@touch fpa11.h
-fpmodule.h: \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/32.h)
-	@touch fpmodule.h
-fpa11.o: fpa11.c \
-   fpa11.h \
-   fpopcode.h \
-   fpmodule.h \
-   fpmodule.inl \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h
-single_cpdo.o: single_cpdo.c \
-   fpa11.h \
-   softfloat.h \
-   fpopcode.h
-fpmodule.o: fpmodule.c \
-   fpa11.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/version.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   softfloat.h \
-   fpopcode.h \
-   fpmodule.h \
-   fpa11.inl \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/debug/user.h)
-milieu.h: \
-   ARM-gcc.h
-	@touch milieu.h
-fpopcode.o: fpopcode.c \
-   fpa11.h \
-   softfloat.h \
-   fpopcode.h \
-   fpsr.h \
-   fpmodule.h \
-   fpmodule.inl
 .PRECIOUS:	fpa11.h \
 	fpmodule.h \
 	milieu.h \

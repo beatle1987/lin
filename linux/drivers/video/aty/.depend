@@ -1,80 +1,80 @@
 atyfb_base.o: atyfb_base.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/selection.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/vt_kern.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kd.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb24.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/vmalloc.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/selection.h \
+   /home/eccles/lin/linux/include/linux/console.h \
+   /home/eccles/lin/linux/include/linux/fb.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/pci.h \
+   /home/eccles/lin/linux/include/linux/vt_kern.h \
+   /home/eccles/lin/linux/include/linux/kd.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/video/fbcon.h \
+   /home/eccles/lin/linux/include/video/fbcon-cfb8.h \
+   /home/eccles/lin/linux/include/video/fbcon-cfb16.h \
+   /home/eccles/lin/linux/include/video/fbcon-cfb24.h \
+   /home/eccles/lin/linux/include/video/fbcon-cfb32.h \
    mach64.h \
    atyfb.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/video/macmodes.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/adb/pmu.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/adb.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pmu.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/bootx/text.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/nvram.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/nvram.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/compat/xpmac.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pmac/backlight.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/atari.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ppc.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/aty/gx.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fb/aty/ct.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pmac/pbook.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/chip/id.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/stat0.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/stat1.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pci.h)
-mach64_accel.o: mach64_accel.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb8.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb16.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb24.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon-cfb32.h \
-   mach64.h \
-   atyfb.h
+   /home/eccles/lin/linux/include/video/macmodes.h \
+   $(wildcard /home/eccles/lin/linux/include/config/adb/pmu.h) \
+   /home/eccles/lin/linux/include/linux/adb.h \
+   /home/eccles/lin/linux/include/linux/pmu.h \
+   $(wildcard /home/eccles/lin/linux/include/config/bootx/text.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/nvram.h) \
+   /home/eccles/lin/linux/include/linux/nvram.h \
+   $(wildcard /home/eccles/lin/linux/include/config/fb/compat/xpmac.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/pmac/backlight.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/atari.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ppc.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/fb/aty/gx.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/fb/aty/ct.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/pmac/pbook.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/chip/id.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/stat0.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/stat1.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/pci.h)
 atyfb.h: \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pmac/pbook.h)
+   $(wildcard /home/eccles/lin/linux/include/config/pmac/pbook.h)
 	@touch atyfb.h
-mach64_ct.o: mach64_ct.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+mach64_accel.o: mach64_accel.c \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/fb.h \
+   /home/eccles/lin/linux/include/video/fbcon.h \
+   /home/eccles/lin/linux/include/video/fbcon-cfb8.h \
+   /home/eccles/lin/linux/include/video/fbcon-cfb16.h \
+   /home/eccles/lin/linux/include/video/fbcon-cfb24.h \
+   /home/eccles/lin/linux/include/video/fbcon-cfb32.h \
    mach64.h \
    atyfb.h
-mach64_gx.o: mach64_gx.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+mach64_ct.o: mach64_ct.c \
+   /home/eccles/lin/linux/include/linux/fb.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/video/fbcon.h \
    mach64.h \
    atyfb.h
 mach64_cursor.o: mach64_cursor.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fb.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/video/fbcon.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/console.h \
+   /home/eccles/lin/linux/include/linux/fb.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/video/fbcon.h \
+   mach64.h \
+   atyfb.h
+mach64_gx.o: mach64_gx.c \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/fb.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/video/fbcon.h \
    mach64.h \
    atyfb.h
 .PRECIOUS:	atyfb.h \

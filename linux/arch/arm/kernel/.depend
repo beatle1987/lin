@@ -1,514 +1,514 @@
-head-armo.o: head-armo.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach-types.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/arc.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/a5k.h)
-init_task.o: init_task.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h
-setup.o: setup.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/stddef.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/utsname.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/blk.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/console.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/bootmem.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/seq_file.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/elf.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/procinfo.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/setup.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach-types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/arch.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/irq.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cmdline.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fpe/nwfpe.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fpe/fastfpe.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/blk/dev/ram.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/blk/dev/initrd.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/vga/console.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/dummy/console.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/vt.h)
-debug-armo.o: debug-armo.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h
-time.o: time.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/time.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/timex.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/leds.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/leds.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/modules.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/leds/timer.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/arch/time.h
-dma-isa.o: dma-isa.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/dma.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/dma.h
-ptrace.o: ptrace.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/user.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   ptrace.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arm/thumb.h)
-semaphore.o: semaphore.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/semaphore.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/26.h)
-traps.o: traps.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/spinlock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/personality.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/elf.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/unistd.h \
-   ptrace.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/frame/pointer.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/debug/user.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/26.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/ignore/fiq.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/32.h)
 arch.o: arch.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/elf.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/setup.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach-types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/arch.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware/dec21285.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/acorn.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/rpc.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/arc.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/a5k.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/l7200.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/blk/dev/ram/size.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/nexuspci.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/tbox.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/clps7110.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/etoile.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/lacie/nas.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/clps7500.h)
+   /home/eccles/lin/linux/include/linux/tty.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/pm.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/elf.h \
+   /home/eccles/lin/linux/include/asm/setup.h \
+   /home/eccles/lin/linux/include/asm/mach-types.h \
+   /home/eccles/lin/linux/include/asm/mach/arch.h \
+   /home/eccles/lin/linux/include/asm/hardware/dec21285.h \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/acorn.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/rpc.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/arc.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/a5k.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/l7200.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/blk/dev/ram/size.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/nexuspci.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/tbox.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/clps7110.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/etoile.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/lacie/nas.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/clps7500.h)
+armksyms.o: armksyms.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/user.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/mman.h \
+   /home/eccles/lin/linux/include/linux/pci.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/in6.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/pm.h \
+   /home/eccles/lin/linux/include/linux/vt_kern.h \
+   /home/eccles/lin/linux/include/asm/byteorder.h \
+   /home/eccles/lin/linux/include/asm/elf.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/irq.h \
+   /home/eccles/lin/linux/include/asm/pgalloc.h \
+   /home/eccles/lin/linux/include/asm/proc-fns.h \
+   /home/eccles/lin/linux/include/asm/processor.h \
+   /home/eccles/lin/linux/include/asm/semaphore.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/asm/checksum.h \
+   /home/eccles/lin/linux/include/asm/mach-types.h \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/26.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/vt.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/32.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/debug/bugverbose.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/no/pgt/cache.h)
+arthur.o: arthur.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/personality.h \
+   /home/eccles/lin/linux/include/linux/stddef.h \
+   /home/eccles/lin/linux/include/linux/signal.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/ptrace.h
+bios32.o: bios32.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/pci.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/page.h \
+   /home/eccles/lin/linux/include/asm/irq.h \
+   /home/eccles/lin/linux/include/asm/mach-types.h \
+   /home/eccles/lin/linux/include/asm/mach/pci.h \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/ebsa285.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/shark.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/cats.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/netwinder.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/personal/server.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/ftvpci.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/integrator.h)
+compat.o: compat.c \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/setup.h \
+   /home/eccles/lin/linux/include/asm/mach-types.h \
+   /home/eccles/lin/linux/include/asm/page.h \
+   /home/eccles/lin/linux/include/asm/mach/arch.h \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/acorn.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/footbridge.h)
+debug-armo.o: debug-armo.S \
+   /home/eccles/lin/linux/include/linux/linkage.h
+debug-armv.o: debug-armv.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/rpc.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/ebsa110.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/shark.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/footbridge.h) \
+   /home/eccles/lin/linux/include/asm/hardware/dec21285.h \
+   $(wildcard /home/eccles/lin/linux/include/config/debug/dc21285/port.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/ftvpci.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/sa1100.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/clps7500.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/l7200.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/integrator.h) \
+   /home/eccles/lin/linux/include/asm/hardware/serial_amba.h \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/clps711x.h) \
+   /home/eccles/lin/linux/include/asm/hardware/clps7111.h \
+   $(wildcard /home/eccles/lin/linux/include/config/debug/clps711x/uart2.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/anakin.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/camelot.h)
+dec21285.o: dec21285.c \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/pci.h \
+   /home/eccles/lin/linux/include/linux/ptrace.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/irq.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/asm/mach/pci.h \
+   /home/eccles/lin/linux/include/asm/hardware/dec21285.h
+dma-arc.o: dma-arc.c \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/dma.h \
+   /home/eccles/lin/linux/include/asm/fiq.h \
+   /home/eccles/lin/linux/include/asm/irq.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   /home/eccles/lin/linux/include/asm/mach-types.h \
+   /home/eccles/lin/linux/include/asm/mach/dma.h \
+   $(wildcard /home/eccles/lin/linux/include/config/blk/dev/fd1772.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/blk/dev/fd1772/module.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/a5k.h)
+dma.o: dma.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/mman.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/spinlock.h \
+   /home/eccles/lin/linux/include/asm/dma.h \
+   /home/eccles/lin/linux/include/asm/mach/dma.h
+dma-footbridge.o: dma-footbridge.c \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/dma.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/mach/dma.h \
+   /home/eccles/lin/linux/include/asm/hardware/dec21285.h \
+   $(wildcard /home/eccles/lin/linux/include/config/isa/dma.h)
+dma-isa.o: dma-isa.c \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/pci.h \
+   /home/eccles/lin/linux/include/asm/dma.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/mach/dma.h
+dma-rpc.o: dma-rpc.c \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/mman.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/pci.h \
+   /home/eccles/lin/linux/include/asm/page.h \
+   /home/eccles/lin/linux/include/asm/dma.h \
+   /home/eccles/lin/linux/include/asm/fiq.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/irq.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/asm/mach/dma.h \
+   /home/eccles/lin/linux/include/asm/hardware/iomd.h
 ecard.o: ecard.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/reboot.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/notifier.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/dma.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/ecard.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgalloc.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mmu_context.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/irq.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/rpc.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/32.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/completion.h
-entry-header.o: entry-header.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/constants.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/arch/irqs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/proc-fns.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/frame/pointer.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/32.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/alignment/trap.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arm/thumb.h)
-ftv-pci.o: ftv-pci.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/pci.h
-irq.o: irq.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel_stat.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/random.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/irq.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/arch/irq.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/acorn.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/debug/errors.h)
-leds-ftvpci.o: leds-ftvpci.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/leds.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h
-io.o: io.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/reboot.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/proc_fs.h \
+   /home/eccles/lin/linux/include/linux/notifier.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/dma.h \
+   /home/eccles/lin/linux/include/asm/ecard.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/irq.h \
+   /home/eccles/lin/linux/include/asm/pgalloc.h \
+   /home/eccles/lin/linux/include/asm/mmu_context.h \
+   /home/eccles/lin/linux/include/asm/mach/irq.h \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/rpc.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/32.h) \
+   /home/eccles/lin/linux/include/linux/completion.h
 entry-armo.o: entry-armo.S \
    entry-header.S \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fpe/nwfpe.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fpe/fastfpe.h)
-dec21285.o: dec21285.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/pci.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware/dec21285.h
-arthur.o: arthur.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/personality.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/stddef.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/ptrace.h
-time-acorn.o: time-acorn.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware/ioc.h
-irq-arch.o: irq-arch.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel_stat.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/random.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/irq.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/arch/irq.h
-oldlatches.o: oldlatches.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach-types.h
-head-armv.o: head-armv.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach-types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/arch.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/netwinder.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/l7200.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/alignment/trap.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/debug/ll.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/cats.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/rpc.h)
+   $(wildcard /home/eccles/lin/linux/include/config/fpe/nwfpe.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/fpe/fastfpe.h)
+entry-armv.o: entry-armv.S \
+   entry-header.S \
+   /home/eccles/lin/linux/include/asm/hardware/iomd.h \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/ebsa110.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/shark.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/footbridge.h) \
+   /home/eccles/lin/linux/include/asm/hardware/dec21285.h \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/nexuspci.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/tbox.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/sa1100.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/l7200.h) \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/integrator.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/mx1ads.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/clps711x.h) \
+   /home/eccles/lin/linux/include/asm/hardware/clps7111.h \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/camelot.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/anakin.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/fpe/nwfpe.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/fpe/fastfpe.h)
 entry-common.o: entry-common.S \
    entry-header.S \
    calls.S \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/arm710.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/alignment/trap.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/arm710.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/alignment/trap.h) \
    calls.S
-debug-armv.o: debug-armv.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/rpc.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/ebsa110.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/shark.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/footbridge.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware/dec21285.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/debug/dc21285/port.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/ftvpci.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/sa1100.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/clps7500.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/l7200.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/integrator.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware/serial_amba.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/clps711x.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware/clps7111.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/debug/clps711x/uart2.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/anakin.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/camelot.h)
-compat.o: compat.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/setup.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach-types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/page.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/arch.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/acorn.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/footbridge.h)
-signal.o: signal.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp_lock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/wait.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/stddef.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/unistd.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/personality.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/elf.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgalloc.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/ucontext.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   ptrace.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/32.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arm/thumb.h)
-dma.o: dma.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mman.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/spinlock.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/dma.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/dma.h
-process.o: process.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/stddef.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/unistd.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/user.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/reboot.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/leds.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/arch/system.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/no/pgt/cache.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/32.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sysrq.h)
-via82c505.o: via82c505.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ioport.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/pci.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cmd.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/shark.h)
+entry-header.o: entry-header.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/constants.h \
+   /home/eccles/lin/linux/include/asm/errno.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   /home/eccles/lin/linux/include/asm/arch/irqs.h \
+   /home/eccles/lin/linux/include/asm/proc-fns.h \
+   $(wildcard /home/eccles/lin/linux/include/config/frame/pointer.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/32.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/alignment/trap.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arm/thumb.h)
 fiq.o: fiq.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mman.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/fiq.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgalloc.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/32.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/26.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/debug/errors.h)
-bios32.o: bios32.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/page.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach-types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/pci.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/ebsa285.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/shark.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/cats.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/netwinder.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/personal/server.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/ftvpci.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/integrator.h)
-sys_arm.o: sys_arm.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sem.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/msg.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/shm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/stat.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mman.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/file.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/utsname.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/ipc.h
-dma-arc.o: dma-arc.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/dma.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/fiq.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach-types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/dma.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/blk/dev/fd1772.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/blk/dev/fd1772/module.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/a5k.h)
-armksyms.o: armksyms.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/user.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mman.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/delay.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/in6.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/vt_kern.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/byteorder.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/elf.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgalloc.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/proc-fns.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/processor.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/semaphore.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/checksum.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach-types.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/26.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/vt.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/32.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/debug/bugverbose.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/no/pgt/cache.h)
-entry-armv.o: entry-armv.S \
-   entry-header.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware/iomd.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/ebsa110.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/shark.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/footbridge.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware/dec21285.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/nexuspci.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/tbox.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/sa1100.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/l7200.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/integrator.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/mx1ads.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/clps711x.h) \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware/clps7111.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/camelot.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/arch/anakin.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fpe/nwfpe.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/fpe/fastfpe.h)
-dma-footbridge.o: dma-footbridge.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/dma.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/dma.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware/dec21285.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/isa/dma.h)
-dma-rpc.o: dma-rpc.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/slab.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mman.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/page.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/dma.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/fiq.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/dma.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware/iomd.h
-plx90x0.o: plx90x0.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/ptrace.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/irq.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/pci.h
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/mman.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/fiq.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/irq.h \
+   /home/eccles/lin/linux/include/asm/pgalloc.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/32.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/26.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/debug/errors.h)
+ftv-pci.o: ftv-pci.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/pci.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/irq.h \
+   /home/eccles/lin/linux/include/asm/mach/pci.h
+head-armo.o: head-armo.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/mach-types.h \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/arc.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/a5k.h)
+head-armv.o: head-armv.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/mach-types.h \
+   /home/eccles/lin/linux/include/asm/mach/arch.h \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/netwinder.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/l7200.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/alignment/trap.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/debug/ll.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/cats.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/rpc.h)
+init_task.o: init_task.c \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/asm/pgtable.h
+io.o: io.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/asm/io.h
+irq-arch.o: irq-arch.c \
+   /home/eccles/lin/linux/include/linux/ptrace.h \
+   /home/eccles/lin/linux/include/linux/kernel_stat.h \
+   /home/eccles/lin/linux/include/linux/signal.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/random.h \
+   /home/eccles/lin/linux/include/linux/smp.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/asm/mach/irq.h \
+   /home/eccles/lin/linux/include/asm/arch/irq.h
+irq.o: irq.c \
+   /home/eccles/lin/linux/include/linux/ptrace.h \
+   /home/eccles/lin/linux/include/linux/kernel_stat.h \
+   /home/eccles/lin/linux/include/linux/signal.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/random.h \
+   /home/eccles/lin/linux/include/linux/smp.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/irq.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/asm/mach/irq.h \
+   /home/eccles/lin/linux/include/asm/arch/irq.h \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/acorn.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/debug/errors.h)
 isa.o: isa.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/stddef.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sysctl.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h
+   /home/eccles/lin/linux/include/linux/stddef.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/sysctl.h \
+   /home/eccles/lin/linux/include/linux/init.h
+leds-ftvpci.o: leds-ftvpci.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   /home/eccles/lin/linux/include/asm/leds.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/asm/io.h
+oldlatches.o: oldlatches.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   /home/eccles/lin/linux/include/asm/mach-types.h
+plx90x0.o: plx90x0.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/pci.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/ptrace.h \
+   /home/eccles/lin/linux/include/asm/irq.h \
+   /home/eccles/lin/linux/include/asm/mach/pci.h
+process.o: process.c \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/stddef.h \
+   /home/eccles/lin/linux/include/linux/unistd.h \
+   /home/eccles/lin/linux/include/linux/ptrace.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/user.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/reboot.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/leds.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/asm/arch/system.h \
+   $(wildcard /home/eccles/lin/linux/include/config/no/pgt/cache.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/32.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/sysrq.h)
+ptrace.o: ptrace.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/smp.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h \
+   /home/eccles/lin/linux/include/linux/ptrace.h \
+   /home/eccles/lin/linux/include/linux/user.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/asm/pgtable.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   ptrace.h \
+   $(wildcard /home/eccles/lin/linux/include/config/arm/thumb.h)
+semaphore.o: semaphore.c \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/asm/semaphore.h \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/26.h)
+setup.o: setup.c \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/stddef.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/linux/delay.h \
+   /home/eccles/lin/linux/include/linux/utsname.h \
+   /home/eccles/lin/linux/include/linux/blk.h \
+   /home/eccles/lin/linux/include/linux/console.h \
+   /home/eccles/lin/linux/include/linux/bootmem.h \
+   /home/eccles/lin/linux/include/linux/seq_file.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/elf.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/procinfo.h \
+   /home/eccles/lin/linux/include/asm/setup.h \
+   /home/eccles/lin/linux/include/asm/mach-types.h \
+   /home/eccles/lin/linux/include/asm/mach/arch.h \
+   /home/eccles/lin/linux/include/asm/mach/irq.h \
+   $(wildcard /home/eccles/lin/linux/include/config/cmdline.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/fpe/nwfpe.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/fpe/fastfpe.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/blk/dev/ram.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/blk/dev/initrd.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/vga/console.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/dummy/console.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/vt.h)
+signal.o: signal.c \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/smp.h \
+   /home/eccles/lin/linux/include/linux/smp_lock.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/signal.h \
+   /home/eccles/lin/linux/include/linux/wait.h \
+   /home/eccles/lin/linux/include/linux/ptrace.h \
+   /home/eccles/lin/linux/include/linux/stddef.h \
+   /home/eccles/lin/linux/include/linux/unistd.h \
+   /home/eccles/lin/linux/include/linux/personality.h \
+   /home/eccles/lin/linux/include/linux/tty.h \
+   /home/eccles/lin/linux/include/linux/elf.h \
+   /home/eccles/lin/linux/include/asm/pgalloc.h \
+   /home/eccles/lin/linux/include/asm/ucontext.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   ptrace.h \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/32.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arm/thumb.h)
+sys_arm.o: sys_arm.c \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/slab.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/sem.h \
+   /home/eccles/lin/linux/include/linux/msg.h \
+   /home/eccles/lin/linux/include/linux/shm.h \
+   /home/eccles/lin/linux/include/linux/stat.h \
+   /home/eccles/lin/linux/include/linux/mman.h \
+   /home/eccles/lin/linux/include/linux/fs.h \
+   /home/eccles/lin/linux/include/linux/file.h \
+   /home/eccles/lin/linux/include/linux/utsname.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/asm/ipc.h
+time-acorn.o: time-acorn.c \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/irq.h \
+   /home/eccles/lin/linux/include/asm/hardware/ioc.h
+time.o: time.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/time.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/smp.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/irq.h \
+   /home/eccles/lin/linux/include/linux/timex.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   $(wildcard /home/eccles/lin/linux/include/config/leds.h) \
+   /home/eccles/lin/linux/include/asm/leds.h \
+   $(wildcard /home/eccles/lin/linux/include/config/modules.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/leds/timer.h) \
+   /home/eccles/lin/linux/include/asm/arch/time.h
+traps.o: traps.c \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/signal.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/spinlock.h \
+   /home/eccles/lin/linux/include/linux/personality.h \
+   /home/eccles/lin/linux/include/linux/ptrace.h \
+   /home/eccles/lin/linux/include/linux/elf.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/pgtable.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/asm/unistd.h \
+   ptrace.h \
+   $(wildcard /home/eccles/lin/linux/include/config/frame/pointer.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/debug/user.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/26.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/ignore/fiq.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/32.h)
+via82c505.o: via82c505.c \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/pci.h \
+   /home/eccles/lin/linux/include/linux/ptrace.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/ioport.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/asm/mach/pci.h \
+   $(wildcard /home/eccles/lin/linux/include/config/cmd.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/arch/shark.h)

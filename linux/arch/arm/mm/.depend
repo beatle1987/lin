@@ -1,274 +1,274 @@
-mm-rpc.o: mm-rpc.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/page.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/proc/domain.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/setup.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/map.h
-mm-tbox.o: mm-tbox.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/page.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/map.h
-mm-armv.o: mm-armv.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/bootmem.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgalloc.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/page.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/setup.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/map.h
-proc-arm920.o: proc-arm920.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/constants.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/procinfo.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/arm920/cpu/idle.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/arm920/writethrough.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/arm920/i/cache/on.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/arm920/d/cache/on.h)
-proc-arm2,3.o: proc-arm2,3.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/constants.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/procinfo.h
-mm-clps7500.o: mm-clps7500.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/page.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/proc/domain.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/setup.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/map.h
-mm-ftvpci.o: mm-ftvpci.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/page.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/map.h
-proc-arm720.o: proc-arm720.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/constants.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/procinfo.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h
-init.o: init.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mman.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/swap.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/swapctl.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/bootmem.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/blk.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/segment.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach-types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgalloc.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/dma.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/setup.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/arch.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/map.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/discontigmem.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/32.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/no/pgt/cache.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/blk/dev/initrd.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/sa1111.h)
-fault-common.o: fault-common.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mman.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/unaligned.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/26.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/32.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/debug/user.h)
-fault-armo.o: fault-armo.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mman.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h
-proc-syms.o: proc-syms.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/proc-fns.h
-proc-arm1020.o: proc-arm1020.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/constants.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/procinfo.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/arm1020/branch/prediction.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/arm1020/d/cache/on.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/arm1020/i/cache/on.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/arm1020/force/write/through.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/arm1020/cpu/idle.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/arm1020/round/robin.h)
 alignment.o: alignment.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/compiler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mman.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/bitops.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgalloc.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/unaligned.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/proc/fs.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/arm922t.h)
-small_page.o: small_page.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mman.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/swap.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/smp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/bitops.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h
-extable.o: extable.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/modules.h)
-proc-arm926.o: proc-arm926.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/constants.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/procinfo.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/arm926/cpu/idle.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/arm926/writethrough.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/arm926/i/cache/on.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/arm926/d/cache/on.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/arm926/round/robin.h)
-mm-armo.o: mm-armo.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/bootmem.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgalloc.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/page.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/arch/memory.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/map.h
-proc-sa110.o: proc-sa110.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/constants.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/procinfo.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h
-fault-armv.o: fault-armv.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/signal.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/sched.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ptrace.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mman.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/bitops.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/system.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgalloc.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/alignment/trap.h)
+   /home/eccles/lin/linux/include/linux/compiler.h \
+   /home/eccles/lin/linux/include/linux/signal.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/ptrace.h \
+   /home/eccles/lin/linux/include/linux/mman.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/proc_fs.h \
+   /home/eccles/lin/linux/include/linux/bitops.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/asm/pgalloc.h \
+   /home/eccles/lin/linux/include/asm/pgtable.h \
+   /home/eccles/lin/linux/include/asm/unaligned.h \
+   $(wildcard /home/eccles/lin/linux/include/config/proc/fs.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/arm922t.h)
 consistent.o: consistent.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/types.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/string.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/interrupt.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/pci.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgtable.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgalloc.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/pci.h)
-proc-arm6,7.o: proc-arm6,7.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/constants.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/procinfo.h
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/vmalloc.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/pci.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/pgtable.h \
+   /home/eccles/lin/linux/include/asm/pgalloc.h \
+   $(wildcard /home/eccles/lin/linux/include/config/pci.h)
 discontig.o: discontig.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/bootmem.h
-mm-l7200.o: mm-l7200.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/init.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/page.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/proc/domain.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/mach/map.h
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/bootmem.h
+extable.o: extable.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   $(wildcard /home/eccles/lin/linux/include/config/modules.h)
+fault-armo.o: fault-armo.c \
+   /home/eccles/lin/linux/include/linux/signal.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/ptrace.h \
+   /home/eccles/lin/linux/include/linux/mman.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/asm/pgtable.h
+fault-armv.o: fault-armv.c \
+   /home/eccles/lin/linux/include/linux/signal.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/ptrace.h \
+   /home/eccles/lin/linux/include/linux/mman.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/proc_fs.h \
+   /home/eccles/lin/linux/include/linux/bitops.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/asm/pgalloc.h \
+   /home/eccles/lin/linux/include/asm/pgtable.h \
+   $(wildcard /home/eccles/lin/linux/include/config/alignment/trap.h)
+fault-common.o: fault-common.c \
+   /home/eccles/lin/linux/include/linux/signal.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/ptrace.h \
+   /home/eccles/lin/linux/include/linux/mman.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/interrupt.h \
+   /home/eccles/lin/linux/include/linux/proc_fs.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/system.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/asm/pgtable.h \
+   /home/eccles/lin/linux/include/asm/unaligned.h \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/26.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/32.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/debug/user.h)
+init.o: init.c \
+   /home/eccles/lin/linux/include/linux/signal.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/ptrace.h \
+   /home/eccles/lin/linux/include/linux/mman.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/swap.h \
+   /home/eccles/lin/linux/include/linux/swapctl.h \
+   /home/eccles/lin/linux/include/linux/smp.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/bootmem.h \
+   /home/eccles/lin/linux/include/linux/blk.h \
+   /home/eccles/lin/linux/include/asm/segment.h \
+   /home/eccles/lin/linux/include/asm/mach-types.h \
+   /home/eccles/lin/linux/include/asm/pgalloc.h \
+   /home/eccles/lin/linux/include/asm/dma.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   /home/eccles/lin/linux/include/asm/setup.h \
+   /home/eccles/lin/linux/include/asm/mach/arch.h \
+   /home/eccles/lin/linux/include/asm/mach/map.h \
+   $(wildcard /home/eccles/lin/linux/include/config/discontigmem.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/32.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/no/pgt/cache.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/blk/dev/initrd.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/sa1111.h)
 ioremap.o: ioremap.c \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/errno.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/mm.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/vmalloc.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/page.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/pgalloc.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/io.h
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/vmalloc.h \
+   /home/eccles/lin/linux/include/asm/page.h \
+   /home/eccles/lin/linux/include/asm/pgalloc.h \
+   /home/eccles/lin/linux/include/asm/io.h
+mm-armo.o: mm-armo.c \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/bootmem.h \
+   /home/eccles/lin/linux/include/asm/pgtable.h \
+   /home/eccles/lin/linux/include/asm/pgalloc.h \
+   /home/eccles/lin/linux/include/asm/page.h \
+   /home/eccles/lin/linux/include/asm/arch/memory.h \
+   /home/eccles/lin/linux/include/asm/mach/map.h
+mm-armv.o: mm-armv.c \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/linux/bootmem.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   /home/eccles/lin/linux/include/asm/pgtable.h \
+   /home/eccles/lin/linux/include/asm/pgalloc.h \
+   /home/eccles/lin/linux/include/asm/page.h \
+   /home/eccles/lin/linux/include/asm/setup.h \
+   /home/eccles/lin/linux/include/asm/mach/map.h
+mm-clps7500.o: mm-clps7500.c \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   /home/eccles/lin/linux/include/asm/page.h \
+   /home/eccles/lin/linux/include/asm/proc/domain.h \
+   /home/eccles/lin/linux/include/asm/setup.h \
+   /home/eccles/lin/linux/include/asm/mach/map.h
+mm-ftvpci.o: mm-ftvpci.c \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/pgtable.h \
+   /home/eccles/lin/linux/include/asm/page.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/mach/map.h
+mm-l7200.o: mm-l7200.c \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   /home/eccles/lin/linux/include/asm/page.h \
+   /home/eccles/lin/linux/include/asm/proc/domain.h \
+   /home/eccles/lin/linux/include/asm/mach/map.h
+mm-rpc.o: mm-rpc.c \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   /home/eccles/lin/linux/include/asm/page.h \
+   /home/eccles/lin/linux/include/asm/proc/domain.h \
+   /home/eccles/lin/linux/include/asm/setup.h \
+   /home/eccles/lin/linux/include/asm/mach/map.h
+mm-tbox.o: mm-tbox.c \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/init.h \
+   /home/eccles/lin/linux/include/asm/io.h \
+   /home/eccles/lin/linux/include/asm/pgtable.h \
+   /home/eccles/lin/linux/include/asm/page.h \
+   /home/eccles/lin/linux/include/asm/mach/map.h
+proc-arm1020.o: proc-arm1020.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/constants.h \
+   /home/eccles/lin/linux/include/asm/procinfo.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/arm1020/branch/prediction.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/arm1020/d/cache/on.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/arm1020/i/cache/on.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/arm1020/force/write/through.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/arm1020/cpu/idle.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/arm1020/round/robin.h)
+proc-arm2,3.o: proc-arm2,3.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/constants.h \
+   /home/eccles/lin/linux/include/asm/procinfo.h
+proc-arm6,7.o: proc-arm6,7.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/constants.h \
+   /home/eccles/lin/linux/include/asm/procinfo.h
+proc-arm720.o: proc-arm720.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/constants.h \
+   /home/eccles/lin/linux/include/asm/procinfo.h \
+   /home/eccles/lin/linux/include/asm/hardware.h
+proc-arm920.o: proc-arm920.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/constants.h \
+   /home/eccles/lin/linux/include/asm/procinfo.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/arm920/cpu/idle.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/arm920/writethrough.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/arm920/i/cache/on.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/arm920/d/cache/on.h)
 proc-arm922.o: proc-arm922.S \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/linkage.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/assembler.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/constants.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/procinfo.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/hardware.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/arm922/cpu/idle.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/arm922/writethrough.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/arm922/i/cache/on.h) \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/cpu/arm922/d/cache/on.h)
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/constants.h \
+   /home/eccles/lin/linux/include/asm/procinfo.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/arm922/cpu/idle.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/arm922/writethrough.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/arm922/i/cache/on.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/arm922/d/cache/on.h)
+proc-arm926.o: proc-arm926.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/constants.h \
+   /home/eccles/lin/linux/include/asm/procinfo.h \
+   /home/eccles/lin/linux/include/asm/hardware.h \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/arm926/cpu/idle.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/arm926/writethrough.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/arm926/i/cache/on.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/arm926/d/cache/on.h) \
+   $(wildcard /home/eccles/lin/linux/include/config/cpu/arm926/round/robin.h)
+proc-sa110.o: proc-sa110.S \
+   /home/eccles/lin/linux/include/linux/linkage.h \
+   /home/eccles/lin/linux/include/asm/assembler.h \
+   /home/eccles/lin/linux/include/asm/constants.h \
+   /home/eccles/lin/linux/include/asm/procinfo.h \
+   /home/eccles/lin/linux/include/asm/hardware.h
+proc-syms.o: proc-syms.c \
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/asm/proc-fns.h
+small_page.o: small_page.c \
+   /home/eccles/lin/linux/include/linux/signal.h \
+   /home/eccles/lin/linux/include/linux/sched.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/errno.h \
+   /home/eccles/lin/linux/include/linux/string.h \
+   /home/eccles/lin/linux/include/linux/types.h \
+   /home/eccles/lin/linux/include/linux/ptrace.h \
+   /home/eccles/lin/linux/include/linux/mman.h \
+   /home/eccles/lin/linux/include/linux/mm.h \
+   /home/eccles/lin/linux/include/linux/swap.h \
+   /home/eccles/lin/linux/include/linux/smp.h \
+   /home/eccles/lin/linux/include/asm/bitops.h \
+   /home/eccles/lin/linux/include/asm/pgtable.h

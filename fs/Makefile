@@ -7,7 +7,7 @@
 # SYSTEM is the name of the rootfs to compress.
 # The output of this script will have an extension .comp added!
 #
-SYSTEM	= rootfs6
+SYSTEM	= rootfs
 
 CROSS_COMPILE = arm-linux-
 

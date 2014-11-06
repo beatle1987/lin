@@ -1,38 +1,38 @@
-irnet_ppp.h: \
-   irnet.h
-	@touch irnet_ppp.h
-irnet_ppp.o: irnet_ppp.c \
-   irnet_ppp.h
-irnet_irda.h: \
-   irnet.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/proc/fs.h)
-	@touch irnet_irda.h
 irnet.h: \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/module.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/skbuff.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/tty.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/proc_fs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/devfs_fs_kernel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/netdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/miscdevice.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/poll.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ctype.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/asm/uaccess.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ppp_defs.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/if_ppp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/linux/ppp_channel.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/irda/irda.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/irda/iriap.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/irda/irias_object.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/irda/irlmp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/irda/irttp.h \
-   /home/netlab/j6-harvey/Kernel/linux/include/net/irda/discovery.h
+   /home/eccles/lin/linux/include/linux/module.h \
+   /home/eccles/lin/linux/include/linux/kernel.h \
+   /home/eccles/lin/linux/include/linux/skbuff.h \
+   /home/eccles/lin/linux/include/linux/tty.h \
+   /home/eccles/lin/linux/include/linux/proc_fs.h \
+   /home/eccles/lin/linux/include/linux/devfs_fs_kernel.h \
+   /home/eccles/lin/linux/include/linux/netdevice.h \
+   /home/eccles/lin/linux/include/linux/miscdevice.h \
+   /home/eccles/lin/linux/include/linux/poll.h \
+   /home/eccles/lin/linux/include/linux/ctype.h \
+   /home/eccles/lin/linux/include/asm/uaccess.h \
+   /home/eccles/lin/linux/include/linux/ppp_defs.h \
+   /home/eccles/lin/linux/include/linux/if_ppp.h \
+   /home/eccles/lin/linux/include/linux/ppp_channel.h \
+   /home/eccles/lin/linux/include/net/irda/irda.h \
+   /home/eccles/lin/linux/include/net/irda/iriap.h \
+   /home/eccles/lin/linux/include/net/irda/irias_object.h \
+   /home/eccles/lin/linux/include/net/irda/irlmp.h \
+   /home/eccles/lin/linux/include/net/irda/irttp.h \
+   /home/eccles/lin/linux/include/net/irda/discovery.h
 	@touch irnet.h
 irnet_irda.o: irnet_irda.c \
    irnet_irda.h \
-   $(wildcard /home/netlab/j6-harvey/Kernel/linux/include/config/proc/fs.h)
-.PRECIOUS:	irnet_ppp.h \
+   $(wildcard /home/eccles/lin/linux/include/config/proc/fs.h)
+irnet_irda.h: \
+   irnet.h \
+   $(wildcard /home/eccles/lin/linux/include/config/proc/fs.h)
+	@touch irnet_irda.h
+irnet_ppp.o: irnet_ppp.c \
+   irnet_ppp.h
+irnet_ppp.h: \
+   irnet.h
+	@touch irnet_ppp.h
+.PRECIOUS:	irnet.h \
 	irnet_irda.h \
-	irnet.h \
+	irnet_ppp.h \
 
