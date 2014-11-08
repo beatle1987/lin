@@ -32,9 +32,9 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-build_triplet = i686-pc-linux-gnu
-host_triplet = i686-pc-linux-gnu
-target_triplet = i686-pc-linux-gnu
+build_triplet = x86_64-unknown-linux-gnu
+host_triplet = x86_64-unknown-linux-gnu
+target_triplet = x86_64-unknown-linux-gnu
 subdir = doc/man
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -121,25 +121,25 @@ am__relativize = \
     dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
   done; \
   reldir="$$dir2"
-ACLOCAL = ${SHELL} /home/eccles/lin/nano-2.2.6/missing --run aclocal-1.11
-AMTAR = ${SHELL} /home/eccles/lin/nano-2.2.6/missing --run tar
-AUTOCONF = ${SHELL} /home/eccles/lin/nano-2.2.6/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/eccles/lin/nano-2.2.6/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/eccles/lin/nano-2.2.6/missing --run automake-1.11
+ACLOCAL = ${SHELL} /home/netlab/j6-harvey/lin/nano-2.2.6/missing --run aclocal-1.11
+AMTAR = ${SHELL} /home/netlab/j6-harvey/lin/nano-2.2.6/missing --run tar
+AUTOCONF = ${SHELL} /home/netlab/j6-harvey/lin/nano-2.2.6/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/netlab/j6-harvey/lin/nano-2.2.6/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/netlab/j6-harvey/lin/nano-2.2.6/missing --run automake-1.11
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
 CPP = gcc -E
-CPPFLAGS = 
-CURSES_LIB = -lncurses
+CPPFLAGS = -I/usr/include/ncursesw 
+CURSES_LIB = -lncursesw
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
 ECHO_C = 
 ECHO_N = -n
 ECHO_T = 
-EGREP = /bin/grep -E
+EGREP = /usr/bin/grep -E
 EXEEXT = 
 GLIB_CFLAGS = 
 GLIB_GENMARSHAL = 
@@ -147,7 +147,7 @@ GLIB_LIBS =
 GLIB_MKENUMS = 
 GMSGFMT = /usr/bin/msgfmt
 GOBJECT_QUERY = 
-GREP = /bin/grep
+GREP = /usr/bin/grep
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
@@ -158,13 +158,13 @@ LDFLAGS =
 LIBICONV = -liconv
 LIBINTL = 
 LIBOBJS = 
-LIBS =  -lncurses
+LIBS =  -lncursesw
 LN_S = ln -s
 LTLIBICONV = -liconv
 LTLIBINTL = 
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/eccles/lin/nano-2.2.6/missing --run makeinfo
-MKDIR_P = /bin/mkdir -p
+MAKEINFO = ${SHELL} /home/netlab/j6-harvey/lin/nano-2.2.6/missing --run makeinfo
+MKDIR_P = /usr/bin/mkdir -p
 MKINSTALLDIRS = ./mkinstalldirs
 MSGFMT = /usr/bin/msgfmt
 MSGMERGE = /usr/bin/msgmerge
@@ -181,15 +181,15 @@ PKGDATADIR = /usr/local/share/nano
 PKG_CONFIG = 
 POSUB = po
 SET_MAKE = 
-SHELL = /bin/bash
+SHELL = /bin/sh
 STRIP = 
 USE_NLS = yes
 VERSION = 2.2.6
 XGETTEXT = /usr/bin/xgettext
-abs_builddir = /home/eccles/lin/nano-2.2.6/doc/man
-abs_srcdir = /home/eccles/lin/nano-2.2.6/doc/man
-abs_top_builddir = /home/eccles/lin/nano-2.2.6
-abs_top_srcdir = /home/eccles/lin/nano-2.2.6
+abs_builddir = /home/netlab/j6-harvey/lin/nano-2.2.6/doc/man
+abs_srcdir = /home/netlab/j6-harvey/lin/nano-2.2.6/doc/man
+abs_top_builddir = /home/netlab/j6-harvey/lin/nano-2.2.6
+abs_top_srcdir = /home/netlab/j6-harvey/lin/nano-2.2.6
 ac_ct_CC = gcc
 am__include = include
 am__leading_dot = .
@@ -197,32 +197,32 @@ am__quote =
 am__tar = ${AMTAR} chof - "$$tardir"
 am__untar = ${AMTAR} xf -
 bindir = ${exec_prefix}/bin
-build = i686-pc-linux-gnu
+build = x86_64-unknown-linux-gnu
 build_alias = 
-build_cpu = i686
+build_cpu = x86_64
 build_os = linux-gnu
-build_vendor = pc
+build_vendor = unknown
 builddir = .
 datadir = ${datarootdir}
 datarootdir = ${prefix}/share
 docdir = ${datarootdir}/doc/${PACKAGE_TARNAME}
 dvidir = ${docdir}
 exec_prefix = ${prefix}
-host = i686-pc-linux-gnu
+host = x86_64-unknown-linux-gnu
 host_alias = 
-host_cpu = i686
+host_cpu = x86_64
 host_os = linux-gnu
-host_vendor = pc
+host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/eccles/lin/nano-2.2.6/install-sh
+install_sh = ${SHELL} /home/netlab/j6-harvey/lin/nano-2.2.6/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
 localstatedir = ${prefix}/var
 mandir = ${datarootdir}/man
-mkdir_p = /bin/mkdir -p
+mkdir_p = /usr/bin/mkdir -p
 oldincludedir = /usr/include
 pdfdir = ${docdir}
 prefix = /usr/local
@@ -232,11 +232,11 @@ sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
 srcdir = .
 sysconfdir = ${prefix}/etc
-target = i686-pc-linux-gnu
+target = x86_64-unknown-linux-gnu
 target_alias = 
-target_cpu = i686
+target_cpu = x86_64
 target_os = linux-gnu
-target_vendor = pc
+target_vendor = unknown
 top_build_prefix = ../../
 top_builddir = ../..
 top_srcdir = ../..
@@ -244,14 +244,14 @@ top_srcdir = ../..
 SUBDIRS = fr
 #man_MANS = nano.1 rnano.1
 man_MANS = nano.1 nanorc.5 rnano.1
-##BUILT_SOURCES = nano.1.html rnano.1.html
-#BUILT_SOURCES = nano.1.html nanorc.5.html rnano.1.html
+#BUILT_SOURCES = nano.1.html rnano.1.html
+BUILT_SOURCES = nano.1.html nanorc.5.html rnano.1.html
 nano_man_mans = nano.1 nanorc.5 rnano.1
-#htmlman_DATA = nano.1.html nanorc.5.html rnano.1.html
-#htmlmandir = $(datadir)/nano/man-html
-#nano_built_sources = nano.1.html nanorc.5.html rnano.1.html
-EXTRA_DIST = $(nano_man_mans)
-#EXTRA_DIST = $(nano_man_mans) $(nano_built_sources)
+htmlman_DATA = nano.1.html nanorc.5.html rnano.1.html
+htmlmandir = $(datadir)/nano/man-html
+nano_built_sources = nano.1.html nanorc.5.html rnano.1.html
+#EXTRA_DIST = $(nano_man_mans)
+EXTRA_DIST = $(nano_man_mans) $(nano_built_sources)
 all: $(BUILT_SOURCES)
 	$(MAKE) $(AM_MAKEFLAGS) all-recursive
 
@@ -713,12 +713,12 @@ uninstall-man: uninstall-man1 uninstall-man5
 	uninstall-man uninstall-man1 uninstall-man5
 
 
-#nano.1.html: nano.1
-#	groff -t -mandoc -Thtml < $? > $@
-#nanorc.5.html: nanorc.5
-#	groff -t -mandoc -Thtml < $? > $@
-#rnano.1.html: rnano.1
-#	groff -t -mandoc -Thtml < $? > $@
+nano.1.html: nano.1
+	groff -t -mandoc -Thtml < $? > $@
+nanorc.5.html: nanorc.5
+	groff -t -mandoc -Thtml < $? > $@
+rnano.1.html: rnano.1
+	groff -t -mandoc -Thtml < $? > $@
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

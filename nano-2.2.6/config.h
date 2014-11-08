@@ -50,7 +50,7 @@
 /* Define this if your system has sufficient UTF-8 support (a wide curses
    library, iswalnum(), iswpunct(), iswblank() or iswspace(), nl_langinfo,
    mblen(), mbstowcs(), mbtowc(), wctomb(), and wcwidth()). */
-/* #undef ENABLE_UTF8 */
+#define ENABLE_UTF8 1
 
 /* Define if the system supports GNU-style word boundaries in regexes. */
 #define GNU_WORDBOUNDS 1
@@ -267,7 +267,7 @@
 #define VERSION "2.2.6"
 
 /* Number of bits in a file offset, on hosts where this is settable. */
-#define _FILE_OFFSET_BITS 64
+/* #undef _FILE_OFFSET_BITS */
 
 /* Define for large files, on AIX-style hosts. */
 /* #undef _LARGE_FILES */
